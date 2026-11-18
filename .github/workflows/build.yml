@@ -1,0 +1,90 @@
+# Tests the project and builds the downloads: the web app, the Mac and Windows installers,
+# and the Android package. Pushing a tag such as v0.0.1 also prepares a draft pre-release
+# with the downloads attached; a person still has to publish it.
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm test
+      - run: npm run build:app-file
+      - uses: actions/upload-artifact@v4
+        with: { name: web, path: dist }
+      - run: cp 2026-11-16-name-check-app.html name-check-single-file.html
+      - uses: actions/upload-artifact@v4
+        with: { name: single-file, path: name-check-single-file.html }
+
+  desktop:
+    needs: test
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest
+            args: --target universal-apple-darwin
+            files: src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg
+            name: mac
+          - os: windows-latest
+            args: ''
+            files: src-tauri/target/release/bundle/nsis/*.exe
+            name: windows
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - if: matrix.name == 'mac'
+        run: rustup target add x86_64-apple-darwin aarch64-apple-darwin
+      - run: npm ci
+      - run: npx tauri build ${{ matrix.args }}
+      - uses: actions/upload-artifact@v4
+        with: { name: '${{ matrix.name }}', path: '${{ matrix.files }}' }
+
+  android:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 21 }
+      - run: npm ci
+      - run: npm run build
+      - run: npx cap sync android
+      - run: ./gradlew assembleDebug
+        working-directory: android
+      - run: cp android/app/build/outputs/apk/debug/app-debug.apk name-check-android.apk
+      - uses: actions/upload-artifact@v4
+        with: { name: android, path: name-check-android.apk }
+
+  draft-release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [desktop, android]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: downloads }
+      - run: |
+          cd downloads && zip -r ../name-check-web.zip web && cd ..
+          gh release create "$GITHUB_REF_NAME" --draft --prerelease --title "$GITHUB_REF_NAME (pilot)" --notes-file CHANGELOG.md \
+            downloads/mac/*.dmg downloads/windows/*.exe downloads/android/*.apk downloads/single-file/*.html name-check-web.zip
+        env:
+          GH_TOKEN: ${{ github.token }}

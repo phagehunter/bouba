@@ -1,0 +1,59 @@
+name,origin,real_thai,predicted_thai,similarity_percent,exact_match
+Glasgow,en,กลาสโกว์,แกลสโค,38,no
+Kodak,en,โกดัก,โคแดก,40,no
+Paramount Pictures,en,พาราเมาต์พิกเจอส์,แพรามาวนต์พิกเชิร์ส,53,no
+National Geographic,en,เนชั่นแนลจีโอกราฟฟิก,แนชะนัลเจียแกรฟิก,53,no
+BlackBerry,en,แบล็คเบอร์รี,แบลกเบรี,64,no
+Twitch,en,ทวิตช์,ทวิช,67,no
+Edinburgh,en,เอดินบะระ,เอดันบะโร,67,no
+Oxford,en,ออกซฟอร์ด,ออกสเฟิร์ด,70,no
+Toronto,en,โทรอนโต,ทอรอนโต,71,no
+General Motors,en,เจเนรัลมอเตอร์,เจเนรัลโมเติร์ส,73,no
+Motorola,en,โมโตโรลา,โมตอโรลา,75,no
+Roblox,en,โรบล็อกซ์,รอบลอกซ์,75,no
+Nickelodeon,en,นิคคาโลเดียน,นิกกิโลเดียน,75,no
+Western Union,en,เวสเทิร์นยูเนียน,เว็สเติร์นยูนยัน,75,no
+Auckland,en,ออกแลนด์,ออกลันด์,75,no
+Belfast,en,เบลฟาสต์,เบ็ลแฟสต์,75,no
+Nashville,en,แนชวิลล์,แนชวิล,75,no
+Cambridge,en,เคมบริดจ์,เคมบริจ,78,no
+Cleveland,en,คลีฟแลนด์,คลีฟลันด์,78,no
+Portland,en,พอร์ตแลนด์,พอร์ตลันด์,80,no
+Cartoon Network,en,การ์ตูนเน็ตเวิร์ค,คาร์ทูนเน็ตเวิร์ก,81,no
+Pittsburgh,en,พิตต์สเบิร์ก,พิตส์เบิร์ก,83,no
+Goldman Sachs,en,โกลด์แมนแซกส์,โกลด์มันแซกส์,85,no
+Xerox,en,ซีร็อกซ์,ซิรอกซ์,86,no
+Morgan Stanley,en,มอร์แกนสแตนลีย์,มอร์กันสแตนลีย์,87,no
+Discord,en,ดิสคอร์ด,ดิสกอร์ด,88,no
+Detroit,en,ดีทรอยต์,ดิทรอยต์,88,no
+Hollywood,en,ฮอลลีวูด,ฮอลลีวุด,88,no
+Flickr,en,ฟลิคเกอร์,ฟลิกเกอร์,89,no
+Seattle,en,ซีแอตเทิล,ซีแอตเติล,89,no
+Baltimore,en,บอลทิมอร์,บอลติมอร์,89,no
+Philadelphia,en,ฟิลาเดลเฟีย,ฟิละเด็ลเฟีย,91,no
+General Electric,en,เจเนอรัลอิเล็กทริก,เจเนรัลอิเล็กทริก,94,no
+Tinder,en,ทินเดอร์,ทินเดอร์,100,yes
+Telegram,en,เทเลแกรม,เทเลแกรม,100,yes
+Skype,en,สไกป์,สไกป์,100,yes
+Tumblr,en,ทัมเบลอร์,ทัมเบลอร์,100,yes
+Citibank,en,ซิตี้แบงก์,ซิตีแบงก์,100,yes
+Manchester,en,แมนเชสเตอร์,แมนเช็สเตอร์,100,yes
+Liverpool,en,ลิเวอร์พูล,ลิเวอร์พูล,100,yes
+Birmingham,en,เบอร์มิงแฮม,เบอร์มิงแฮม,100,yes
+Boston,en,บอสตัน,บอสตัน,100,yes
+Chicago,en,ชิคาโก,ชิคาโก,100,yes
+Houston,en,ฮิวสตัน,ฮิวสตัน,100,yes
+Dallas,en,แดลลัส,แดลลัส,100,yes
+Denver,en,เดนเวอร์,เด็นเวอร์,100,yes
+Atlanta,en,แอตแลนตา,แอตแลนตา,100,yes
+Sydney,en,ซิดนีย์,ซิดนีย์,100,yes
+Melbourne,en,เมลเบิร์น,เม็ลเบิร์น,100,yes
+Brisbane,en,บริสเบน,บริสเบน,100,yes
+Perth,en,เพิร์ท,เพิร์ท,100,yes
+Wellington,en,เวลลิงตัน,เว็ลลิงตัน,100,yes
+Vancouver,en,แวนคูเวอร์,แวนคูเวอร์,100,yes
+Bristol,en,บริสตอล,บริสตอล,100,yes
+Leeds,en,ลีดส์,ลีดส์,100,yes
+Dublin,en,ดับลิน,ดับลิน,100,yes
+Memphis,en,เมมฟิส,เม็มฟิส,100,yes
+Brooklyn,en,บรุกลิน,บรุกลิน,100,yes

@@ -1,0 +1,235 @@
+name,wiki_title,origin
+Phoenix,"Phoenix, Arizona",en
+Austin,"Austin, Texas",en
+Columbus,"Columbus, Ohio",en
+Charlotte,"Charlotte, North Carolina",en
+Indianapolis,Indianapolis,en
+Jacksonville,"Jacksonville, Florida",en
+Milwaukee,Milwaukee,en
+Omaha,"Omaha, Nebraska",en
+Raleigh,"Raleigh, North Carolina",en
+Miami,Miami,en
+Oakland,"Oakland, California",en
+Minneapolis,Minneapolis,en
+Tulsa,"Tulsa, Oklahoma",en
+Arlington,"Arlington, Texas",en
+Tampa,"Tampa, Florida",en
+Anaheim,"Anaheim, California",en
+Lexington,"Lexington, Kentucky",en
+Stockton,"Stockton, California",en
+Cincinnati,Cincinnati,en
+Greensboro,"Greensboro, North Carolina",en
+Anchorage,"Anchorage, Alaska",en
+Lincoln,"Lincoln, Nebraska",en
+Orlando,"Orlando, Florida",en
+Irvine,"Irvine, California",en
+Newark,"Newark, New Jersey",en
+Durham,"Durham, North Carolina",en
+Madison,"Madison, Wisconsin",en
+Lubbock,"Lubbock, Texas",en
+Scottsdale,"Scottsdale, Arizona",en
+Reno,"Reno, Nevada",en
+Buffalo,"Buffalo, New York",en
+Norfolk,"Norfolk, Virginia",en
+Fremont,"Fremont, California",en
+Richmond,"Richmond, Virginia",en
+Boise,"Boise, Idaho",en
+Spokane,"Spokane, Washington",en
+Tacoma,"Tacoma, Washington",en
+Akron,"Akron, Ohio",en
+Rochester,"Rochester, New York",en
+Hartford,"Hartford, Connecticut",en
+Albany,"Albany, New York",en
+Trenton,"Trenton, New Jersey",en
+Harrisburg,"Harrisburg, Pennsylvania",en
+Annapolis,"Annapolis, Maryland",en
+Charleston,"Charleston, South Carolina",en
+Montgomery,"Montgomery, Alabama",en
+Topeka,"Topeka, Kansas",en
+Bismarck,"Bismarck, North Dakota",en
+Helena,"Helena, Montana",en
+Olympia,"Olympia, Washington",en
+Augusta,"Augusta, Georgia",en
+Lansing,"Lansing, Michigan",en
+Wichita,"Wichita, Kansas",en
+Toledo,"Toledo, Ohio",en
+Dayton,"Dayton, Ohio",en
+Savannah,"Savannah, Georgia",en
+Chattanooga,"Chattanooga, Tennessee",en
+Knoxville,"Knoxville, Tennessee",en
+Louisville,"Louisville, Kentucky",en
+Tallahassee,"Tallahassee, Florida",en
+Syracuse,"Syracuse, New York",en
+Scranton,"Scranton, Pennsylvania",en
+Princeton,"Princeton, New Jersey",en
+Berkeley,"Berkeley, California",en
+Pasadena,"Pasadena, California",en
+Leicester,Leicester,en
+Sheffield,Sheffield,en
+Nottingham,Nottingham,en
+Southampton,Southampton,en
+Portsmouth,Portsmouth,en
+Plymouth,Plymouth,en
+Brighton,Brighton,en
+Coventry,Coventry,en
+Bradford,Bradford,en
+Cardiff,Cardiff,en
+Swansea,Swansea,en
+Aberdeen,Aberdeen,en
+Dundee,Dundee,en
+Inverness,Inverness,en
+Exeter,Exeter,en
+Norwich,Norwich,en
+Derby,Derby,en
+Sunderland,Sunderland,en
+Wolverhampton,Wolverhampton,en
+Preston,"Preston, Lancashire",en
+Blackpool,Blackpool,en
+Bournemouth,Bournemouth,en
+Luton,Luton,en
+Swindon,Swindon,en
+Ipswich,Ipswich,en
+Lancaster,"Lancaster, Lancashire",en
+Canterbury,Canterbury,en
+Winchester,Winchester,en
+Carlisle,Carlisle,en
+Worcester,"Worcester, England",en
+Gloucester,Gloucester,en
+Salisbury,Salisbury,en
+Middlesbrough,Middlesbrough,en
+Huddersfield,Huddersfield,en
+Doncaster,Doncaster,en
+Adelaide,Adelaide,en
+Canberra,Canberra,en
+Hobart,Hobart,en
+Hamilton,"Hamilton, New Zealand",en
+Dunedin,Dunedin,en
+Calgary,Calgary,en
+Edmonton,Edmonton,en
+Winnipeg,Winnipeg,en
+Ottawa,Ottawa,en
+Halifax,"Halifax, Nova Scotia",en
+Kingston,"Kingston, Ontario",en
+Darwin,"Darwin, Northern Territory",en
+Cairns,Cairns,en
+Townsville,Townsville,en
+Geelong,Geelong,en
+Tauranga,Tauranga,en
+Saskatoon,Saskatoon,en
+Surrey,Surrey,en
+Kent,Kent,en
+Essex,Essex,en
+Sussex,Sussex,en
+Devon,Devon,en
+Dorset,Dorset,en
+Somerset,Somerset,en
+Cornwall,Cornwall,en
+Yorkshire,Yorkshire,en
+Lancashire,Lancashire,en
+Hampshire,Hampshire,en
+Wiltshire,Wiltshire,en
+Cumbria,Cumbria,en
+Shropshire,Shropshire,en
+Stanford,"Stanford, California",en
+Harvard,Harvard University,en
+Windsor,"Windsor, Berkshire",en
+Eton,"Eton, Berkshire",en
+Wimbledon,"Wimbledon, London",en
+Greenwich,Greenwich,en
+Tottenham,Tottenham,en
+Chelsea,"Chelsea, London",en
+Everton,Everton,en
+Fulham,Fulham,en
+Watford,Watford,en
+Burnley,Burnley,en
+Bolton,Bolton,en
+Wigan,Wigan,en
+Stoke,Stoke-on-Trent,en
+Hull,Kingston upon Hull,en
+Dover,"Dover, Kent",en
+Hastings,Hastings,en
+Darlington,Darlington,en
+Lockheed,Lockheed Corporation,en
+Chrysler,Chrysler,en
+Dodge,Dodge,en
+Buick,Buick,en
+Cadillac,Cadillac,en
+Caterpillar,Caterpillar Inc.,en
+Honeywell,Honeywell,en
+Raytheon,Raytheon,en
+Northrop,Northrop Corporation,en
+Hewlett,Bill Hewlett,en
+Packard,Packard,en
+Gateway,"Gateway, Inc.",en
+Compaq,Compaq,en
+Texaco,Texaco,en
+Chevron,Chevron Corporation,en
+Exxon,Exxon,en
+Mobil,Mobil,en
+Kellogg,Kellanova,en
+Heinz,Heinz,en
+Campbell,Campbell's,en
+Hershey,The Hershey Company,en
+Wrigley,Wrigley Company,en
+Mattel,Mattel,en
+Hasbro,Hasbro,en
+Revlon,Revlon,en
+Avon,Avon Products,en
+Tiffany,Tiffany & Co.,en
+Gap,Gap Inc.,en
+Levi,Levi Strauss & Co.,en
+Wrangler,Wrangler (brand),en
+Macy,Macy's,en
+Kroger,Kroger,en
+Safeway,Safeway Inc.,en
+Target,Target Corporation,en
+Sears,Sears,en
+Whirlpool,Whirlpool Corporation,en
+Maytag,Maytag,en
+Kraft,Kraft Foods Inc.,en
+Nabisco,Nabisco,en
+Quaker,Quaker Oats Company,en
+Gatorade,Gatorade,en
+Tropicana,Tropicana Products,en
+Smirnoff,Smirnoff,other
+Bacardi,Bacardi,other
+Guinness,Guinness,en
+Carlsberg,Carlsberg Group,other
+Cadbury,Cadbury,en
+Unilever,Unilever,en
+Vodafone,Vodafone,en
+Barclays,Barclays,en
+Lloyds,Lloyds Bank,en
+Reuters,Reuters,en
+Bloomberg,Bloomberg L.P.,en
+Forbes,Forbes,en
+Gallup,"Gallup, Inc.",en
+Nielsen,Nielsen Holdings,en
+Deloitte,Deloitte,en
+Accenture,Accenture,en
+McKinsey,McKinsey & Company,en
+Dyson,Dyson (company),en
+Aston Martin,Aston Martin,en
+Lotus,Lotus Cars,en
+Triumph,Triumph Motorcycles Ltd,en
+Rover,Rover Company,en
+Qualcomm,Qualcomm,en
+Nvidia,Nvidia,en
+Broadcom,Broadcom,en
+Micron,Micron Technology,en
+Garmin,Garmin,en
+Logitech,Logitech,en
+Kingston Technology,Kingston Technology,en
+Seagate,Seagate Technology,en
+Corning,Corning Inc.,en
+Emerson,Emerson Electric,en
+Dow,Dow Chemical Company,en
+Monsanto,Monsanto,en
+Halliburton,Halliburton,en
+Boston Scientific,Boston Scientific,en
+Medtronic,Medtronic,en
+Abbott,Abbott Laboratories,en
+Merck,Merck & Co.,en
+Amgen,Amgen,en
+Gilead,Gilead Sciences,en
+Moderna,Moderna,en

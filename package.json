@@ -1,0 +1,31 @@
+{
+  "name": "name-pronunciation-app",
+  "version": "0.0.0-s7",
+  "private": true,
+  "description": "Predicts how native speakers of other languages will pronounce a brand name or phrase. Thai first.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:app-file": "vite build && tsx scripts/build-app-file.ts",
+    "build:data": "tsx scripts/build-data.ts",
+    "check": "tsx src/cli.ts",
+    "benchmark": "tsx scripts/run-benchmark.ts",
+    "test": "vitest run",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/cli": "^8.6.2",
+    "@capacitor/core": "^8.6.2",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/node": "^26.6.6",
+    "svelte": "^5.57.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "license": "Apache-2.0"
+}

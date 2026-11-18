@@ -1,0 +1,31 @@
+name: A prediction is wrong
+description: The app predicts a pronunciation that speakers of the language would not use
+labels: [prediction]
+body:
+  - type: input
+    id: name
+    attributes: { label: Name or phrase typed }
+    validations: { required: true }
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options: [Thai, Burmese, Japanese]
+    validations: { required: true }
+  - type: input
+    id: predicted
+    attributes: { label: What the app predicted, description: Copy the "Likely said as" line and say which speaker group was selected }
+    validations: { required: true }
+  - type: textarea
+    id: actual
+    attributes: { label: How people really say it, description: The local script, a respelling, or both }
+    validations: { required: true }
+  - type: dropdown
+    id: basis
+    attributes:
+      label: How this is known
+      options: [I am a native speaker, I speak the language as a second language, A published source (please cite it below), The company's own spelling or advertising, A guess]
+    validations: { required: true }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else, description: For example the age or region of the speakers, or a link to a source }

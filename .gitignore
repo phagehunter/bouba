@@ -1,0 +1,18 @@
+node_modules/
+dist/
+.DS_Store
+
+# Raw downloads. Fetch them with scripts/fetch-raw-data.sh
+data/raw/
+
+# Working files from development on one computer (reports, generated pages, screenshots)
+/2026-*
+.claude/
+
+# The retired Stage 2 test page
+src/web.ts
+scripts/build-page.ts
+
+# Desktop wrapper build output
+src-tauri/target/
+src-tauri/gen/

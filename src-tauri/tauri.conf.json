@@ -1,0 +1,47 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Bouba",
+  "version": "0.0.0",
+  "identifier": "io.github.phagehunter.namepronunciationcheck",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5183",
+    "beforeDevCommand": "npm run dev -- --port 5183",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Bouba",
+        "width": 1180,
+        "height": 820,
+        "resizable": true,
+        "fullscreen": false,
+        "minWidth": 360,
+        "minHeight": 480
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app",
+      "dmg",
+      "nsis"
+    ],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "android": {
+      "debugApplicationIdSuffix": ".debug"
+    },
+    "shortDescription": "Predicts how speakers of other languages will pronounce a name"
+  }
+}

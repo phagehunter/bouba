@@ -1,0 +1,946 @@
+{
+  "id": "my",
+  "name": "Burmese",
+  "packVersion": "0.0.0-s5",
+  "about": "How Burmese speakers adapt names written in English spelling. Every rule names its source and a confidence level. Edit this file to correct or add rules; no programming is needed.",
+  "profiles": {
+    "traditional": "The pattern found in long-established English loanwords: F is said as P, and R is said as Y.",
+    "younger": "Speakers with more exposure to English, and newer loanwords: F is kept, and R is said as a quick tapped R."
+  },
+  "profileLabels": {
+    "traditional": "Established pattern",
+    "younger": "Newer pattern"
+  },
+  "validation": {
+    "nativeChecked": false,
+    "note": "Not checked by native speakers. The rules come from three published studies that rest largely on one bilingual speaker. Corrections are welcome."
+  },
+  "sources": {
+    "chang2009": "Chang, C. B. (2009). English loanword adaptation in Burmese. Journal of the Southeast Asian Linguistics Society 1: 77-94.",
+    "chang2003": "Chang, C. B. (2003). \"High-Interest Loans\": The Phonology of English Loanword Adaptation in Burmese. BA thesis, Harvard University.",
+    "jenny2015": "Jenny, M. (2015). Foreign influence in the Burmese language.",
+    "unverified": "Background knowledge of the pack author; not checked against a source. Corrections welcome."
+  },
+  "effortPoints": {
+    "substitution": 6,
+    "epenthesis": 12,
+    "finalChanged": 10,
+    "finalDropped": 8,
+    "clusterKept": 5,
+    "rDropped": 1,
+    "codaAfterDiphthong": 10,
+    "nonNativeFinalKept": 10
+  },
+  "respellingKey": [
+    [
+      "'",
+      "a catch in the throat that cuts the vowel short, as in the middle of \"uh-oh\""
+    ],
+    [
+      "n (at the end of a syllable)",
+      "the vowel is said through the nose; the N itself is not sounded"
+    ],
+    [
+      "uh",
+      "a weak, quick vowel, as in the first sound of \"about\""
+    ],
+    [
+      "ah",
+      "as in father"
+    ],
+    [
+      "ay",
+      "as in day"
+    ],
+    [
+      "ee",
+      "as in see"
+    ],
+    [
+      "eh",
+      "as in bed"
+    ],
+    [
+      "oh",
+      "as in go"
+    ],
+    [
+      "oo",
+      "as in too"
+    ],
+    [
+      "aw",
+      "as in law"
+    ],
+    [
+      "i",
+      "as in sit"
+    ],
+    [
+      "u",
+      "as in cup"
+    ],
+    [
+      "ai",
+      "as in eye"
+    ],
+    [
+      "ao",
+      "as in now"
+    ]
+  ],
+  "sounds": {
+    "p": {
+      "roman": "p",
+      "panphon": "p",
+      "ipa": "p"
+    },
+    "ph": {
+      "roman": "p",
+      "panphon": "p",
+      "ipa": "pʰ"
+    },
+    "b": {
+      "roman": "b",
+      "panphon": "b",
+      "ipa": "b"
+    },
+    "t": {
+      "roman": "t",
+      "panphon": "t",
+      "ipa": "t"
+    },
+    "d": {
+      "roman": "d",
+      "panphon": "d",
+      "ipa": "d"
+    },
+    "k": {
+      "roman": "k",
+      "panphon": "k",
+      "ipa": "k"
+    },
+    "g": {
+      "roman": "g",
+      "panphon": "ɡ",
+      "ipa": "g"
+    },
+    "ch": {
+      "roman": "ch",
+      "panphon": "t͡ʃ",
+      "ipa": "tʃʰ"
+    },
+    "j": {
+      "roman": "j",
+      "panphon": "d͡ʒ",
+      "ipa": "dʒ"
+    },
+    "f": {
+      "roman": "f",
+      "panphon": "f",
+      "ipa": "f"
+    },
+    "th": {
+      "roman": "th",
+      "panphon": "θ",
+      "ipa": "θ"
+    },
+    "dh": {
+      "roman": "th",
+      "panphon": "ð",
+      "ipa": "ð"
+    },
+    "s": {
+      "roman": "s",
+      "panphon": "s",
+      "ipa": "s"
+    },
+    "z": {
+      "roman": "z",
+      "panphon": "z",
+      "ipa": "z"
+    },
+    "sh": {
+      "roman": "sh",
+      "panphon": "ʃ",
+      "ipa": "ʃ"
+    },
+    "h": {
+      "roman": "h",
+      "panphon": "h",
+      "ipa": "h"
+    },
+    "m": {
+      "roman": "m",
+      "panphon": "m",
+      "ipa": "m"
+    },
+    "n": {
+      "roman": "n",
+      "panphon": "n",
+      "ipa": "n"
+    },
+    "ng": {
+      "roman": "ng",
+      "panphon": "ŋ",
+      "ipa": "ŋ"
+    },
+    "l": {
+      "roman": "l",
+      "panphon": "l",
+      "ipa": "l"
+    },
+    "r": {
+      "roman": "r",
+      "panphon": "ɾ",
+      "ipa": "ɾ"
+    },
+    "w": {
+      "roman": "w",
+      "panphon": "w",
+      "ipa": "w"
+    },
+    "y": {
+      "roman": "y",
+      "panphon": "j",
+      "ipa": "j"
+    },
+    "q": {
+      "roman": "'",
+      "panphon": "ʔ",
+      "ipa": "ʔ"
+    },
+    "N": {
+      "roman": "n",
+      "panphon": "ŋ",
+      "ipa": ""
+    }
+  },
+  "rhymeCodas": {
+    "nasal": "N",
+    "stop": "q"
+  },
+  "rhymeClasses": {
+    "nasal": [
+      "M",
+      "N",
+      "NG"
+    ],
+    "silent": [
+      "L",
+      "R"
+    ]
+  },
+  "vowelRoman": {
+    "i": "ee",
+    "ei": "ay",
+    "e": "eh",
+    "eh": "eh",
+    "a": "ah",
+    "aw": "aw",
+    "ou": "oh",
+    "u": "oo",
+    "schwa": "uh",
+    "I": "i",
+    "U": "oo",
+    "V": "u",
+    "ai": "ai",
+    "au": "ao",
+    "iya": "ee-yah",
+    "aya": "ai-yah",
+    "wai": "wai"
+  },
+  "vowelIpa": {
+    "i": "i",
+    "ei": "ei",
+    "e": "e",
+    "eh": "ɛ",
+    "a": "a",
+    "aw": "ɔ",
+    "ou": "ou",
+    "u": "u",
+    "schwa": "ə",
+    "I": "ɪ",
+    "U": "ʊ",
+    "V": "ʌ",
+    "ai": "ai",
+    "au": "au",
+    "iya": "ija",
+    "aya": "aja",
+    "wai": "wai"
+  },
+  "vowelIpaNasal": {
+    "I": "ɪ̃",
+    "ei": "eĩ",
+    "a": "ã",
+    "ou": "oũ",
+    "U": "ʊ̃",
+    "ai": "aĩ",
+    "au": "aũ",
+    "wai": "wãĩ",
+    "i": "ɪ̃",
+    "u": "ʊ̃",
+    "eh": "ɪ̃",
+    "e": "ɪ̃",
+    "aw": "aũ",
+    "V": "ã"
+  },
+  "onsets": {
+    "P": {
+      "to": "p"
+    },
+    "B": {
+      "to": "b"
+    },
+    "T": {
+      "to": "t"
+    },
+    "D": {
+      "to": "d"
+    },
+    "K": {
+      "to": "k"
+    },
+    "G": {
+      "to": "g"
+    },
+    "CH": {
+      "to": "ch",
+      "loss": 0
+    },
+    "JH": {
+      "to": "j",
+      "loss": 0
+    },
+    "F": {
+      "to": "ph",
+      "missing": true,
+      "loss": 0.4,
+      "ruleId": "my-on-f",
+      "confidence": "high",
+      "source": "chang2009",
+      "why": "Established Burmese loanwords have no F; it is said as a P with a puff of air. The study found this almost without exception.",
+      "tip": "If the F sound is central to the name, expect many speakers to say P."
+    },
+    "V": {
+      "to": "b",
+      "missing": true,
+      "ruleId": "my-on-v",
+      "confidence": "high",
+      "source": "chang2009",
+      "why": "Burmese has no V; it is said as B.",
+      "tip": "If the V sound is central to the name, expect it to be heard as B in Myanmar."
+    },
+    "TH": {
+      "to": "th",
+      "loss": 0.1,
+      "effort": 0,
+      "ruleId": "my-on-th",
+      "confidence": "medium",
+      "source": "chang2009",
+      "why": "Burmese has a soft TH-like sound made with the tongue against the teeth. It is close to English TH."
+    },
+    "DH": {
+      "to": "dh",
+      "loss": 0.1
+    },
+    "S": {
+      "to": "s"
+    },
+    "Z": {
+      "to": "z"
+    },
+    "SH": {
+      "to": "sh"
+    },
+    "ZH": {
+      "to": "sh",
+      "missing": true,
+      "ruleId": "my-on-zh",
+      "confidence": "high",
+      "source": "chang2009",
+      "why": "Burmese has no ZH sound (as in \"vision\"); it is said as SH."
+    },
+    "HH": {
+      "to": "h"
+    },
+    "M": {
+      "to": "m"
+    },
+    "N": {
+      "to": "n"
+    },
+    "NG": {
+      "to": "ng"
+    },
+    "L": {
+      "to": "l"
+    },
+    "R": {
+      "to": "y",
+      "missing": true,
+      "loss": 0.5,
+      "ruleId": "my-on-r",
+      "confidence": "high",
+      "source": "chang2003",
+      "why": "In older Burmese loanwords an English R is said as Y. In the study's word list, half the words had Y and half had a tapped R.",
+      "tip": "R is said in two different ways in Myanmar. A name without R is said the same way by both speaker groups."
+    },
+    "W": {
+      "to": "w"
+    },
+    "Y": {
+      "to": "y"
+    }
+  },
+  "onsetsByProfile": {
+    "younger": {
+      "F": {
+        "to": "f",
+        "loss": 0,
+        "effort": 3,
+        "ruleId": "my-on-f-new",
+        "confidence": "medium",
+        "source": "jenny2015",
+        "why": "A real F is spreading in Burmese, and some speakers now keep it."
+      },
+      "R": {
+        "to": "r",
+        "loss": 0.1,
+        "effort": 2,
+        "ruleId": "my-on-r-new",
+        "confidence": "high",
+        "source": "chang2003",
+        "why": "In newer loanwords an English R is said as a quick tapped R."
+      }
+    }
+  },
+  "clusters": {
+    "about": "Two consonants at the start of a syllable. Burmese keeps a consonant followed by W, and P, B or M followed by Y. Every other pair is split by a weak 'uh' vowel. No consonant is dropped.",
+    "insertVowel": "schwa",
+    "native": [
+      "K W",
+      "G W",
+      "T W",
+      "D W",
+      "S W",
+      "P Y",
+      "B Y",
+      "M Y"
+    ],
+    "loan": [],
+    "epenthesisRule": {
+      "ruleId": "my-cl-epenthesis",
+      "confidence": "high",
+      "source": "chang2009",
+      "why": "Burmese cannot say these two consonants together, so a weak 'uh' vowel is put between them. This adds a short syllable.",
+      "tip": "A single consonant before each vowel avoids the added syllables."
+    }
+  },
+  "codas": {
+    "about": "One consonant at the end of a syllable. Burmese allows none. A final P, T, K, S and similar sound becomes a catch in the throat; a final M, N or NG turns the vowel into a nasal vowel; a final L is not said.",
+    "traditional": {
+      "P": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "Burmese allows no consonant at the end of a syllable. The consonant is replaced by a catch in the throat that cuts the vowel short.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "T": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "Burmese allows no consonant at the end of a syllable. The consonant is replaced by a catch in the throat that cuts the vowel short.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "K": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "Burmese allows no consonant at the end of a syllable. The consonant is replaced by a catch in the throat that cuts the vowel short.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "D": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "Burmese allows no consonant at the end of a syllable. The consonant is replaced by a catch in the throat that cuts the vowel short.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "B": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop-rare",
+        "confidence": "medium",
+        "source": "chang2003",
+        "why": "Burmese allows no consonant at the end of a syllable. The consonant is replaced by a catch in the throat. The study had few real examples with this consonant.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "G": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop-rare",
+        "confidence": "medium",
+        "source": "chang2003",
+        "why": "Burmese allows no consonant at the end of a syllable. The consonant is replaced by a catch in the throat. The study had few real examples with this consonant.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "S": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-fric",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final S is replaced by a catch in the throat, like other final consonants (\"gas\" and \"police\" both end this way in Burmese).",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "Z": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-fric",
+        "confidence": "high",
+        "source": "chang2003",
+        "why": "A final Z after a vowel is replaced by a catch in the throat.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "F": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-fric",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final F is replaced by a catch in the throat (\"golf\" ends this way in Burmese).",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "V": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop-rare",
+        "confidence": "low",
+        "source": "unverified",
+        "why": "A final V is expected to be replaced by a catch in the throat. The studies give no example.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "SH": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-fric",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final SH is replaced by a catch in the throat (\"English\" ends this way in Burmese).",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "CH": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-fric",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final CH is replaced by a catch in the throat (\"March\" ends this way in Burmese).",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "JH": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-fric",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final J sound is replaced by a catch in the throat (\"college\" ends this way in Burmese).",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "TH": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop-rare",
+        "confidence": "low",
+        "source": "unverified",
+        "why": "A final TH is expected to be replaced by a catch in the throat. The studies give no example.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "DH": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop-rare",
+        "confidence": "low",
+        "source": "unverified",
+        "why": "A final voiced TH is expected to be replaced by a catch in the throat. The studies give no example.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "ZH": {
+        "to": "q",
+        "changed": true,
+        "ruleId": "my-co-stop-rare",
+        "confidence": "low",
+        "source": "unverified",
+        "why": "A final ZH is expected to be replaced by a catch in the throat. The studies give no example.",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      },
+      "M": {
+        "to": "N",
+        "loss": 0.3,
+        "effort": 4,
+        "ruleId": "my-co-nasal",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final M, N or NG is not sounded as a consonant. The vowel before it is said through the nose."
+      },
+      "N": {
+        "to": "N",
+        "loss": 0.3,
+        "effort": 4,
+        "ruleId": "my-co-nasal",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final M, N or NG is not sounded as a consonant. The vowel before it is said through the nose."
+      },
+      "NG": {
+        "to": "N",
+        "loss": 0.3,
+        "effort": 4,
+        "ruleId": "my-co-nasal",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final M, N or NG is not sounded as a consonant. The vowel before it is said through the nose."
+      },
+      "L": {
+        "to": "",
+        "deleted": true,
+        "ruleId": "my-co-l",
+        "confidence": "high",
+        "source": "chang2009",
+        "why": "A final L is not said in Burmese (\"e-mail\" and \"uncle\" lose theirs).",
+        "tip": "A name that ends in a vowel keeps its ending in Burmese."
+      }
+    }
+  },
+  "codaClusters": {
+    "about": "Two or more consonants at the end of a syllable. R and L are not said. Of the rest only the first one counts: an M, N or NG makes the vowel nasal, and any other consonant becomes the catch in the throat. In the middle of a word, S and similar sounds start the next syllable.",
+    "rSilent": {
+      "ruleId": "my-co-r",
+      "confidence": "medium",
+      "source": "chang2009",
+      "why": "An R after a vowel is not said. The study assumes Burmese borrowed from British English, which has no R there."
+    },
+    "dropped": {
+      "ruleId": "my-co-cluster",
+      "confidence": "high",
+      "source": "chang2009",
+      "why": "Burmese allows no consonant at the end of a syllable, so this one is not said.",
+      "tip": "A name that ends in a vowel keeps its ending in Burmese."
+    },
+    "lBeforeLabialVelar": [
+      "P",
+      "B",
+      "T",
+      "D",
+      "K",
+      "G",
+      "F",
+      "V",
+      "S",
+      "Z",
+      "SH",
+      "CH",
+      "JH",
+      "TH",
+      "DH",
+      "ZH",
+      "M",
+      "N",
+      "NG"
+    ],
+    "lDropped": {
+      "ruleId": "my-co-l-cluster",
+      "confidence": "high",
+      "source": "chang2009",
+      "why": "An L before another consonant is not said (\"golf\" loses its L in Burmese)."
+    },
+    "medialToOnset": [
+      "S",
+      "Z",
+      "SH",
+      "F",
+      "V",
+      "TH"
+    ],
+    "doubledOnly": [
+      "P",
+      "T",
+      "K"
+    ]
+  },
+  "vowels": {
+    "about": "English vowel -> Burmese vowel. The first matching rule wins. 'rhyme' is how the syllable ends in Burmese: open (nothing), stop (the catch in the throat) or nasal. Burmese vowels change with the ending, so most English vowels have three outcomes.",
+    "rules": [
+      {
+        "phone": "IY",
+        "beforeR": true,
+        "to": "iya"
+      },
+      {
+        "phone": "IY",
+        "rhyme": "stop",
+        "to": "ei",
+        "loss": 0.1
+      },
+      {
+        "phone": "IY",
+        "rhyme": "nasal",
+        "to": "I",
+        "loss": 0.1
+      },
+      {
+        "phone": "IY",
+        "to": "i"
+      },
+      {
+        "phone": "IH",
+        "beforeR": true,
+        "to": "iya"
+      },
+      {
+        "phone": "IH",
+        "rhyme": "open",
+        "to": "i"
+      },
+      {
+        "phone": "IH",
+        "to": "I"
+      },
+      {
+        "phone": "EY",
+        "to": "ei"
+      },
+      {
+        "phone": "EH",
+        "rhyme": "nasal",
+        "to": "I",
+        "loss": 0.2
+      },
+      {
+        "phone": "EH",
+        "rhyme": "stop",
+        "to": "eh"
+      },
+      {
+        "phone": "EH",
+        "beforeR": true,
+        "to": "eh"
+      },
+      {
+        "phone": "EH",
+        "to": "e"
+      },
+      {
+        "phone": "AE",
+        "rhyme": "nasal",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AE",
+        "to": "eh",
+        "loss": 0.1
+      },
+      {
+        "phone": "AA",
+        "beforeR": true,
+        "to": "a"
+      },
+      {
+        "phone": "AA",
+        "letters": "^(o|au|aw|ou)",
+        "rhyme": "stop",
+        "to": "au",
+        "loss": 0.2
+      },
+      {
+        "phone": "AA",
+        "letters": "^(o|au|aw|ou)",
+        "rhyme": "nasal",
+        "to": "U",
+        "loss": 0.2
+      },
+      {
+        "phone": "AA",
+        "letters": "^(o|au|aw|ou)",
+        "to": "aw"
+      },
+      {
+        "phone": "AA",
+        "to": "a"
+      },
+      {
+        "phone": "AO",
+        "rhyme": "open",
+        "to": "aw"
+      },
+      {
+        "phone": "AO",
+        "to": "au",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "lastSyllable": true,
+        "wordEndsWith": "(le|el|al|il)$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEnd": true,
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "rhyme": "stop",
+        "to": "eh",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "rhyme": "nasal",
+        "lastSyllable": true,
+        "wordEndsWith": "(on|om)$",
+        "to": "U",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "rhyme": "nasal",
+        "letters": "^(e|i|y|ai)",
+        "to": "I",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "rhyme": "nasal",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "to": "schwa"
+      },
+      {
+        "phone": "AH",
+        "rhyme": "stop",
+        "to": "V"
+      },
+      {
+        "phone": "AH",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "ER",
+        "rhyme": "stop",
+        "to": "V",
+        "loss": 0.1
+      },
+      {
+        "phone": "ER",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "to": "ou"
+      },
+      {
+        "phone": "UW",
+        "rhyme": "open",
+        "to": "u"
+      },
+      {
+        "phone": "UW",
+        "to": "U",
+        "loss": 0.1
+      },
+      {
+        "phone": "UH",
+        "rhyme": "open",
+        "to": "u"
+      },
+      {
+        "phone": "UH",
+        "to": "U"
+      },
+      {
+        "phone": "AY",
+        "rhyme": "open",
+        "to": "ai",
+        "addCoda": "N",
+        "loss": 0.2
+      },
+      {
+        "phone": "AY",
+        "to": "ai"
+      },
+      {
+        "phone": "AW",
+        "rhyme": "open",
+        "to": "au",
+        "addCoda": "N",
+        "loss": 0.2
+      },
+      {
+        "phone": "AW",
+        "to": "au"
+      },
+      {
+        "phone": "OY",
+        "to": "wai",
+        "addCoda": "N",
+        "loss": 0.3
+      }
+    ],
+    "merges": [
+      {
+        "first": [
+          "AY"
+        ],
+        "second": "ER",
+        "to": "aya",
+        "silentR": true
+      }
+    ],
+    "summaryRule": {
+      "ruleId": "my-vo-nearest",
+      "confidence": "medium",
+      "source": "chang2003",
+      "why": "Burmese vowels depend on how the syllable ends, so English vowels shift to the nearest vowel that fits. A syllable cut short or said through the nose often takes a different vowel from the English one."
+    }
+  },
+  "limits": [
+    "Tone is not predicted. Every Burmese syllable has a tone, and both studies say the tone given to a borrowed word follows no reliable pattern.",
+    "The Burmese-script spelling is not shown. Spellings of borrowed names in Burmese are too irregular to predict.",
+    "The rules rest on three studies. Two of them describe about 280 words from one bilingual speaker, and none gives figures by age or region.",
+    "The studies give no examples of names that start with FL, FR or TW, or that end in V, so those predictions are less certain.",
+    "Results have not been checked by native speakers."
+  ],
+  "market": {
+    "code": "MM",
+    "country": "Myanmar"
+  },
+  "accuracy": "The predicted pronunciation was compared with 76 English loanwords whose Burmese pronunciation is published in Chang (2003, 2009), ignoring tone. On the 38 words kept apart from rule adjustments, the average similarity was 87.9%, with 25 matching exactly. All 76 words come from one bilingual speaker.",
+  "speakerNote": "The two patterns differ in F and R. The studies report both, and one notes that English-like forms are spreading to people who do not speak English. They give no figures by age."
+}

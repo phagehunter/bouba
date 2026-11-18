@@ -1,0 +1,1830 @@
+{
+  "id": "ja",
+  "name": "Japanese",
+  "packVersion": "0.0.0-s5",
+  "about": "How Japanese speakers adapt names written in English spelling, following the habits of katakana spelling. Every rule names its source and a confidence level. Edit this file to correct or add rules; no programming is needed.",
+  "profiles": {
+    "traditional": "The long-established katakana habits. Sound pairs Japanese did not have are replaced: 'ti' becomes 'chi', 'di' becomes 'ji', 'tu' becomes 'tsu', V becomes B, and 'wi' becomes 'ui'.",
+    "younger": "The newer katakana habits, which keep more of the original: 'ti', 'di', 'tu' and 'wi' are written with their own letters (ティ, ディ, トゥ, ウィ)."
+  },
+  "profileLabels": {
+    "traditional": "Established spelling",
+    "younger": "Newer spelling"
+  },
+  "scriptName": "katakana",
+  "accuracy": "The predicted katakana was compared with the first spelling listed in the JMdict dictionary for English loanwords. On 1,500 words the rules had not been adjusted to, the average similarity was 88.1% under \"Established spelling\" and 89.9% under \"Newer spelling\", with 933 and 985 matching exactly. This measures agreement with dictionary spellings. Pronunciation itself was not measured, and the word lists contain some mismatched pairs.",
+  "sources": {
+    "jmdict": "English loanwords in JMdict, the Japanese-English dictionary project (Electronic Dictionary Research and Development Group), CC BY-SA 4.0. The rule follows dictionary spellings.",
+    "unverified": "Background knowledge of the pack author; not checked against a source. Corrections welcome."
+  },
+  "effortPoints": {
+    "substitution": 6,
+    "epenthesis": 12,
+    "finalChanged": 10,
+    "finalDropped": 8,
+    "clusterKept": 5,
+    "rDropped": 1,
+    "codaAfterDiphthong": 10,
+    "nonNativeFinalKept": 10
+  },
+  "respellingKey": [
+    [
+      "-",
+      "separates beats; Japanese gives each beat about the same length"
+    ],
+    [
+      "a",
+      "as in 'father', short"
+    ],
+    [
+      "i",
+      "as in 'machine', short"
+    ],
+    [
+      "u",
+      "as in 'put', with the lips relaxed"
+    ],
+    [
+      "e",
+      "as in 'bed'"
+    ],
+    [
+      "o",
+      "as in 'more', short"
+    ],
+    [
+      "aa, ii, uu, ee, oo",
+      "the same vowel held for two beats"
+    ],
+    [
+      "ai, ei, oi, au",
+      "two vowels said one after the other, as in 'eye', 'day', 'boy', 'now'"
+    ],
+    [
+      "r",
+      "a light tap of the tongue, between English R, L and D"
+    ],
+    [
+      "f",
+      "a soft F made with both lips, as when blowing out a candle"
+    ],
+    [
+      "n at the end of a beat",
+      "a hummed N that takes a full beat"
+    ],
+    [
+      "a doubled consonant across a hyphen (bak-ku, kyat-to)",
+      "a short stop before the consonant, as in 'book-keeper'"
+    ],
+    [
+      "tsu",
+      "as in 'cats'"
+    ],
+    [
+      "ky, gy, ny, hy, my, ry, py, by",
+      "the consonant followed by a quick Y, as in 'cute'"
+    ]
+  ],
+  "consonants": {
+    "about": "What each English consonant becomes. 'to' is the Japanese consonant row; 'panphon' is its row in the sound-similarity table. The table has no rows for some Japanese sounds, so the nearest row is used for the flap R (ɾ is present), SH and J (ʃ, d͡ʒ) and F (f).",
+    "P": {
+      "to": "p"
+    },
+    "B": {
+      "to": "b"
+    },
+    "T": {
+      "to": "t"
+    },
+    "D": {
+      "to": "d"
+    },
+    "K": {
+      "to": "k"
+    },
+    "G": {
+      "to": "g"
+    },
+    "CH": {
+      "to": "ch"
+    },
+    "JH": {
+      "to": "j"
+    },
+    "F": {
+      "to": "f"
+    },
+    "S": {
+      "to": "s"
+    },
+    "Z": {
+      "to": "z"
+    },
+    "SH": {
+      "to": "sh"
+    },
+    "HH": {
+      "to": "h"
+    },
+    "M": {
+      "to": "m"
+    },
+    "N": {
+      "to": "n"
+    },
+    "W": {
+      "to": "w"
+    },
+    "Y": {
+      "to": "y"
+    },
+    "L": {
+      "to": "r",
+      "panphon": "ɾ",
+      "label": "R",
+      "missing": true,
+      "ruleId": "ja-c-l",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has one sound where English has L and R, a light tap of the tongue, so L is said as that sound.",
+      "tip": "L and R sound the same in Japanese, so a name that relies on the difference will lose it."
+    },
+    "R": {
+      "to": "r",
+      "panphon": "ɾ",
+      "label": "tapped R",
+      "effort": 1,
+      "loss": 0.2,
+      "ruleId": "ja-c-r",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "The Japanese R is a light tap of the tongue, which sounds between English R, L and D."
+    },
+    "V": {
+      "to": "b",
+      "panphon": "b",
+      "label": "B",
+      "missing": true,
+      "ruleId": "ja-c-v",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no V sound; the established spelling uses B.",
+      "tip": "V and B sound the same for many Japanese speakers, so a name that relies on the difference will lose it. Some spellings write V with its own letter (ヴ); in the JMdict dictionary, the first spelling listed uses B far more often."
+    },
+    "TH": {
+      "to": "s",
+      "panphon": "s",
+      "label": "S",
+      "missing": true,
+      "ruleId": "ja-c-th",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no TH sound (as in 'think'); S is used.",
+      "tip": "TH and S sound the same in Japanese."
+    },
+    "DH": {
+      "to": "z",
+      "panphon": "z",
+      "label": "Z",
+      "missing": true,
+      "ruleId": "ja-c-dh",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no TH sound (as in 'this'); Z is used."
+    },
+    "ZH": {
+      "to": "j",
+      "panphon": "d͡ʒ",
+      "label": "J",
+      "missing": true,
+      "effort": 2,
+      "ruleId": "ja-c-zh",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no ZH sound (as in 'vision'); J is used, which is close."
+    }
+  },
+  "palatalRows": {
+    "k": "ky",
+    "g": "gy",
+    "s": "sh",
+    "z": "j",
+    "t": "ty",
+    "d": "dy",
+    "n": "ny",
+    "h": "hy",
+    "b": "by",
+    "p": "py",
+    "m": "my",
+    "r": "ry",
+    "f": "fy",
+    "v": "vy",
+    "ch": "ch",
+    "sh": "sh",
+    "j": "j"
+  },
+  "combos": {
+    "about": "Consonant and vowel pairs that Japanese lacks or writes in a special way. 'to' lists the beats used instead, per spelling habit where the two differ.",
+    "s+i": {
+      "to": [
+        "shi"
+      ],
+      "label": "SH",
+      "fromPhones": [
+        "S",
+        "TH"
+      ],
+      "panphon": "ʃ",
+      "ruleId": "ja-si",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no 'see' sound; S before an 'ee' or 'i' sound is said as 'shi'.",
+      "tip": "'See' and 'she' sound the same in Japanese."
+    },
+    "z+i": {
+      "to": [
+        "ji"
+      ],
+      "label": "J",
+      "fromPhones": [
+        "Z",
+        "DH"
+      ],
+      "panphon": "d͡ʒ",
+      "ruleId": "ja-zi",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no 'zee' sound; Z before an 'ee' or 'i' sound is said as 'ji'."
+    },
+    "t+i": {
+      "to": {
+        "traditional": [
+          "chi"
+        ],
+        "younger": [
+          "ti"
+        ]
+      },
+      "label": {
+        "traditional": "CH",
+        "younger": null
+      },
+      "fromPhones": [
+        "T"
+      ],
+      "panphon": {
+        "traditional": "t͡ɕ"
+      },
+      "ruleId": "ja-ti",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese had no 'tee' sound; the established spelling uses 'chi'. The newer spelling keeps 'ti' (ティ).",
+      "tip": "'Tee' and 'chee' can sound the same in Japanese."
+    },
+    "t+u": {
+      "to": {
+        "traditional": [
+          "tsu"
+        ],
+        "younger": [
+          "tu"
+        ]
+      },
+      "label": {
+        "traditional": "TS",
+        "younger": null
+      },
+      "fromPhones": [
+        "T"
+      ],
+      "loss": 0.3,
+      "ruleId": "ja-tu",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese had no 'too' sound; the established spelling uses 'tsu'. The newer spelling keeps 'tu' (トゥ)."
+    },
+    "d+i": {
+      "to": {
+        "traditional": [
+          "ji"
+        ],
+        "younger": [
+          "di"
+        ]
+      },
+      "label": {
+        "traditional": "J",
+        "younger": null
+      },
+      "fromPhones": [
+        "D"
+      ],
+      "panphon": {
+        "traditional": "d͡ʒ"
+      },
+      "ruleId": "ja-di",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese had no 'dee' sound; the established spelling uses 'ji'. The newer spelling keeps 'di' (ディ).",
+      "tip": "'Dee' and 'jee' can sound the same in Japanese."
+    },
+    "d+u": {
+      "to": {
+        "traditional": [
+          "zu"
+        ],
+        "younger": [
+          "du"
+        ]
+      },
+      "label": {
+        "traditional": "Z",
+        "younger": null
+      },
+      "fromPhones": [
+        "D"
+      ],
+      "panphon": {
+        "traditional": "z"
+      },
+      "ruleId": "ja-du",
+      "source": "unverified",
+      "confidence": "low",
+      "why": "Japanese had no 'doo' sound; the established spelling uses 'zu'. The newer spelling keeps 'du' (ドゥ)."
+    },
+    "h+u": {
+      "to": [
+        "fu"
+      ],
+      "label": "F",
+      "fromPhones": [
+        "HH"
+      ],
+      "panphon": "f",
+      "effort": 2,
+      "ruleId": "ja-hu",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no 'hoo' sound; H before an 'oo' sound is said as a soft F."
+    },
+    "w+i": {
+      "to": {
+        "traditional": [
+          "u",
+          "i"
+        ],
+        "younger": [
+          "wi"
+        ]
+      },
+      "label": {
+        "traditional": "U",
+        "younger": null
+      },
+      "fromPhones": [
+        "W"
+      ],
+      "loss": 0.2,
+      "effort": 2,
+      "ruleId": "ja-wi",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has W only before 'a'; the established spelling writes 'wi' as 'u' plus 'i'. The newer spelling uses ウィ."
+    },
+    "w+e": {
+      "to": {
+        "traditional": [
+          "u",
+          "e"
+        ],
+        "younger": [
+          "we"
+        ]
+      },
+      "label": {
+        "traditional": "U",
+        "younger": null
+      },
+      "fromPhones": [
+        "W"
+      ],
+      "loss": 0.2,
+      "effort": 2,
+      "ruleId": "ja-we",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has W only before 'a'; the established spelling writes 'we' as 'u' plus 'e'. The newer spelling uses ウェ."
+    },
+    "w+o": {
+      "to": {
+        "traditional": [
+          "u",
+          "o"
+        ],
+        "younger": [
+          "wo"
+        ]
+      },
+      "label": {
+        "traditional": "U",
+        "younger": null
+      },
+      "fromPhones": [
+        "W"
+      ],
+      "loss": 0.2,
+      "effort": 2,
+      "ruleId": "ja-wo",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has W only before 'a'; the established spelling writes 'wo' as 'u' plus 'o'. The newer spelling uses ウォ."
+    },
+    "w+u": {
+      "to": [
+        "u"
+      ],
+      "label": "U",
+      "fromPhones": [
+        "W"
+      ],
+      "loss": 0.3,
+      "effort": 2,
+      "ruleId": "ja-wu",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has W only before 'a'; before an 'oo' sound the W is not said."
+    },
+    "y+i": {
+      "to": [
+        "i"
+      ],
+      "label": "I",
+      "fromPhones": [
+        "Y"
+      ],
+      "loss": 0.3,
+      "effort": 2,
+      "ruleId": "ja-yi",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has no 'yi' sound; the Y is not said before an 'ee' or 'i' sound."
+    },
+    "y+e": {
+      "to": [
+        "i",
+        "e"
+      ]
+    },
+    "ty+a": {
+      "to": [
+        "cha"
+      ],
+      "label": "CH",
+      "fromPhones": [
+        "T"
+      ],
+      "panphon": "t͡ɕ",
+      "ruleId": "ja-tyu",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "T followed by a quick Y is said as CH."
+    },
+    "ty+u": {
+      "to": [
+        "chu"
+      ],
+      "label": "CH",
+      "fromPhones": [
+        "T"
+      ],
+      "panphon": "t͡ɕ",
+      "ruleId": "ja-tyu",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "T followed by a quick Y (as in 'tube' said the British way) is said as CH."
+    },
+    "ty+o": {
+      "to": [
+        "cho"
+      ],
+      "label": "CH",
+      "fromPhones": [
+        "T"
+      ],
+      "panphon": "t͡ɕ",
+      "ruleId": "ja-tyu",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "T followed by a quick Y is said as CH."
+    },
+    "dy+a": {
+      "to": [
+        "ja"
+      ]
+    },
+    "dy+o": {
+      "to": [
+        "jo"
+      ]
+    },
+    "dy+u": {
+      "to": [
+        "dyu"
+      ]
+    }
+  },
+  "wAfterConsonant": {
+    "about": "W after another consonant (queen, twin, sweet). The consonant takes 'u' and the W is written only before 'a'.",
+    "a": [
+      "wa"
+    ],
+    "i": [
+      "i"
+    ],
+    "u": [],
+    "e": [
+      "e"
+    ],
+    "o": [
+      "o"
+    ],
+    "rule": {
+      "label": "U",
+      "loss": 0.3,
+      "effort": 2,
+      "ruleId": "ja-w-after-consonant",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has W only before 'a'. After another consonant the W turns into the 'u' that follows that consonant (as in the Japanese forms of 'queen' and 'twin')."
+    }
+  },
+  "wDroppedAfter": [
+    "AH",
+    "UW"
+  ],
+  "whSpelling": {
+    "beat": "ho",
+    "label": "HO",
+    "loss": 0.3,
+    "ruleId": "ja-wh",
+    "source": "jmdict",
+    "confidence": "medium",
+    "why": "Words spelled with WH at the start are usually written with 'ho' (as in the Japanese form of 'white')."
+  },
+  "insertedVowel": {
+    "about": "The vowel added after a consonant that has no vowel after it. 'special' is checked first, in order.",
+    "default": "u",
+    "byConsonant": {
+      "T": "o",
+      "D": "o",
+      "CH": "i",
+      "JH": "i"
+    },
+    "special": [
+      {
+        "cons": "T",
+        "before": [
+          "W"
+        ],
+        "vowel": "u"
+      },
+      {
+        "cons": "K",
+        "spelled": "^x$",
+        "word": "text|hex|ox[iy]",
+        "vowel": "i"
+      },
+      {
+        "cons": "K",
+        "before": [
+          ""
+        ],
+        "word": "cake$",
+        "vowel": "i"
+      }
+    ],
+    "loss": 0.5,
+    "rule": {
+      "ruleId": "ja-insert",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "In Japanese almost every consonant is followed by a vowel, so a consonant with no vowel after it gets a short extra one: usually 'u', 'o' after T and D, 'i' after CH and J.",
+      "tip": "Each consonant with no vowel after it adds a beat. Names where consonants and vowels alternate keep their length in Japanese."
+    }
+  },
+  "merges": [
+    {
+      "first": "T",
+      "second": "S",
+      "beat": "tsu"
+    },
+    {
+      "first": "D",
+      "second": "Z",
+      "beat": "zu"
+    }
+  ],
+  "nasals": {
+    "about": "N with no vowel after it is the hummed N (ン). M before P, B, F or V is written the same way. NG is the hummed N plus G.",
+    "ngAddsG": true,
+    "mBecomesNBefore": [
+      "P",
+      "B",
+      "F",
+      "V"
+    ]
+  },
+  "rAfterVowel": {
+    "loss": 0.2,
+    "ruleId": "ja-r-after-vowel",
+    "source": "jmdict",
+    "confidence": "medium",
+    "why": "An R after a vowel is not said; the vowel is held longer or followed by a short 'a'."
+  },
+  "doubling": {
+    "about": "When a consonant is doubled (a short stop before it, written ッ). It applies only straight after a short vowel. Rules are checked in order and the first match decides. position: final = last sound of the word; beforeFinal = one consonant follows and ends the word; medial = a vowel follows; beforeCons = a consonant follows inside the word. 'rest' is a pattern over the English sounds that follow.",
+    "why": "After a short vowel, Japanese says many English consonants with a short stop before them, which is how the snap of the English syllable is kept.",
+    "ruleId": "ja-doubling",
+    "source": "jmdict",
+    "confidence": "medium",
+    "doubledSpelling": "^(pp|tt|ck|kk|cc|tch|dd|gg|ss|sh|ff|zz)$",
+    "respellingLetter": {
+      "ch": "t",
+      "sh": "s",
+      "ts": "t",
+      "j": "d"
+    },
+    "rules": [
+      {
+        "cons": [
+          "P",
+          "T",
+          "K",
+          "CH",
+          "JH",
+          "SH",
+          "D"
+        ],
+        "position": [
+          "final"
+        ],
+        "double": true
+      },
+      {
+        "cons": [
+          "G"
+        ],
+        "position": [
+          "final"
+        ],
+        "prev": "AH$",
+        "double": false
+      },
+      {
+        "cons": [
+          "G"
+        ],
+        "position": [
+          "final"
+        ],
+        "stress": "any",
+        "double": true
+      },
+      {
+        "cons": [
+          "K"
+        ],
+        "position": [
+          "beforeFinal"
+        ],
+        "word": "ics$",
+        "double": false
+      },
+      {
+        "cons": [
+          "K",
+          "P"
+        ],
+        "position": [
+          "beforeFinal"
+        ],
+        "rest": "^S$",
+        "double": true
+      },
+      {
+        "cons": [
+          "T",
+          "D"
+        ],
+        "position": [
+          "beforeFinal"
+        ],
+        "rest": "^$",
+        "double": true
+      },
+      {
+        "cons": [
+          "P",
+          "K",
+          "F",
+          "S"
+        ],
+        "position": [
+          "beforeFinal",
+          "beforeCons"
+        ],
+        "stress": "main",
+        "rest": "^L( [^AEIOU]|$)",
+        "double": true
+      },
+      {
+        "cons": [
+          "K"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "main",
+        "doubledLetter": true,
+        "rest": "^AH L$",
+        "double": true
+      },
+      {
+        "cons": [
+          "K"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "stress": "any",
+        "spelled": "^(ck|k)$",
+        "double": true
+      },
+      {
+        "cons": [
+          "T"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "rest": "^(B|P|K|G|D|F|HH|W|CH|M|SH)",
+        "double": true
+      },
+      {
+        "cons": [
+          "D"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "stress": "any",
+        "rest": "^(B|P|K|G|F|HH|W|CH|M|L)",
+        "double": true
+      },
+      {
+        "cons": [
+          "P"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "stress": "main",
+        "rest": "^(B|D|G|M|K|HH|W|F)",
+        "double": true
+      },
+      {
+        "cons": [
+          "P"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "word": "^up",
+        "double": true
+      },
+      {
+        "cons": [
+          "G"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "stress": "main",
+        "rest": "^(K|S|B|P|HH|F|D|CH)",
+        "double": true
+      },
+      {
+        "cons": [
+          "CH",
+          "JH",
+          "SH"
+        ],
+        "position": [
+          "beforeCons"
+        ],
+        "double": true
+      },
+      {
+        "cons": [
+          "K"
+        ],
+        "position": [
+          "medial"
+        ],
+        "rest": "^(AH|IH) (T|N)( S| Z)?$",
+        "double": false
+      },
+      {
+        "cons": [
+          "K"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "any",
+        "spelled": "^ck$",
+        "double": true
+      },
+      {
+        "cons": [
+          "K"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "any",
+        "spelled": "^(k|cc)$",
+        "rest": "^(ER|IH NG|IH SH)( |$)",
+        "double": true
+      },
+      {
+        "cons": [
+          "P",
+          "CH"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "any",
+        "doubledLetter": true,
+        "rest": "^(ER|IH NG)$",
+        "double": true
+      },
+      {
+        "cons": [
+          "T"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "any",
+        "doubledLetter": true,
+        "rest": "^IH NG$",
+        "double": true
+      },
+      {
+        "cons": [
+          "G",
+          "D"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "any",
+        "doubledLetter": true,
+        "rest": "^(ER|IH NG)$",
+        "double": true
+      },
+      {
+        "cons": [
+          "K",
+          "P",
+          "CH"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "main",
+        "doubledLetter": true,
+        "rest": "^IY$",
+        "double": true
+      },
+      {
+        "cons": [
+          "CH"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "main",
+        "doubledLetter": true,
+        "rest": "^AH N$",
+        "double": true
+      },
+      {
+        "cons": [
+          "SH"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "any",
+        "spelled": "^(ss|sh)",
+        "double": true
+      },
+      {
+        "cons": [
+          "SH"
+        ],
+        "position": [
+          "medial"
+        ],
+        "spelled": "^sh",
+        "rest": "^IH NG$",
+        "double": true
+      },
+      {
+        "cons": [
+          "TH"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "main",
+        "rest": "^IH NG$",
+        "double": true
+      },
+      {
+        "cons": [
+          "S"
+        ],
+        "position": [
+          "medial"
+        ],
+        "stress": "main",
+        "spelled": "^ss$",
+        "double": true
+      }
+    ]
+  },
+  "vowels": {
+    "about": "English vowel to Japanese vowel beats, as an ordered list; the first matching rule wins. 'to' uses the five Japanese vowels: a doubled letter is a long vowel, and consonant letters inside it start a new beat ('yaa'). Conditions: stress (main, any, none, notMain), letters (the vowel letters that spell the sound), beforeR (a silent R follows), beforeRV (an R that starts the next beat follows), beforeVowel, wordEnd, lastSyl, firstSyl, rest and prev (patterns over the English sounds after and before), word (pattern over the spelling). 'palatal' adds a quick Y after the listed consonants; 'yGlide' does the same where British English has one.",
+    "summaryRule": {
+      "ruleId": "ja-vowels",
+      "source": "jmdict",
+      "confidence": "medium",
+      "why": "Japanese has five vowels (a, i, u, e, o), each short or long. Each English vowel is replaced by the nearest of these, and weak vowels usually follow the spelling."
+    },
+    "usualLetters": {
+      "about": "For lining up vowel sounds with the spelling: the letters that usually spell each stressed vowel.",
+      "AA": "^(a|o|au|e)",
+      "AE": "^(a|ai|au)",
+      "AH": "^(u|o|ou|oo|a)",
+      "AO": "^(o|a|au|ou|oa|oo)",
+      "AW": "^(ou|o|au)",
+      "AY": "^(i|y|ie|ei|uy|ai|eye|ye|ui)",
+      "EH": "^(e|ea|a|ai|ie|ue|ei)",
+      "ER": "",
+      "EY": "^(a|ai|ay|ei|ey|ea|e$|ee)",
+      "IH": "^(i|y|e|ui|ee|ie|u)",
+      "IY": "^(e|ee|ea|i|y|ie|ei|ey|eo)",
+      "OW": "^(o|oa|ou|oe|eau|au)",
+      "OY": "^(oi|oy)",
+      "UH": "^(u|oo|ou|o)",
+      "UW": "^(u|oo|ou|e|ue|ui|o|eu|oe)"
+    },
+    "yGlidePhones": [
+      "UW",
+      "UH"
+    ],
+    "yGlideLetters": "^(u|eu|ew)",
+    "rules": [
+      {
+        "phone": "AA",
+        "beforeR": true,
+        "to": "aa",
+        "loss": 0.1
+      },
+      {
+        "phone": "AA",
+        "letters": "^(au|aw)",
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "AA",
+        "letters": "^a",
+        "to": "a"
+      },
+      {
+        "phone": "AA",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "AE",
+        "stress": "any",
+        "palatal": [
+          "K",
+          "G"
+        ],
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AE",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "rest": "^L( [^AEIOU]|$)",
+        "word": "[^aeiou]le",
+        "letters": "^e$",
+        "to": ""
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "rest": "^T ER$",
+        "word": "meter$",
+        "to": "ee"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^M$",
+        "word": "(s|th)m$",
+        "to": "u"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^L$",
+        "word": "ful$",
+        "to": "u"
+      },
+      {
+        "phone": "AH",
+        "stress": "any",
+        "letters": "^o$",
+        "rest": "^(N|M) (T|P|F|JH|D)",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "prev": "Y$",
+        "letters": "^u",
+        "to": "u"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "rest": "^W",
+        "letters": "^u",
+        "to": "u"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "prev": "(CH|JH|SH|ZH)$",
+        "letters": "^u$",
+        "to": "u"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "prev": "OY$",
+        "to": "ya"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^N$",
+        "letters": "^e$",
+        "prev": "(P|V|K|Z|F)$",
+        "to": "u",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^N$",
+        "letters": "^o$",
+        "prev": "Z$",
+        "to": "u",
+        "loss": 0.2
+      },
+      {
+        "phone": [
+          "AH",
+          "IH"
+        ],
+        "stress": "none",
+        "lastSyl": true,
+        "word": "(tch|ick)en$",
+        "to": "i"
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "lastSyl": true,
+        "word": "(dom|some|come)$",
+        "to": "a"
+      },
+      {
+        "phone": [
+          "AH",
+          "IH"
+        ],
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^JH$",
+        "word": "age$",
+        "to": "ee",
+        "loss": 0.3
+      },
+      {
+        "phone": [
+          "AH",
+          "IH"
+        ],
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^T$",
+        "word": "ate$",
+        "to": "ee",
+        "loss": 0.3
+      },
+      {
+        "phone": [
+          "AH",
+          "IH"
+        ],
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^N JH$",
+        "word": "ange$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": [
+          "AH",
+          "IH"
+        ],
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^S$",
+        "word": "ace$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": [
+          "AH",
+          "IH",
+          "IY"
+        ],
+        "stress": "none",
+        "firstSyl": true,
+        "letters": "^e$",
+        "prev": "(^| )(R|B)$",
+        "to": "i"
+      },
+      {
+        "phone": [
+          "AH",
+          "IH",
+          "IY"
+        ],
+        "stress": "none",
+        "firstSyl": true,
+        "letters": "^e$",
+        "prev": "^D$",
+        "to": {
+          "traditional": "e",
+          "younger": "i"
+        }
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^a",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^e$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^(i|y)$",
+        "to": "i",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^(o|io|eo)$",
+        "to": "o",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^(ai|ie)$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "beforeR": true,
+        "wordEnd": true,
+        "word": "(ore|oor)s?$",
+        "to": "oa",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "beforeR": true,
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "stress": "main",
+        "beforeRV": true,
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "rest": "^L T|^L S$",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "lastSyl": true,
+        "word": "ogue$",
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "letters": "^(a|au|aw|ou|oa)",
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "AW",
+        "beforeR": true,
+        "to": "awaa"
+      },
+      {
+        "phone": "AW",
+        "rest": "^ER",
+        "to": "a"
+      },
+      {
+        "phone": "AW",
+        "to": "au"
+      },
+      {
+        "phone": "AY",
+        "beforeR": true,
+        "to": "aia"
+      },
+      {
+        "phone": "AY",
+        "to": "ai"
+      },
+      {
+        "phone": "EH",
+        "beforeR": true,
+        "to": "ea"
+      },
+      {
+        "phone": "EH",
+        "beforeRV": true,
+        "letters": "^a$",
+        "palatal": [
+          "K",
+          "G"
+        ],
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "EH",
+        "beforeRV": true,
+        "letters": "^(ai|ae|ea)$",
+        "to": "ea"
+      },
+      {
+        "phone": "EH",
+        "to": "e"
+      },
+      {
+        "phone": "ER",
+        "prev": "AW$",
+        "to": "waa",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "beforeVowel": true,
+        "letters": "^e$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "beforeVowel": true,
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "prev": "AY$",
+        "word": "ire[sd]?$",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "prev": "(AY|EY|OY)$",
+        "to": "yaa",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "prev": "(IY|Y)$",
+        "wordEnd": true,
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "prev": "(UW|OW)$",
+        "to": "waa",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "stress": "none",
+        "lastSyl": true,
+        "rest": "^N$",
+        "word": "ern$",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "ER",
+        "to": "aa",
+        "loss": 0.2
+      },
+      {
+        "phone": "EY",
+        "rest": "^N JH",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "EY",
+        "letters": "^ai$",
+        "rest": "^L",
+        "to": "ee",
+        "loss": 0.1
+      },
+      {
+        "phone": "EY",
+        "wordEnd": true,
+        "word": "day$",
+        "to": "ee",
+        "loss": 0.1
+      },
+      {
+        "phone": "EY",
+        "letters": "^(ai|ay|ei|ey)$",
+        "to": "ei"
+      },
+      {
+        "phone": "EY",
+        "to": "ee",
+        "loss": 0.1
+      },
+      {
+        "phone": "IH",
+        "beforeR": true,
+        "to": "ia"
+      },
+      {
+        "phone": "IH",
+        "beforeRV": true,
+        "prev": "S$",
+        "to": "i"
+      },
+      {
+        "phone": "IH",
+        "beforeRV": true,
+        "letters": "^e$",
+        "to": "e",
+        "loss": 0.1
+      },
+      {
+        "phone": "IH",
+        "stress": "none",
+        "letters": "^e$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "IH",
+        "stress": "none",
+        "letters": "^a$",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "IH",
+        "to": "i"
+      },
+      {
+        "phone": "IY",
+        "stress": "main",
+        "rest": "^IH NG",
+        "to": "ii"
+      },
+      {
+        "phone": "IY",
+        "beforeVowel": true,
+        "prev": "JH$",
+        "to": "i"
+      },
+      {
+        "phone": "IY",
+        "beforeVowel": true,
+        "letters": "^e$",
+        "word": "eo",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "IY",
+        "beforeVowel": true,
+        "to": "i"
+      },
+      {
+        "phone": "IY",
+        "lastSyl": true,
+        "stress": "notMain",
+        "rest": "^N$",
+        "word": "ine$",
+        "to": "i"
+      },
+      {
+        "phone": "IY",
+        "stress": "any",
+        "to": "ii"
+      },
+      {
+        "phone": "IY",
+        "lastSyl": true,
+        "to": "ii"
+      },
+      {
+        "phone": "IY",
+        "stress": "none",
+        "letters": "^(y|ey|ie)$",
+        "to": "ii"
+      },
+      {
+        "phone": "IY",
+        "stress": "notMain",
+        "letters": "^e$",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "IY",
+        "to": "i"
+      },
+      {
+        "phone": "OW",
+        "wordEnd": true,
+        "stress": "notMain",
+        "letters": "^o$",
+        "word": "o$",
+        "to": "o"
+      },
+      {
+        "phone": "OW",
+        "lastSyl": true,
+        "stress": "notMain",
+        "rest": "^N$",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "rest": "^L (D|S|T|JH) ER",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "stress": "main",
+        "firstSyl": true,
+        "word": "^pro",
+        "rest": "(^| )[AEIOU]",
+        "to": "o"
+      },
+      {
+        "phone": "OW",
+        "stress": "any",
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "lastSyl": true,
+        "to": "oo",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "OY",
+        "wordEnd": true,
+        "word": "boy$",
+        "to": "ooi"
+      },
+      {
+        "phone": "OY",
+        "to": "oi"
+      },
+      {
+        "phone": "UH",
+        "beforeR": true,
+        "to": "ua"
+      },
+      {
+        "phone": "UH",
+        "stress": "main",
+        "beforeRV": true,
+        "to": "uu"
+      },
+      {
+        "phone": "UH",
+        "to": "u"
+      },
+      {
+        "phone": "UW",
+        "firstSyl": true,
+        "word": "^uni",
+        "to": "u"
+      },
+      {
+        "phone": "UW",
+        "rest": "^IH NG",
+        "to": "uu"
+      },
+      {
+        "phone": "UW",
+        "beforeVowel": true,
+        "to": "u"
+      },
+      {
+        "phone": "UW",
+        "prev": "(^| )(T|D|N)$",
+        "letters": "^(u|eu|e|ue)$",
+        "yGlide": [
+          "T",
+          "D",
+          "N"
+        ],
+        "to": "uu"
+      },
+      {
+        "phone": "UW",
+        "stress": "main",
+        "prev": "[AEIOU][A-Z] L$",
+        "letters": "^u$",
+        "yGlide": [
+          "L"
+        ],
+        "to": "uu"
+      },
+      {
+        "phone": "UW",
+        "to": "uu"
+      }
+    ]
+  },
+  "kana": {
+    "N": "ン",
+    "Q": "ッ",
+    "L": "ー",
+    "a": "ア",
+    "i": "イ",
+    "u": "ウ",
+    "e": "エ",
+    "o": "オ",
+    "ka": "カ",
+    "ki": "キ",
+    "ku": "ク",
+    "ke": "ケ",
+    "ko": "コ",
+    "kya": "キャ",
+    "kyu": "キュ",
+    "kyo": "キョ",
+    "ga": "ガ",
+    "gi": "ギ",
+    "gu": "グ",
+    "ge": "ゲ",
+    "go": "ゴ",
+    "gya": "ギャ",
+    "gyu": "ギュ",
+    "gyo": "ギョ",
+    "sa": "サ",
+    "su": "ス",
+    "se": "セ",
+    "so": "ソ",
+    "sha": "シャ",
+    "shi": "シ",
+    "shu": "シュ",
+    "she": "シェ",
+    "sho": "ショ",
+    "za": "ザ",
+    "zu": "ズ",
+    "ze": "ゼ",
+    "zo": "ゾ",
+    "ja": "ジャ",
+    "ji": "ジ",
+    "ju": "ジュ",
+    "je": "ジェ",
+    "jo": "ジョ",
+    "ta": "タ",
+    "te": "テ",
+    "to": "ト",
+    "ti": "ティ",
+    "tu": "トゥ",
+    "tyu": "テュ",
+    "cha": "チャ",
+    "chi": "チ",
+    "chu": "チュ",
+    "che": "チェ",
+    "cho": "チョ",
+    "tsa": "ツァ",
+    "tsi": "ツィ",
+    "tsu": "ツ",
+    "tse": "ツェ",
+    "tso": "ツォ",
+    "da": "ダ",
+    "de": "デ",
+    "do": "ド",
+    "di": "ディ",
+    "du": "ドゥ",
+    "dyu": "デュ",
+    "na": "ナ",
+    "ni": "ニ",
+    "nu": "ヌ",
+    "ne": "ネ",
+    "no": "ノ",
+    "nya": "ニャ",
+    "nyu": "ニュ",
+    "nyo": "ニョ",
+    "ha": "ハ",
+    "hi": "ヒ",
+    "he": "ヘ",
+    "ho": "ホ",
+    "hya": "ヒャ",
+    "hyu": "ヒュ",
+    "hyo": "ヒョ",
+    "fa": "ファ",
+    "fi": "フィ",
+    "fu": "フ",
+    "fe": "フェ",
+    "fo": "フォ",
+    "fyu": "フュ",
+    "ba": "バ",
+    "bi": "ビ",
+    "bu": "ブ",
+    "be": "ベ",
+    "bo": "ボ",
+    "bya": "ビャ",
+    "byu": "ビュ",
+    "byo": "ビョ",
+    "pa": "パ",
+    "pi": "ピ",
+    "pu": "プ",
+    "pe": "ペ",
+    "po": "ポ",
+    "pya": "ピャ",
+    "pyu": "ピュ",
+    "pyo": "ピョ",
+    "ma": "マ",
+    "mi": "ミ",
+    "mu": "ム",
+    "me": "メ",
+    "mo": "モ",
+    "mya": "ミャ",
+    "myu": "ミュ",
+    "myo": "ミョ",
+    "ya": "ヤ",
+    "yu": "ユ",
+    "yo": "ヨ",
+    "ra": "ラ",
+    "ri": "リ",
+    "ru": "ル",
+    "re": "レ",
+    "ro": "ロ",
+    "rya": "リャ",
+    "ryu": "リュ",
+    "ryo": "リョ",
+    "wa": "ワ",
+    "wi": "ウィ",
+    "we": "ウェ",
+    "wo": "ウォ",
+    "va": "ヴァ",
+    "vi": "ヴィ",
+    "vu": "ヴ",
+    "ve": "ヴェ",
+    "vo": "ヴォ",
+    "vyu": "ヴュ"
+  },
+  "limits": [
+    "Pitch accent is not predicted. Japanese words rise and fall in pitch in set patterns, and the pattern a new name will get is not worked out here.",
+    "Results have not been checked by native speakers.",
+    "The katakana shown is the spelling the rules predict. Company-chosen spellings often differ.",
+    "Names that are not English-style are read the English way, so a French, German or Italian name will often come out wrong.",
+    "The rules follow the spellings of English loanwords in the JMdict dictionary. A dictionary spelling shows the written habit; how people say the word aloud can differ.",
+    "The two spelling habits are a simplification. Real words mix them, and which one a given name gets depends on when it arrived and on who chose its spelling.",
+    "V is always shown as B. Some newer spellings write V with its own letter (ヴ); which names get it has not been worked out."
+  ],
+  "accuracyData": {
+    "about": "The predicted katakana compared with the first spelling JMdict lists, for English loanwords drawn from JMdict (scripts/build-ja-benchmark.ts). Nothing is removed from either side before comparing. Rules were tuned on the tune list only; the test list was run twice, with the same result both times.",
+    "measured": "2026-11-16",
+    "tune": {
+      "words": 1500,
+      "traditional": {
+        "exact": 936,
+        "meanSimilarity": 88.5
+      },
+      "younger": {
+        "exact": 1013,
+        "meanSimilarity": 90.8
+      }
+    },
+    "test": {
+      "words": 1500,
+      "traditional": {
+        "exact": 933,
+        "meanSimilarity": 88.1
+      },
+      "younger": {
+        "exact": 985,
+        "meanSimilarity": 89.9
+      }
+    }
+  },
+  "market": {
+    "code": "JP",
+    "country": "Japan"
+  },
+  "voiceLang": "ja",
+  "scriptPerProfile": true,
+  "scriptNote": "The katakana spelling the rules predict. Companies choose their own spellings, and these often differ.",
+  "validation": {
+    "nativeChecked": false,
+    "note": "Not checked by native speakers. The rules follow the spellings of English loanwords in the JMdict dictionary. Corrections are welcome."
+  },
+  "speakerNote": "The two groups differ in a few sound pairs, such as \"ti\" and \"di\". In the dictionary used for testing, the newer forms are the more common first spelling."
+}

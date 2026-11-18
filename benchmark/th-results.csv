@@ -1,0 +1,112 @@
+name,origin,real_thai,predicted_thai,similarity_percent,exact_match
+WhatsApp,en,วอตส์แอปป์,วัตซาป,30,no
+Volkswagen,other,ฟ็อลคส์วาเกิน,โวล์กสแวเก็น,42,no
+Doritos,en,โดริโทส,ดอรีโตส,43,no
+Nestlé,other,เนสท์เล่,เน็สตล์,43,no
+IKEA,other,อิเกีย,ไอเคีย,50,no
+Samsung,other,ซัมซุง,แซมซัง,50,no
+Nivea,other,นีเวีย,นิวี,50,no
+Marriott International,en,แมริออทอินเตอร์เนชั่นแนล,เมเรียตต์อินเตอร์แนชะนัล,54,no
+McDonald's,en,แมคโดนัลด์,มักดานัลดส์,55,no
+Adidas,other,อาดิดาส,อะดีดัส,57,no
+American Express,en,อเมริกันเอ็กซ์เพรส,อะเมริกันอิกสเปร็สส์,58,no
+Fanta,en,แฟนต้า,ฟานตา,60,no
+Domino's Pizza,en,โดมิโน่ส์พิซซ่า,ดอมิโนสพีตซา,62,no
+Pizza Hut,en,พิซซ่าฮัท,พีตซาฮัต,63,no
+Red Bull,en,เรดบูล,เร็ดบุลล์,63,no
+Gillette,en,ยิลเลตต์,จิลเล็ต,63,no
+Chevrolet,en,เชฟโรเลต,เช็ฟรอเล,63,no
+YouTube,en,ยูทูบ,ยูทิวบ,67,no
+Kit Kat,en,คิทแคท,คิตแคต,67,no
+Colgate,en,คอลเกต,โคลเกต,67,no
+Jaguar Cars,en,จากัวร์คาร์ส,แจกวาร์คาร์ส,67,no
+Huawei,other,หัวเว่ย,ฮัวเว,67,no
+PayPal,en,เพย์แพล,เพย์พัล,71,no
+Expedia,en,เอ็กซ์พีเดีย,เอ็กสปีเดีย,73,no
+FedEx,en,เฟดเอกซ์,เฟเด็กซ์,75,no
+Mastercard,en,มาสเตอร์การ์ด,แมสเตอร์คาร์ด,77,no
+Dunkin' Donuts,en,ดังกิ้นโดนัท,ดังกินโดนัตส์,77,no
+LinkedIn,en,ลิงกต์อิน,ลิงก์ทิน,78,no
+Mitsubishi,other,มิตซูบิชิ,มิตซูบีชี,78,no
+Pepsi,en,เป๊ปซี่,เพ็ปซี,80,no
+Cisco,en,ซิสโก้,ซิสโค,80,no
+Minecraft,en,ไมน์คราฟต์,ไมน์แครฟต์,80,no
+Reebok,en,รีบอค,รีบอก,80,no
+Shopee,en,ช้อปปี้,ชอปี,80,no
+Pinterest,en,พินเทอเรสต์,พินเทร็สต์,82,no
+TikTok,en,ติ๊กต๊อก,ทิกตอก,83,no
+Oreo,en,โอรีโอ,ออรีโอ,83,no
+Sprite,en,สไปรท์,สไปรต์,83,no
+Pantene,en,แพนทีน,แพนตีน,83,no
+Ford Motor,en,ฟอร์ดมอเตอร์,ฟอร์ดโมเตอร์,83,no
+Agoda,en,อโกดา,อาโกดา,83,no
+Microsoft Windows,en,ไมโครซอฟท์วินโดวส์,ไมโครซอฟต์วินโดส,83,no
+Toyota,other,โตโยต้า,โทโยตา,83,no
+Amazon,en,แอมะซอน,แอมาซอน,86,no
+Uber,en,อูเบอร์,ยูเบอร์,86,no
+Baskin-Robbins,en,บาสกินรอบบินส์,แบสกินรอบบินส์,86,no
+Michelin,other,มิชลิน,มิเชลิน,86,no
+Tommy Hilfiger,en,ทอมมีฮิลฟิเกอร์,ทอมมีฮิลไฟเกอร์,87,no
+Coca-Cola,en,โคคาโคล่า,โคกาโคลา,88,no
+Harley-Davidson,en,ฮาร์ลีย์เดวิดสัน,ฮาร์ลีย์เดวิดซอน,88,no
+Mozilla Firefox,en,มอซิลลาไฟร์ฟอกซ์,โมซิลลาไฟร์ฟอกซ์,88,no
+Victoria's Secret,en,วิกตอเรียส์ซีเคร็ต,วิกทอเรียสซีเคร็ต,88,no
+Goodyear Tire and Rubber,en,กู๊ดเยียร์ไทร์แอนด์รับเบอร์,กุดเยียร์ไทร์อันด์รับเบอร์,88,no
+Starbucks,en,สตาร์บัคส์,สตาร์บักส์,90,no
+Microsoft,en,ไมโครซอฟท์,ไมโครซอฟต์,90,no
+Wikipedia,en,วิกิพีเดีย,วิกีพีเดีย,90,no
+Shell PLC,en,เชลล์พีแอลซี,เช็ลล์พีเอ็ลซี,92,no
+The Walt Disney,en,เดอะวอลต์ดิสนีย์,เดอวอลต์ดิสนีย์,94,no
+Oracle Corporation,en,ออราเคิลคอร์ปอเรชัน,ออราเกิลคอร์ปอเรชัน,95,no
+Netflix,en,เน็ตฟลิกซ์,เน็ตฟลิกซ์,100,yes
+Facebook,en,เฟซบุ๊ก,เฟซบุก,100,yes
+Google,en,กูเกิล,กูเกิล,100,yes
+Apple,en,แอปเปิล,แอปเปิล,100,yes
+Tesla,en,เทสลา,เท็สลา,100,yes
+Nike,en,ไนกี้,ไนกี,100,yes
+Burger King,en,เบอร์เกอร์คิง,เบอร์เกอร์คิง,100,yes
+Instagram,en,อินสตาแกรม,อินสตาแกรม,100,yes
+Snapchat,en,สแนปแชต,สแนปแชต,100,yes
+Reddit,en,เรดดิต,เร็ดดิต,100,yes
+Spotify,en,สปอติฟาย,สปอติฟาย,100,yes
+Air BNB,en,แอร์บีเอ็นบี,แอร์บีเอ็นบี,100,yes
+Visa,en,วีซา,วีซา,100,yes
+Intel,en,อินเทล,อินเท็ล,100,yes
+Dell,en,เดลล์,เด็ลล์,100,yes
+Adobe Systems,en,อะโดบีซิสเต็มส์,อะโดบีซิสเต็มส์,100,yes
+Walmart,en,วอลมาร์ต,วอลมาร์ต,100,yes
+Costco,en,คอสต์โก,คอสต์โก,100,yes
+Subway,en,ซับเวย์,ซับเวย์,100,yes
+Krispy Kreme,en,คริสปีครีม,คริสปีครีม,100,yes
+Dairy Queen,en,แดรี่ควีน,แดรีควีน,100,yes
+Pfizer,en,ไฟเซอร์,ไฟเซอร์,100,yes
+Rolls-Royce,en,โรลส์รอยซ์,โรลส์รอยซ์,100,yes
+Land Rover,en,แลนด์โรเวอร์,แลนด์โรเวอร์,100,yes
+Boeing,en,โบอิง,โบอิง,100,yes
+Marvel Comics,en,มาร์เวลคอมิกส์,มาร์เวลคอมิกส์,100,yes
+Pixar,en,พิกซาร์,พิกซาร์,100,yes
+Xbox,en,เอกซ์บอกซ์,เอ็กซ์บอกซ์,100,yes
+PlayStation,en,เพลย์สเตชัน,เพลย์สเตชัน,100,yes
+Fortnite,en,ฟอร์ตไนต์,ฟอร์ตไนต์,100,yes
+Barbie,en,บาร์บี้,บาร์บี,100,yes
+Converse,en,คอนเวิร์ส,คอนเวิร์ส,100,yes
+Under Armour,en,อันเดอร์อาร์เมอร์,อันเดอร์อาร์เมอร์,100,yes
+Ray-Ban,en,เรย์แบน,เรย์แบน,100,yes
+Grab,en,แกร็บ,แกรบ,100,yes
+Lazada,en,ลาซาด้า,ลาซาดา,100,yes
+Zoom,en,ซูม,ซูม,100,yes
+GitHub,en,กิตฮับ,กิตฮับ,100,yes
+Android,en,แอนดรอยด์,แอนดรอยด์,100,yes
+Google Chrome,en,กูเกิลโครม,กูเกิลโครม,100,yes
+Gmail,en,จีเมล,จีเมล,100,yes
+Yahoo,en,ยาฮู,ยาฮู,100,yes
+eBay,en,อีเบย์,อีเบย์,100,yes
+Tesco,en,เทสโก้,เท็สโก,100,yes
+Walt Disney,en,วอลต์ดิสนีย์,วอลต์ดิสนีย์,100,yes
+Nokia,other,โนเกีย,โนเกีย,100,yes
+Honda,other,ฮอนด้า,ฮอนดา,100,yes
+Sony,other,โซนี่,โซนี,100,yes
+Rolex,other,โรเล็กซ์,โรเล็กซ์,100,yes
+Lego,other,เลโก้,เลโก,100,yes
+Heineken,other,ไฮเนเก้น,ไฮเนเก็น,100,yes
+Nintendo,other,นินเท็นโด,นินเท็นโด,100,yes

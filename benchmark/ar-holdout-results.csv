@@ -1,0 +1,67 @@
+name,origin,real,predicted,similarity_percent,exact_match
+Boston,en,بوسطن,بوستون,67,no
+Birmingham,en,برمنغهام,بيرمينجهام,70,no
+Telegram,en,تلغرام,تيلجرام,71,no
+Bristol,en,برستل,بريستول,71,no
+Edinburgh,en,إدنبرة,إدنبرور,71,no
+Perth,en,برث,بيرث,75,no
+Manchester,en,مانشستر,مانتشيستر,78,no
+Tinder,en,تندر,تيندر,80,no
+Tupperware,en,تبروير,تبروار,83,no
+Wendy's,en,وينديز,ونديز,83,no
+Cartoon Network,en,كرتوننتورك,كارتوننتوورك,83,no
+Chicago,en,شيكاغو,شيكاجو,83,no
+Glasgow,en,غلاسكو,جلاسكو,83,no
+Taco Bell,en,تاكوبل,تاكوبيل,86,no
+Houston,en,هيوستن,هيوستون,86,no
+Detroit,en,ديترويت,دترويت,86,no
+Melbourne,en,ملبورن,ميلبورن,86,no
+Brisbane,en,بريزبان,بريزبين,86,no
+Toronto,en,تورنتو,تورونتو,86,no
+Belfast,en,بلفاست,بيلفاست,86,no
+Pittsburgh,en,بيتسبرغ,بيتسبرج,86,no
+Brooklyn,en,بروكلين,بروكلن,86,no
+Polaroid,en,بولارويد,بولرويد,88,no
+Citibank,en,سيتيبنك,سيتيبانك,88,no
+National Geographic,en,ناشونالجيوغرافيك,ناشينالجيوجرافيك,88,no
+Cambridge,en,كامبريدج,كيمبريدج,88,no
+Oxford,en,أكسفورد,أوكسفورد,88,no
+Wellington,en,ويلينغتون,ويلينجتون,89,no
+Philadelphia,en,فيلادلفيا,فيلاديلفيا,90,no
+Goldman Sachs,en,غولدمانساكس,جولدمانساكس,91,no
+Western Union,en,ويسترنيونيون,ويسترنيونين,92,no
+Morgan Stanley,en,مورغانستانلي,مورجانستانلي,92,no
+General Motors,en,جنرالموتورز,جينرالموتورز,92,no
+General Electric,en,جنرالإلكتريك,جينرالإلكتريك,92,no
+Lipton,en,ليبتون,ليبتون,100,yes
+Motorola,en,موتورولا,موتورولا,100,yes
+BlackBerry,en,بلاكبيري,بلاكبيري,100,yes
+Kodak,en,كوداك,كوداك,100,yes
+Xerox,en,زيروكس,زيروكس,100,yes
+Skype,en,سكايب,سكايب,100,yes
+Discord,en,ديسكورد,ديسكورد,100,yes
+Twitch,en,تويتش,تويتش,100,yes
+Roblox,en,روبلوكس,روبلوكس,100,yes
+Tumblr,en,تمبلر,تمبلر,100,yes
+Flickr,en,فليكر,فليكر,100,yes
+Pampers,en,بامبرز,بامبرز,100,yes
+Listerine,en,ليسترين,ليسترين,100,yes
+Popeyes,en,بوبايز,بوبايز,100,yes
+Nickelodeon,en,نيكلوديون,نيكلوديون,100,yes
+Paramount Pictures,en,باراماونتبيكتشرز,باراماونتبيكتشرز,100,yes
+Liverpool,en,ليفربول,ليفربول,100,yes
+Dallas,en,دالاس,دالاس,100,yes
+Seattle,en,سياتل,سياتل,100,yes
+Denver,en,دنفر,دنفر,100,yes
+Atlanta,en,أتلانتا,أتلانتا,100,yes
+Portland,en,بورتلاند,بورتلاند,100,yes
+Sydney,en,سيدني,سيدني,100,yes
+Auckland,en,أوكلاند,أوكلاند,100,yes
+Vancouver,en,فانكوفر,فانكوفر,100,yes
+Leeds,en,ليدز,ليدز,100,yes
+Dublin,en,دبلن,دبلن,100,yes
+Nashville,en,ناشفيل,ناشفيل,100,yes
+Memphis,en,ممفيس,ممفيس,100,yes
+Cleveland,en,كليفلاند,كليفلاند,100,yes
+Baltimore,en,بالتيمور,بالتيمور,100,yes
+Hollywood,en,هوليوود,هوليوود,100,yes

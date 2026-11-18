@@ -1,0 +1,354 @@
+{
+  "id": "hi",
+  "name": "Hindi",
+  "packVersion": "0.0.0-s6",
+  "about": "How Hindi speakers say names written in English spelling, and how those names are usually spelled in Devanagari. Every rule names its source and a confidence level. Edit this file to correct or add rules; no programming is needed.",
+  "profiles": {
+    "traditional": "Speakers with less exposure to English. T and D are said with the tongue curled back, TH is a T or D made on the teeth, V and W are one sound, and Z is said as J. A name that starts with S plus another consonant probably gets a short 'i' in front (school is said 'is-kool').",
+    "younger": "For example, the university students and staff measured in the studies. Z is kept and no 'i' is added in front. T, D, TH, V and W are said the same way as in the first group."
+  },
+  "profileLabels": {
+    "traditional": "Most speakers",
+    "younger": "English-exposed speakers"
+  },
+  "scriptName": "Devanagari",
+  "accuracy": "The predicted Devanagari spelling was compared with Hindi Wikipedia article titles for well-known English names. On a list of 92 names the rules had not been adjusted to (brands, cities and US states), the average similarity was 83.5%, with 31 matching exactly. This measures agreement with Wikipedia spellings. Pronunciation itself was not measured, and place names often keep older spellings.",
+  "sources": {
+    "pal": "Pal, Jain, Yarra, Vuppala and Ghosh (2022), \"Study of Indian English Pronunciation Variabilities relative to Received Pronunciation\", arXiv 2204.06502. Measured on 80 Indian speakers of English (university students and staff, several first languages). The figures describe Indian English speech, used here as a stand-in for names said inside Hindi.",
+    "narkar": "Narkar and Staroverov, \"An acoustic study of voiceless stops in Indian English\", Journal of South Asian Linguistics. Measured on 102 Indian speakers of English, 28 of them with Hindi as first language.",
+    "fuchs": "Fuchs (2019), \"Almost [w]anishing: the elusive /v/-/w/ contrast in educated Indian English\", Proceedings of ICPhS 2019. Measured on 20 Indian speakers of English, 5 of them with Hindi as first language.",
+    "wiki-phonology": "Wikipedia, \"Hindustani phonology\".",
+    "wiki-orthography": "Wikipedia, \"Hindustani orthography\".",
+    "suhery": "Suhery and others (2019), a study of English loanwords in the Hindi-Urdu of Pilibhit. Weak support only: the study gives no speaker or word counts and its data tables could not be read.",
+    "hi-titles": "The spelling of English names in Hindi Wikipedia article titles. This is a spelling habit.",
+    "unverified": "Background knowledge of the pack author; not checked against a source. Corrections welcome."
+  },
+  "effortPoints": {
+    "substitution": 6,
+    "epenthesis": 12,
+    "finalChanged": 10,
+    "finalDropped": 8,
+    "clusterKept": 5,
+    "rDropped": 1,
+    "codaAfterDiphthong": 10,
+    "nonNativeFinalKept": 10
+  },
+  "respellingKey": [
+    ["-", "separates syllables"],
+    ["a", "the weak vowel of 'about' and 'cup'"],
+    ["aa", "as in 'father'"],
+    ["ae", "as in 'cat', held a little longer"],
+    ["i", "as in 'sit'"],
+    ["ee", "as in 'see'"],
+    ["u", "as in 'put'"],
+    ["oo", "as in 'food'"],
+    ["e", "as in 'day', one steady vowel with no glide at the end"],
+    ["o", "as in 'go', one steady vowel with no glide at the end"],
+    ["aw", "as in British 'hot' or 'law'"],
+    ["ai, au, oy", "as in 'my', 'now', 'boy'"],
+    ["t, d", "said with the tip of the tongue curled back"],
+    ["th", "a T made with the tongue on the teeth and a puff of air; there is no hiss as in English 'think'"],
+    ["p, k", "said without the puff of air they have in English 'pin' and 'kin'"],
+    ["ph", "P with a puff of air"],
+    ["v", "one sound between English V and W"],
+    ["r", "a light tap or short roll of the tongue"],
+    ["n before a consonant", "a nasal sound that takes the place of the next consonant: 'ng' before k and g, 'm' before p and b"]
+  ],
+  "consonants": {
+    "about": "What each English consonant becomes. 'letter' is the Devanagari letter, 'roman' is how it is shown in the easy respelling. A block named after a speaker group overrides the values for that group. The sound-similarity table has no rows for the Hindi sounds, so every rule states its own 'loss'.",
+    "P": { "letter": "प", "roman": "p", "ipa": "p" },
+    "B": { "letter": "ब", "roman": "b", "ipa": "b" },
+    "T": {
+      "letter": "ट", "roman": "t", "ipa": "ʈ", "label": "T with the tongue curled back", "effort": 1, "loss": 0.15,
+      "ruleId": "hi-c-t", "source": "pal", "confidence": "high",
+      "why": "T is said with the tip of the tongue curled back. In a study of Indian speakers of English this happened in 85% of cases, and Hindi spelling uses the letter ट for it."
+    },
+    "D": {
+      "letter": "ड", "roman": "d", "ipa": "ɖ", "label": "D with the tongue curled back", "effort": 1, "loss": 0.15,
+      "ruleId": "hi-c-d", "source": "pal", "confidence": "high",
+      "why": "D is said with the tip of the tongue curled back. In a study of Indian speakers of English this happened in 82% of cases, and Hindi spelling uses the letter ड for it."
+    },
+    "K": { "letter": "क", "roman": "k", "ipa": "k" },
+    "G": { "letter": "ग", "roman": "g", "ipa": "ɡ" },
+    "CH": { "letter": "च", "roman": "ch", "ipa": "t͡ʃ" },
+    "JH": { "letter": "ज", "roman": "j", "ipa": "d͡ʒ" },
+    "F": { "letter": "फ़", "roman": "f", "ipa": "f" },
+    "V": {
+      "letter": "व", "roman": "v", "ipa": "ʋ", "label": "a sound between V and W", "effort": 1, "loss": 0.1,
+      "ruleId": "hi-c-v", "source": "fuchs", "confidence": "high",
+      "why": "Hindi has one sound, written व, where English has V and W. Measurements of Indian speakers of English found the two sounds almost the same.",
+      "tip": "A name that relies on the difference between V and W will probably lose it."
+    },
+    "W": {
+      "letter": "व", "roman": "v", "ipa": "ʋ", "label": "a sound between V and W", "effort": 2, "loss": 0.2,
+      "ruleId": "hi-c-w", "source": "fuchs", "confidence": "high",
+      "why": "Hindi has one sound, written व, where English has V and W. Measurements of Indian speakers of English found the two sounds almost the same.",
+      "tip": "A name that relies on the difference between V and W will probably lose it."
+    },
+    "TH": {
+      "letter": "थ", "roman": "th", "ipa": "t̪ʰ", "label": "T made on the teeth", "missing": true, "loss": 0.4,
+      "ruleId": "hi-c-th", "source": "pal", "confidence": "high",
+      "why": "Hindi has no TH sound (as in 'think'). A T made with the tongue on the teeth is used, often with a puff of air; a study of Indian speakers of English found this in 83% of cases.",
+      "tip": "TH loses its hiss, so 'three' and 'tree' can sound alike."
+    },
+    "DH": {
+      "letter": "द", "roman": "d", "ipa": "d̪", "label": "D made on the teeth", "missing": true, "loss": 0.4,
+      "ruleId": "hi-c-dh", "source": "pal", "confidence": "high",
+      "why": "Hindi has no TH sound (as in 'this'). A D made with the tongue on the teeth is used; a study of Indian speakers of English found this in 67% of cases."
+    },
+    "S": { "letter": "स", "roman": "s", "ipa": "s" },
+    "Z": {
+      "letter": "ज़", "roman": "z", "ipa": "z",
+      "traditional": {
+        "roman": "j", "ipa": "d͡ʒ", "label": "J", "missing": true, "loss": 0.3,
+        "ruleId": "hi-c-z", "source": "wiki-phonology", "confidence": "medium",
+        "why": "Z came into Hindi with borrowed words. It is reported that most speakers say J in its place, and that Z is kept in the careful speech of educated speakers.",
+        "tip": "Z and J can sound the same, so a name that relies on the difference will probably lose it with many speakers."
+      }
+    },
+    "Zs": {
+      "about": "A Z sound that ends the word straight after a consonant (the plural S of 'Jobs').",
+      "letter": "स", "roman": "s", "ipa": "s", "label": "S", "effort": 2, "loss": 0.15,
+      "ruleId": "hi-c-z-final", "source": "pal", "confidence": "medium",
+      "why": "A final S that English says as Z (as in 'Jobs') is probably said as S. In a study of Indian speakers of English, Hindi speakers said Z as S in about 55% of cases, and Hindi spelling writes these endings with स."
+    },
+    "SH": { "letter": "श", "roman": "sh", "ipa": "ʃ" },
+    "ZH": {
+      "letter": "ज़", "roman": "z", "ipa": "z", "label": "Z", "missing": true, "loss": 0.3,
+      "ruleId": "hi-c-zh", "source": "wiki-phonology", "confidence": "medium",
+      "why": "The ZH sound (as in 'vision') is very rare in Hindi. It is reported that speakers say Z or J in its place.",
+      "traditional": { "roman": "j", "ipa": "d͡ʒ", "label": "J" }
+    },
+    "HH": { "letter": "ह", "roman": "h", "ipa": "ɦ" },
+    "M": { "letter": "म", "roman": "m", "ipa": "m" },
+    "N": { "letter": "न", "roman": "n", "ipa": "n" },
+    "L": { "letter": "ल", "roman": "l", "ipa": "l" },
+    "R": {
+      "letter": "र", "roman": "r", "ipa": "ɾ", "label": "tapped R", "effort": 1, "loss": 0.15,
+      "ruleId": "hi-c-r", "source": "wiki-phonology", "confidence": "medium",
+      "why": "The Hindi R is a light tap or short roll of the tongue. It is written, and probably said, wherever the English spelling has an R."
+    },
+    "Y": { "letter": "य", "roman": "y", "ipa": "j" },
+    "Tth": {
+      "about": "A T sound that English spells 'th' (Thomas).",
+      "letter": "थ", "roman": "th", "ipa": "t̪ʰ", "label": "T made on the teeth", "effort": 1, "loss": 0.15,
+      "ruleId": "hi-c-th-spelling", "source": "hi-titles", "confidence": "medium",
+      "why": "Where English writes 'th' and says T (as in 'Thomas'), Hindi spelling follows the letters and uses थ, a T made on the teeth with a puff of air."
+    }
+  },
+  "spelledAs": {
+    "about": "Cases where the Devanagari spelling follows the English letters more than the English sound. 'use' names another entry of 'consonants'.",
+    "rules": [
+      { "phone": "T", "spelled": "^th$", "notBefore": ["HH"], "use": "Tth" },
+      { "phone": "V", "spelled": "^(ph|f)$", "use": "F" }
+    ],
+    "wh": {
+      "about": "Words spelled with WH (Wheels) are often written व्ह. Only the spelling changes.",
+      "letters": ["व", "ह"]
+    }
+  },
+  "startPTK": {
+    "phones": ["P", "K"],
+    "label": { "P": "P without a puff of air", "K": "K without a puff of air" },
+    "effort": 0, "loss": 0.05,
+    "ruleId": "hi-c-ptk", "source": "narkar", "confidence": "high",
+    "why": "English says P and K at the start of a word with a puff of air. Measurements of Indian speakers of English found no such puff, and Hindi spelling uses the plain letters प and क."
+  },
+  "nasals": {
+    "about": "N before one of the listed consonants is written as a dot above the line (anusvara, ं) and takes the place of that consonant. The dot is not used after a two-part vowel (Minecraft). A final N + S is written न्स. NG is the dot plus ग, or the dot alone before K and G.",
+    "anusvara": "ं",
+    "nBefore": ["T", "D", "K", "G", "CH", "JH", "P", "B", "S", "SH", "F", "TH"],
+    "finalNS": ["S", "Z"],
+    "ngLetter": "ग",
+    "ngSkipBefore": ["K", "G"],
+    "notAfterTwoVowels": true
+  },
+  "joins": {
+    "about": "When two consonants meet in the middle of a word with one from each syllable, Devanagari either joins them (a halant, ्, under the first) or writes them side by side. Consonants inside one syllable are always joined. 'pairs' lists the first consonant and the second consonants it joins with; '*' means every consonant. Nothing is joined across the two parts of a compound name (Facebook, Walmart), which is detected from the stress. 'sAfter': an S that follows one of these consonants and comes before another consonant stays with the first one (the X of 'express' is written क्स).",
+    "halant": "्",
+    "sAfter": ["K", "P"],
+    "source": "hi-titles",
+    "confidence": "medium",
+    "pairs": {
+      "R": "*",
+      "S": ["T", "K", "P", "L", "M", "N"],
+      "Z": ["N", "L", "M"],
+      "K": ["S", "T"],
+      "P": ["S", "T"],
+      "F": ["T"],
+      "M": ["P", "B"],
+      "L": ["T", "D", "V", "S", "K"]
+    }
+  },
+  "prothesis": {
+    "about": "S plus another consonant at the start of a word. The standard spelling keeps the two together (स्कूल), so the added vowel shows in the respelling only.",
+    "profiles": ["traditional"],
+    "before": ["P", "T", "K", "M", "N", "L", "W", "F"],
+    "vowel": "i",
+    "loss": 0.5,
+    "ruleId": "hi-s-start", "source": "pal", "confidence": "medium",
+    "why": "A word that starts with S plus another consonant probably gets a short 'i' in front (school is said 'is-kool'). The study reports this for speakers from Uttar Pradesh and Bihar and found it rare among university students and staff.",
+    "tip": "A name that starts with S plus a consonant can gain a syllable. The spelling in Devanagari does not show it."
+  },
+  "finalPairs": {
+    "about": "A final pair of consonants that gets the weak vowel 'a' between them (film is said 'fi-lam'). The standard spelling keeps the pair together (फ़िल्म).",
+    "profiles": ["traditional"],
+    "pairs": [["L", "M"]],
+    "vowel": "a",
+    "loss": 0.5,
+    "ruleId": "hi-final-lm", "source": "pal", "confidence": "medium",
+    "why": "A final L + M probably gets a weak vowel in between (film is said 'fi-lam'). The study cites this from earlier work, and a small study of Pilibhit speakers gives the same example."
+  },
+  "alternative": {
+    "about": "A second pronunciation shown under 'Also heard' for the first speaker group.",
+    "profiles": ["traditional"],
+    "swap": { "f": "ph", "sh": "s" },
+    "note": "Rural and older speakers are reported to say F as a P with a puff of air and SH as S (Wikipedia, \"Hindustani phonology\")."
+  },
+  "glides": {
+    "about": "Two vowels in a row. After the listed English vowels a Y sound (य) is written before a following 'a' or 'aa' (Victoria ends in िया).",
+    "Y": { "after": ["IY", "IH", "EY", "AY", "OY"], "before": ["a", "aa"] },
+    "W": { "after": ["AW"], "before": ["a", "aa"] }
+  },
+  "vowelLetters": {
+    "about": "The Hindi vowels: the letter used at the start of a word or after another vowel, the sign (matra) used after a consonant, and the respelling. The vowel 'a' has no sign: a consonant letter carries it by itself. ऍ and औ are listed for people who edit the rules; the rules below do not use them.",
+    "a": { "letter": "अ", "matra": "", "roman": "a", "ipa": "ə" },
+    "aa": { "letter": "आ", "matra": "ा", "roman": "aa", "ipa": "aː" },
+    "i": { "letter": "इ", "matra": "ि", "roman": "i", "ipa": "ɪ" },
+    "ii": { "letter": "ई", "matra": "ी", "roman": "ee", "ipa": "iː" },
+    "u": { "letter": "उ", "matra": "ु", "roman": "u", "ipa": "ʊ" },
+    "uu": { "letter": "ऊ", "matra": "ू", "roman": "oo", "ipa": "uː" },
+    "e": { "letter": "ए", "matra": "े", "roman": "e", "ipa": "eː" },
+    "ae": { "letter": "ऐ", "matra": "ै", "roman": "ae", "ipa": "æː" },
+    "o": { "letter": "ओ", "matra": "ो", "roman": "o", "ipa": "oː" },
+    "aw": { "letter": "ऑ", "matra": "ॉ", "roman": "aw", "ipa": "ɔ" },
+    "ae2": { "letter": "ऍ", "matra": "ॅ", "roman": "ae", "ipa": "æ" },
+    "au": { "letter": "औ", "matra": "ौ", "roman": "au", "ipa": "ɔː" }
+  },
+  "vowels": {
+    "about": "English vowel to Hindi vowel, as an ordered list; the first matching rule wins. 'to' lists keys of vowelLetters separated by spaces; a capital letter is a consonant from 'consonants' (Y, W or R). 'roman' replaces the respelling of the whole group. A Y at the front of 'to' is the quick Y that British English has in 'new' and 'tube'. Conditions: stress (main, any, none, notMain), letters (the vowel letters that spell the sound), initial (first sound of the word), beforeR (an R follows and no vowel comes after it), beforeRV (an R follows and a vowel comes after it), beforeVowel, beforeWeakVowel (the next sound is an unstressed vowel), wordEnd, lastSyl, notLastSyl, firstSyl, notFirstSyl, rest and prev (patterns over the English sounds after and before), word (pattern over the spelling).",
+    "summaryRule": {
+      "ruleId": "hi-vowels",
+      "source": "pal",
+      "confidence": "medium",
+      "why": "Each English vowel is replaced by the nearest Hindi vowel. In a study of Indian speakers of English, the vowels of 'day' and 'go' were single steady vowels, the vowel of 'cup' was the weak 'a', and weak vowels often followed the spelling."
+    },
+    "usualLetters": {
+      "about": "For lining up vowel sounds with the spelling: the letters that usually spell each stressed vowel.",
+      "AA": "^(a|o|au|e)",
+      "AE": "^(a|ai|au)",
+      "AH": "^(u|o|ou|oo|a)",
+      "AO": "^(o|a|au|ou|oa|oo)",
+      "AW": "^(ou|o|au)",
+      "AY": "^(i|y|ie|ei|uy|ai|eye|ye|ui)",
+      "EH": "^(e|ea|a|ai|ie|ue|ei)",
+      "ER": "",
+      "EY": "^(a|ai|ay|ei|ey|ea|e$|ee)",
+      "IH": "^(i|y|e|ui|ee|ie|u)",
+      "IY": "^(e|ee|ea|i|y|ie|ei|ey|eo)",
+      "OW": "^(o|oa|ou|oe|eau|au)",
+      "OY": "^(oi|oy)",
+      "UH": "^(u|oo|ou|o)",
+      "UW": "^(u|oo|ou|e|ue|ui|o|eu|oe)"
+    },
+    "rules": [
+      { "phone": "AA", "letters": "^a", "prev": "(^| )W$", "word": "^wa", "to": "aw", "loss": 0.05 },
+      { "phone": "AA", "letters": "^o", "to": "aw", "loss": 0.05 },
+      { "phone": "AA", "to": "aa" },
+
+      { "phone": "AE", "initial": true, "to": "e", "loss": 0.1 },
+      { "phone": "AE", "stress": "any", "word": "mast|bask|cast|fast|past|task|mask|glass|grass|class|^last", "rest": "^S", "to": "aa", "loss": 0.1 },
+      { "phone": "AE", "to": "ae" },
+
+      { "phone": "AH", "wordEnd": true, "word": "^the$", "to": "a" },
+      { "phone": "AH", "wordEnd": true, "to": "aa", "loss": 0.1 },
+      { "phone": "AH", "word": "^and$", "to": "e", "loss": 0.1 },
+      { "phone": "AH", "word": "^of$", "to": "aw", "loss": 0.1 },
+      { "phone": "AH", "stress": "any", "to": "a" },
+      { "phone": "AH", "firstSyl": true, "word": "^mc", "to": "ae", "loss": 0.1 },
+      { "phone": "AH", "lastSyl": true, "rest": "^N$", "word": "man$", "to": "ae", "loss": 0.1 },
+      { "phone": "AH", "prev": "(SH|ZH)$", "rest": "^N( |$)", "to": "a" },
+      { "phone": "AH", "prev": "Y$", "to": "a" },
+      { "phone": "AH", "letters": "^i", "to": "i", "loss": 0.15 },
+      { "phone": "AH", "letters": "^e$", "rest": "^(N|L|M)( (Z|S))?$", "to": "a" },
+      { "phone": "AH", "letters": "^e$", "to": "e", "loss": 0.15 },
+      { "phone": "AH", "letters": "^o$", "notLastSyl": true, "to": "o", "loss": 0.15 },
+      { "phone": "AH", "letters": "^u$", "notLastSyl": true, "to": "u", "loss": 0.15 },
+      { "phone": "AH", "letters": "^a$", "notFirstSyl": true, "notLastSyl": true, "rest": "^([A-Z]+ ){1,2}(AA|AE|AH|AO|AW|AY|EH|ER|EY|IH|IY|OW|OY|UH|UW)", "to": "aa", "loss": 0.15 },
+      { "phone": "AH", "to": "a" },
+
+      { "phone": "AO", "beforeRV": true, "to": "o", "loss": 0.1 },
+      { "phone": "AO", "to": "aw", "loss": 0.05 },
+
+      { "phone": "AW", "beforeVowel": true, "to": "aa", "loss": 0.1 },
+      { "phone": "AW", "to": "aa u", "roman": "au" },
+
+      { "phone": "AY", "beforeVowel": true, "to": "aa", "roman": "aa" },
+      { "phone": "AY", "wordEnd": true, "to": "aa ii", "roman": "ai" },
+      { "phone": "AY", "to": "aa i", "roman": "ai" },
+
+      { "phone": "EH", "beforeR": true, "to": "e Y a", "loss": 0.1 },
+      { "phone": "EH", "beforeRV": true, "letters": "^a", "to": "ae", "loss": 0.1 },
+      { "phone": "EH", "to": "e" },
+
+      { "phone": "ER", "stress": "none", "letters": "^o", "notLastSyl": true, "to": "o R", "loss": 0.15 },
+      { "phone": "ER", "to": "a R", "loss": 0.1 },
+
+      { "phone": "EY", "to": "e", "loss": 0.1 },
+
+      { "phone": "IH", "beforeR": true, "to": "i Y a", "loss": 0.1 },
+      { "phone": "IH", "stress": "none", "letters": "^e$", "to": "e", "loss": 0.15 },
+      { "phone": "IH", "to": "i" },
+
+      { "phone": "IY", "beforeWeakVowel": true, "to": "i" },
+      { "phone": "IY", "beforeR": true, "to": "ii Y a", "loss": 0.1 },
+      { "phone": "IY", "stress": "any", "to": "ii" },
+      { "phone": "IY", "wordEnd": true, "to": "ii" },
+      { "phone": "IY", "letters": "^(y|ey|ee|ie)$", "to": "ii" },
+      { "phone": "IY", "to": "i" },
+
+      { "phone": "OW", "to": "o", "loss": 0.1 },
+
+      { "phone": "OY", "to": "aw i", "roman": "oy" },
+
+      { "phone": "UH", "to": "u" },
+
+      { "phone": "UW", "prev": "(^| )(T|D|N)$", "letters": "^(u|ew|eu|ue|e)$", "to": "Y uu" },
+      { "phone": "UW", "to": "uu" }
+    ]
+  },
+  "limits": [
+    "Results have not been checked by native speakers.",
+    "The measurements behind most rules are of Indian speakers talking in English. They are used as a stand-in for how a name is said inside Hindi.",
+    "Stress and tone are not predicted.",
+    "The pack covers Hindi only. Other Indian languages, such as Tamil, Bengali or Marathi, follow different habits.",
+    "The Devanagari shown is the spelling the rules predict. Company-chosen spellings often differ.",
+    "The spelling rules follow Hindi Wikipedia titles. A title sometimes keeps a spelling that differs from how people say the name.",
+    "The respelling and the Devanagari can differ. The standard spelling keeps S plus a consonant together (स्कूल for 'school'), while many speakers probably say a short 'i' in front ('is-kool'). The same holds for the weak vowel in 'fi-lam' (फ़िल्म).",
+    "The dot under फ़ and ज़ is often left out in everyday writing, so फ and ज are common spellings of the same names.",
+    "The two speaker groups are a simplification. Which sounds a person keeps depends on schooling, region and age. The short 'i' before S plus a consonant is reported for Uttar Pradesh and Bihar and is probably rarer elsewhere.",
+    "Rural and older speakers are reported to say F as a P with a puff of air and SH as S. This is shown under 'Also heard' and kept out of the main result, because the same source calls F and SH well established in Hindi and a study of English-exposed speakers found F kept in 98% of cases.",
+    "Z is shown as J for most speakers and as Z for English-exposed speakers. One study of English-exposed Hindi speakers found Z said as S in about half of cases; that finding is used only for a final S after a consonant.",
+    "Groups of consonants are shown as kept. Some speakers probably add a short vowel inside them, and this is not predicted.",
+    "Names that are not English-style are read the English way, so a French, German or Japanese name will often come out wrong.",
+    "The vowel of 'cat' is written ै. Some writers use ॅ (ऍ) for it.",
+    "English sounds come from an American pronouncing dictionary. Hindi spellings often follow British English, so some vowels differ (for example the first vowel of 'Fanta')."
+  ],
+  "accuracyData": {
+    "about": "The predicted Devanagari compared with Hindi Wikipedia article titles (scripts/build-hi-benchmark.ts, scripts/run-hi-benchmark.ts). Nothing is removed from either side before comparing. Rules were tuned on the tuning list only. The held-out list was run once after the rules were fixed; its results were then read to describe weaknesses, and no rule was changed afterwards. 'ignoringDot' is the same comparison with the dot under फ़ and ज़ removed from both sides.",
+    "measured": "2026-11-18",
+    "tune": { "names": 156, "exact": 90, "meanSimilarity": 91.6, "ignoringDot": { "exact": 97, "meanSimilarity": 92.5 }, "setAside": 7, "otherOrigin": 12 },
+    "holdout": { "names": 92, "exact": 31, "meanSimilarity": 83.5, "ignoringDot": { "exact": 31, "meanSimilarity": 83.8 }, "setAside": 0, "otherOrigin": 0 }
+  },
+  "market": {
+    "code": "IN",
+    "country": "India"
+  },
+  "voiceLang": "hi",
+  "scriptNote": "The Devanagari spelling the rules predict. Companies choose their own spellings, and these often differ.",
+  "validation": {
+    "nativeChecked": false,
+    "note": "Not checked by native speakers. The rules come from three published studies of Indian speakers of English, two Wikipedia articles, and the spelling of English names in Hindi Wikipedia titles."
+  },
+  "speakerNote": "The two groups differ in Z, in the short 'i' added before S plus a consonant, and in the weak vowel inside a final L + M. Z as J is in the first group because the source says most Hindi speakers replace Z with J. F as an aspirated P and SH as S are reported for rural and older speakers only, so they are shown as a second pronunciation."
+}

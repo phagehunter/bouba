@@ -1,0 +1,945 @@
+{
+  "id": "th",
+  "name": "Thai",
+  "packVersion": "0.0.0-s5",
+  "about": "How Thai speakers adapt names written in English spelling. Every rule names its source and a confidence level. Edit this file to correct or add rules; no programming is needed.",
+  "profiles": {
+    "traditional": "Everyday casual speech. Sounds that Thai does not allow at the end of a syllable are replaced or dropped.",
+    "younger": "Also speakers who use English often, and careful speech. A final S or F is often kept."
+  },
+  "sources": {
+    "tingsabadh1993": "Tingsabadh & Abramson (1993), Thai. Journal of the IPA 23(1):24-28, as summarized on the Wikipedia page 'Thai phonology'.",
+    "tinglish": "Wikipedia page 'Tinglish', citing Kenstowicz & Suchato (2006) and Nacaskul (1979).",
+    "royal1989": "Royal Institute rules for transcribing English words into Thai, Royal Gazette vol. 106 part 153, 14 Sept 1989 (read by text recognition from a scan).",
+    "nusartlert2013": "Nusartlert (2013), Khon Kaen University community study of final [s] and [l] in English loanwords; 40 speakers.",
+    "unverified": "Background knowledge of the pack author; not checked against a source. Corrections welcome."
+  },
+  "effortPoints": {
+    "substitution": 6,
+    "epenthesis": 12,
+    "finalChanged": 10,
+    "finalDropped": 8,
+    "clusterKept": 5,
+    "rDropped": 1,
+    "codaAfterDiphthong": 10,
+    "nonNativeFinalKept": 10
+  },
+  "sounds": {
+    "ph": {
+      "roman": "p",
+      "panphon": "p"
+    },
+    "p": {
+      "roman": "p",
+      "panphon": "p"
+    },
+    "b": {
+      "roman": "b",
+      "panphon": "b"
+    },
+    "th": {
+      "roman": "t",
+      "panphon": "t"
+    },
+    "t": {
+      "roman": "t",
+      "panphon": "t"
+    },
+    "d": {
+      "roman": "d",
+      "panphon": "d"
+    },
+    "kh": {
+      "roman": "k",
+      "panphon": "k"
+    },
+    "k": {
+      "roman": "g",
+      "romanFinal": "k",
+      "panphon": "k"
+    },
+    "ch": {
+      "roman": "ch",
+      "panphon": "t͡ɕ"
+    },
+    "c": {
+      "roman": "j",
+      "panphon": "t͡ɕ"
+    },
+    "f": {
+      "roman": "f",
+      "panphon": "f"
+    },
+    "s": {
+      "roman": "s",
+      "panphon": "s"
+    },
+    "h": {
+      "roman": "h",
+      "panphon": "h"
+    },
+    "m": {
+      "roman": "m",
+      "panphon": "m"
+    },
+    "n": {
+      "roman": "n",
+      "panphon": "n"
+    },
+    "ng": {
+      "roman": "ng",
+      "panphon": "ŋ"
+    },
+    "l": {
+      "roman": "l",
+      "panphon": "l"
+    },
+    "r": {
+      "roman": "r",
+      "panphon": "r"
+    },
+    "w": {
+      "roman": "w",
+      "panphon": "w",
+      "romanFinal": "o"
+    },
+    "y": {
+      "roman": "y",
+      "panphon": "j"
+    }
+  },
+  "vowelRoman": {
+    "a": "a",
+    "aa": "ah",
+    "i": "i",
+    "ii": "ee",
+    "u": "u",
+    "uu": "oo",
+    "e": "e",
+    "ee": "ay",
+    "ae": "ae",
+    "oo": "oh",
+    "aw": "aw",
+    "er": "er",
+    "ia": "ia",
+    "ua": "ua",
+    "ai": "ai",
+    "aai": "ai",
+    "ao": "ao",
+    "oi": "oi",
+    "iu": "ew"
+  },
+  "onsets": {
+    "P": {
+      "to": "ph",
+      "thai": "พ"
+    },
+    "B": {
+      "to": "b",
+      "thai": "บ"
+    },
+    "T": {
+      "to": "th",
+      "thai": "ท"
+    },
+    "D": {
+      "to": "d",
+      "thai": "ด"
+    },
+    "K": {
+      "to": "kh",
+      "thai": "ค"
+    },
+    "G": {
+      "to": "k",
+      "thai": "ก",
+      "loss": 0.1,
+      "effort": 0,
+      "ruleId": "th-on-g",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "Thai has no hard G; speakers use an unaspirated K, which sounds very close."
+    },
+    "CH": {
+      "to": "ch",
+      "thai": "ช",
+      "loss": 0
+    },
+    "JH": {
+      "to": "c",
+      "thai": "จ",
+      "loss": 0.1,
+      "effort": 0,
+      "ruleId": "th-on-j",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "English J becomes the Thai J-like sound (จ), which is very close."
+    },
+    "F": {
+      "to": "f",
+      "thai": "ฟ"
+    },
+    "V": {
+      "to": "w",
+      "thai": "ว",
+      "missing": true,
+      "ruleId": "th-on-v",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "Thai has no V sound; speakers say W.",
+      "tip": "If the V sound is central to the name, expect it to be heard as W in Thailand.",
+      "loss": 0.5
+    },
+    "TH": {
+      "to": "th",
+      "thai": "ท",
+      "missing": true,
+      "ruleId": "th-on-th",
+      "confidence": "medium",
+      "source": "royal1989",
+      "why": "Thai has no TH sound (as in 'think'); speakers say T.",
+      "tip": "TH and T sound the same in Thai."
+    },
+    "DH": {
+      "to": "d",
+      "thai": "ด",
+      "missing": true,
+      "ruleId": "th-on-dh",
+      "confidence": "medium",
+      "source": "tinglish",
+      "why": "Thai has no TH sound (as in 'this'); speakers say D."
+    },
+    "S": {
+      "to": "s",
+      "thai": "ซ",
+      "thaiInCluster": "ส"
+    },
+    "Z": {
+      "to": "s",
+      "thai": "ซ",
+      "missing": true,
+      "effort": 3,
+      "ruleId": "th-on-z",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "Thai has no Z sound; speakers say S.",
+      "tip": "Z and S sound the same in Thai, so a name that relies on the difference will lose it."
+    },
+    "SH": {
+      "to": "ch",
+      "thai": "ช",
+      "missing": true,
+      "ruleId": "th-on-sh",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "Thai has no SH sound; speakers say CH.",
+      "tip": "SH and CH sound the same in Thai, so a name that relies on the difference will lose it."
+    },
+    "ZH": {
+      "to": "ch",
+      "thai": "ช",
+      "missing": true,
+      "ruleId": "th-on-zh",
+      "confidence": "low",
+      "source": "unverified",
+      "why": "Thai has no ZH sound (as in 'vision'); CH is the likely replacement."
+    },
+    "HH": {
+      "to": "h",
+      "thai": "ฮ"
+    },
+    "M": {
+      "to": "m",
+      "thai": "ม"
+    },
+    "N": {
+      "to": "n",
+      "thai": "น"
+    },
+    "NG": {
+      "to": "ng",
+      "thai": "ง"
+    },
+    "L": {
+      "to": "l",
+      "thai": "ล"
+    },
+    "R": {
+      "to": "r",
+      "thai": "ร",
+      "loss": 0
+    },
+    "W": {
+      "to": "w",
+      "thai": "ว"
+    },
+    "Y": {
+      "to": "y",
+      "thai": "ย"
+    }
+  },
+  "onsetsUnstressed": {
+    "about": "In a later, unstressed syllable English P, T, K have no puff of air, and Thai writes and says them with its plain (unaspirated) letters: computer, market, disco. Source: royal1989.",
+    "P": {
+      "to": "p",
+      "thai": "ป"
+    },
+    "T": {
+      "to": "t",
+      "thai": "ต"
+    },
+    "K": {
+      "to": "k",
+      "thai": "ก"
+    }
+  },
+  "afterS": {
+    "about": "After S, English P, T, K have no puff of air; Thai uses its plain letters (spray, Stanford, screw). Source: royal1989.",
+    "P": {
+      "to": "p",
+      "thai": "ป"
+    },
+    "T": {
+      "to": "t",
+      "thai": "ต"
+    },
+    "K": {
+      "to": "k",
+      "thai": "ก"
+    }
+  },
+  "clusters": {
+    "about": "Two consonants at the start of a syllable. 'native' = Thai has this group. 'loan' = not native but usually kept in careful speech. Any group not listed is split by an inserted short 'a'.",
+    "native": [
+      "P R",
+      "P L",
+      "T R",
+      "K R",
+      "K L",
+      "K W",
+      "G R",
+      "G L",
+      "G W"
+    ],
+    "loan": [
+      "B R",
+      "B L",
+      "D R",
+      "F R",
+      "F L",
+      "TH R",
+      "SH R"
+    ],
+    "loanRule": {
+      "ruleId": "th-cl-loan",
+      "confidence": "medium",
+      "source": "tinglish",
+      "why": "This consonant pair is not native to Thai. It is usually kept in careful speech, but the R or L is often dropped in casual speech.",
+      "tip": "Expect some speakers to drop the R or L. A single consonant at the start is said the same way by both speaker groups."
+    },
+    "epenthesisRule": {
+      "ruleId": "th-cl-epenthesis",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "Thai cannot start a syllable with this consonant pair, so a short 'a' is inserted between them. This adds a syllable.",
+      "tip": "Starting with a single consonant (or a pair Thai already has, such as PR, PL, TR, KR, KL, KW) avoids the extra syllable."
+    }
+  },
+  "codas": {
+    "about": "One consonant at the end of a syllable. Thai allows only P, T, K, M, N, NG (plus W and Y) there. 'thai' is the letter used in the official spelling, which keeps the original consonant even when it is said differently.",
+    "traditional": {
+      "P": {
+        "to": "p",
+        "thai": "ป"
+      },
+      "B": {
+        "to": "p",
+        "thai": "บ",
+        "effort": 2,
+        "ruleId": "th-co-b",
+        "confidence": "medium",
+        "source": "tingsabadh1993",
+        "why": "A final B is said as P."
+      },
+      "T": {
+        "to": "t",
+        "thai": "ต"
+      },
+      "D": {
+        "to": "t",
+        "thai": "ด",
+        "effort": 2,
+        "ruleId": "th-co-d",
+        "confidence": "medium",
+        "source": "tingsabadh1993",
+        "why": "A final D is said as T."
+      },
+      "K": {
+        "to": "k",
+        "thai": "ก"
+      },
+      "G": {
+        "to": "k",
+        "thai": "ก",
+        "effort": 2,
+        "ruleId": "th-co-g",
+        "confidence": "medium",
+        "source": "tingsabadh1993",
+        "why": "A final G is said as K."
+      },
+      "M": {
+        "to": "m",
+        "thai": "ม"
+      },
+      "N": {
+        "to": "n",
+        "thai": "น"
+      },
+      "NG": {
+        "to": "ng",
+        "thai": "ง"
+      },
+      "L": {
+        "to": "n",
+        "thai": "ล",
+        "changed": true,
+        "ruleId": "th-co-l",
+        "confidence": "high",
+        "source": "nusartlert2013",
+        "why": "Thai does not allow L at the end of a syllable; it is usually said as N (sometimes as a W sound). In one community study nobody kept a final L more than 7% of the time.",
+        "alt": {
+          "to": "w",
+          "note": "Some speakers replace the N with a short W-like glide."
+        },
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "S": {
+        "to": "t",
+        "thai": "ส",
+        "changed": true,
+        "ruleId": "th-co-s",
+        "confidence": "high",
+        "source": "nusartlert2013",
+        "why": "Thai does not traditionally allow S at the end of a syllable; it is said as T. Speakers over 60 kept a final S 0-5% of the time.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "Z": {
+        "to": "t",
+        "thai": "ซ",
+        "changed": true,
+        "ruleId": "th-co-z",
+        "confidence": "medium",
+        "source": "tinglish",
+        "why": "A final Z is treated like a final S and said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "F": {
+        "to": "p",
+        "thai": "ฟ",
+        "changed": true,
+        "ruleId": "th-co-f",
+        "confidence": "high",
+        "source": "tinglish",
+        "why": "Thai does not traditionally allow F at the end of a syllable; it is said as P.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "V": {
+        "to": "p",
+        "thai": "ฟ",
+        "changed": true,
+        "ruleId": "th-co-v",
+        "confidence": "high",
+        "source": "tinglish",
+        "why": "A final V is said as P (or F).",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "SH": {
+        "to": "t",
+        "thai": "ช",
+        "changed": true,
+        "ruleId": "th-co-sh",
+        "confidence": "high",
+        "source": "tinglish",
+        "why": "A final SH is said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "CH": {
+        "to": "t",
+        "thai": "ช",
+        "changed": true,
+        "ruleId": "th-co-ch",
+        "confidence": "high",
+        "source": "tinglish",
+        "why": "A final CH is said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "JH": {
+        "to": "t",
+        "thai": "จ",
+        "changed": true,
+        "ruleId": "th-co-j",
+        "confidence": "medium",
+        "source": "tinglish",
+        "why": "A final J sound is said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "TH": {
+        "to": "t",
+        "thai": "ท",
+        "changed": true,
+        "ruleId": "th-co-th",
+        "confidence": "high",
+        "source": "tinglish",
+        "why": "A final TH is said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "DH": {
+        "to": "t",
+        "thai": "ท",
+        "changed": true,
+        "ruleId": "th-co-dh",
+        "confidence": "low",
+        "source": "unverified",
+        "why": "A final voiced TH is said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      },
+      "ZH": {
+        "to": "t",
+        "thai": "ช",
+        "changed": true,
+        "ruleId": "th-co-zh",
+        "confidence": "low",
+        "source": "unverified",
+        "why": "A final ZH is said as T.",
+        "tip": "If the ending matters, a name that ends in a vowel, N, M or NG keeps its ending in Thai."
+      }
+    },
+    "younger": {
+      "S": {
+        "to": "s",
+        "thai": "ส",
+        "kept": true,
+        "ruleId": "th-co-s-young",
+        "confidence": "high",
+        "source": "nusartlert2013",
+        "why": "Younger speakers often keep a final S, a sound borrowed from English: 23% of the time in casual talk and 70% in careful reading among under-30s in one community study.",
+        "tip": "Younger speakers keep this ending, but older speakers do not; a vowel, N, M or NG ending is said the same way by both speaker groups."
+      },
+      "Z": {
+        "to": "s",
+        "thai": "ซ",
+        "kept": true,
+        "ruleId": "th-co-z-young",
+        "confidence": "high",
+        "source": "nusartlert2013",
+        "why": "Younger speakers who keep the final sound say a final Z as S.",
+        "tip": "Younger speakers keep this ending, but older speakers do not; a vowel, N, M or NG ending is said the same way by both speaker groups."
+      },
+      "F": {
+        "to": "f",
+        "thai": "ฟ",
+        "kept": true,
+        "ruleId": "th-co-f-young",
+        "confidence": "medium",
+        "source": "tinglish",
+        "why": "Speakers familiar with English often keep a final F.",
+        "tip": "Younger speakers keep this ending, but older speakers do not; a vowel, N, M or NG ending is said the same way by both speaker groups."
+      },
+      "V": {
+        "to": "f",
+        "thai": "ฟ",
+        "kept": true,
+        "ruleId": "th-co-v-young",
+        "confidence": "medium",
+        "source": "tinglish",
+        "why": "Speakers familiar with English often say a final V as F.",
+        "tip": "Younger speakers keep this ending, but older speakers do not; a vowel, N, M or NG ending is said the same way by both speaker groups."
+      }
+    }
+  },
+  "codaClusters": {
+    "about": "Two or more consonants at the end of a syllable. R is always silent. Normally only the first consonant is said and the rest are silent. Exception: L before a lip or back-of-mouth consonant (film, golf, milk) is the silent one.",
+    "rSilent": {
+      "ruleId": "th-co-r",
+      "confidence": "high",
+      "source": "royal1989",
+      "why": "An R after a vowel is silent, as in British English."
+    },
+    "dropped": {
+      "ruleId": "th-co-cluster",
+      "confidence": "high",
+      "source": "tinglish",
+      "why": "Thai allows only one consonant at the end of a syllable, so this one is not said.",
+      "tip": "Thai keeps only one consonant at the end of a syllable. Ending on a single consonant, or a vowel, avoids the loss."
+    },
+    "lBeforeLabialVelar": [
+      "P",
+      "B",
+      "F",
+      "V",
+      "M",
+      "K",
+      "G"
+    ],
+    "lDropped": {
+      "ruleId": "th-co-l-cluster",
+      "confidence": "medium",
+      "source": "royal1989",
+      "why": "In this consonant pair the L is the silent one (as in the Thai forms of 'film' and 'golf').",
+      "tip": "Thai keeps only one consonant at the end of a syllable. Ending on a single consonant, or a vowel, avoids the loss."
+    },
+    "afterDiphthong": {
+      "ruleId": "th-co-diphthong",
+      "confidence": "medium",
+      "source": "unverified",
+      "why": "After the vowel sounds 'ai', 'ao' and 'oi', Thai does not allow another consonant, so the final consonant is usually silent (the Thai form of 'Line' is said 'lai').",
+      "tip": "After an 'eye', 'ow' or 'oy' sound the last consonant is usually lost. Ending on that vowel sound, or using a plain vowel before the consonant, keeps more of the name."
+    },
+    "afterDiphthongKeptByYounger": [
+      "P",
+      "T",
+      "K",
+      "S",
+      "F"
+    ]
+  },
+  "vowels": {
+    "about": "English vowel -> Thai vowel. The first matching rule wins. Conditions: beforeR (an R follows in the same syllable), wordEnd (last sound of the word), letters (a pattern matched against the vowel letters in the spelling), wordEndsWith (a pattern matched against the end of the spelling, used only for the last syllable), unstressed. Thai often follows the spelling for weak vowels.",
+    "rules": [
+      {
+        "phone": "AA",
+        "beforeR": true,
+        "to": "aa"
+      },
+      {
+        "phone": "AA",
+        "letters": "^(o|au|aw|ou)",
+        "to": "aw"
+      },
+      {
+        "phone": "AA",
+        "wordMatches": "^[^a]*o[^a]*$",
+        "to": "aw"
+      },
+      {
+        "phone": "AA",
+        "to": "aa"
+      },
+      {
+        "phone": "AE",
+        "to": "ae",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEndsWith": "[^aeiou]le$",
+        "lastSyllable": true,
+        "to": "er",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEndsWith": "el$",
+        "lastSyllable": true,
+        "to": "ee",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEndsWith": "(ul|ull)$",
+        "lastSyllable": true,
+        "to": "u",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEndsWith": "ton$",
+        "lastSyllable": true,
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEnd": true,
+        "letters": "^e",
+        "to": "er",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "wordEnd": true,
+        "to": "aa",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "letters": "^io",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "letters": "^a",
+        "open": true,
+        "notFirst": true,
+        "to": "aa",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "letters": "^e",
+        "to": "e",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "letters": "^(i|y)",
+        "to": "i",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "letters": "^o$",
+        "to": "aw",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "unstressed": true,
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "to": "a"
+      },
+      {
+        "phone": "AO",
+        "to": "aw"
+      },
+      {
+        "phone": "AW",
+        "to": "ao"
+      },
+      {
+        "phone": "AY",
+        "wordEnd": true,
+        "letters": "^y$",
+        "to": "aai"
+      },
+      {
+        "phone": "AY",
+        "to": "ai"
+      },
+      {
+        "phone": "OY",
+        "to": "oi"
+      },
+      {
+        "phone": "EH",
+        "beforeR": true,
+        "to": "ae",
+        "loss": 0.1
+      },
+      {
+        "phone": "EH",
+        "letters": "^(ai|a)",
+        "to": "ae",
+        "loss": 0.1
+      },
+      {
+        "phone": "EH",
+        "to": "e"
+      },
+      {
+        "phone": "ER",
+        "to": "er",
+        "loss": 0.1
+      },
+      {
+        "phone": "EY",
+        "to": "ee",
+        "loss": 0.15
+      },
+      {
+        "phone": "IH",
+        "beforeR": true,
+        "to": "ia"
+      },
+      {
+        "phone": "IH",
+        "to": "i"
+      },
+      {
+        "phone": "IY",
+        "beforeR": true,
+        "to": "ia"
+      },
+      {
+        "phone": "IY",
+        "to": "ii"
+      },
+      {
+        "phone": "OW",
+        "beforeR": true,
+        "to": "aw",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "to": "oo",
+        "loss": 0.15
+      },
+      {
+        "phone": "UH",
+        "beforeR": true,
+        "to": "ua"
+      },
+      {
+        "phone": "UH",
+        "to": "u"
+      },
+      {
+        "phone": "UW",
+        "beforeR": true,
+        "to": "ua"
+      },
+      {
+        "phone": "UW",
+        "to": "uu"
+      }
+    ],
+    "merges": [
+      {
+        "first": [
+          "IY",
+          "IH"
+        ],
+        "second": "AH",
+        "to": "ia"
+      },
+      {
+        "first": [
+          "UW",
+          "UH"
+        ],
+        "second": "AH",
+        "to": "ua"
+      },
+      {
+        "first": [
+          "AY"
+        ],
+        "second": "ER",
+        "to": "ai",
+        "silentR": true
+      }
+    ],
+    "yPlusOo": {
+      "to": "iu",
+      "ruleId": "th-vo-yoo",
+      "confidence": "high",
+      "source": "royal1989",
+      "why": "Consonant + 'yoo' (as in 'cute') becomes the Thai vowel 'iu'."
+    },
+    "diphthongs": [
+      "ai",
+      "ao",
+      "oi"
+    ],
+    "summaryRule": {
+      "ruleId": "th-vo-nearest",
+      "confidence": "medium",
+      "source": "tinglish",
+      "why": "Vowels are replaced by the nearest Thai vowels; English gliding vowels (as in 'day', 'go') become long plain vowels."
+    }
+  },
+  "limits": [
+    "Tone is not predicted. Thai gives every syllable a tone, and for borrowed names the choice is not reliably predictable.",
+    "The Thai spelling shown follows the Royal Institute's 1989 rules without tone marks. Companies often choose a different spelling.",
+    "Rules marked 'unverified' or 'low' confidence have not been checked against a published source.",
+    "The age figures come from one community in north-east Thailand (40 speakers). Bangkok may differ."
+  ],
+  "profileLabels": {
+    "traditional": "Most speakers",
+    "younger": "Younger speakers"
+  },
+  "market": {
+    "code": "TH",
+    "country": "Thailand"
+  },
+  "voiceLang": "th",
+  "scriptName": "Thai",
+  "validation": {
+    "nativeChecked": false,
+    "note": "Not yet checked by native speakers."
+  },
+  "respellingKey": [
+    [
+      "ah",
+      "as in father"
+    ],
+    [
+      "ay",
+      "as in day"
+    ],
+    [
+      "ee",
+      "as in see"
+    ],
+    [
+      "oh",
+      "as in go"
+    ],
+    [
+      "oo",
+      "as in too"
+    ],
+    [
+      "aw",
+      "as in law"
+    ],
+    [
+      "ae",
+      "as in cat"
+    ],
+    [
+      "er",
+      "as in British \"her\", with no R sound"
+    ],
+    [
+      "ai",
+      "as in eye"
+    ],
+    [
+      "ao",
+      "as in now"
+    ],
+    [
+      "ew",
+      "as in few"
+    ],
+    [
+      "ia",
+      "as in idea"
+    ],
+    [
+      "g",
+      "as in go, said softly (close to K)"
+    ]
+  ],
+  "accuracy": "The predicted Thai spelling was compared with the real Thai spelling of well-known names, ignoring tone marks. On two lists the rules had not been adjusted to (58 brands and cities; 39 US state names), the average similarity was 84.9% and 86.8%, with 43% and 59% matching exactly. This measures spelling agreement, which stands in for pronunciation.",
+  "speakerNote": "Thai speakers differ, mainly by age and exposure to English. In one community study, under-30s kept a final S 23% of the time in casual talk and 70% when reading carefully; over-60s almost never did. For a name aimed at the general public, \"Most speakers\" is probably the better guide.",
+  "scriptNote": "How the name would be written under the Royal Institute's 1989 rules, without tone marks. Companies are free to choose a different spelling, and often do."
+}

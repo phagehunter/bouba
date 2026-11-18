@@ -1,0 +1,62 @@
+{
+ "source": "Unicode CLDR, supplemental/territoryInfo.json (figures are approximate)",
+ "markets": {
+  "TH": {
+   "country": "Thailand",
+   "population": 69921000,
+   "languagePercent": 80,
+   "speakers": 55936800
+  },
+  "MM": {
+   "country": "Myanmar",
+   "population": 57527100,
+   "languagePercent": 64,
+   "speakers": 36817344
+  },
+  "JP": {
+   "country": "Japan",
+   "population": 123202000,
+   "languagePercent": 95,
+   "speakers": 117041900
+  },
+  "IN": {
+   "country": "India",
+   "population": 1409130000,
+   "languagePercent": 41,
+   "speakers": 577743300
+  },
+  "CN": {
+   "country": "China",
+   "population": 1416040000,
+   "languagePercent": 90,
+   "speakers": 1274436000
+  },
+  "EG": {
+   "country": "Arab countries",
+   "population": 447611120,
+   "languagePercent": 80,
+   "speakers": 360272715,
+   "countries": [
+    "EG",
+    "SA",
+    "DZ",
+    "IQ",
+    "MA",
+    "SD",
+    "YE",
+    "SY",
+    "TN",
+    "JO",
+    "AE",
+    "LY",
+    "LB",
+    "OM",
+    "KW",
+    "MR",
+    "QA",
+    "BH",
+    "PS"
+   ]
+  }
+ }
+}

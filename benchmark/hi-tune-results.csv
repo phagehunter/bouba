@@ -1,0 +1,176 @@
+name,origin,real_hindi,predicted_hindi,similarity_percent,exact_match
+Amazon Kindle,en-meaning,किंडलईरीडर,एमाज़ॉनकिंडल,8,no
+Pizza Hut,en,पिज़्ज़ाहट,पीटसाहट,40,no
+WhatsApp,en,वाट्सऐप,व्हटसाप,43,no
+Uber,en,उबर,यूबर,50,no
+Huawei,other,हुवावे,हूआवे,50,no
+Adidas,other,एडिडास,अडीडस,50,no
+Ronald Reagan,en-meaning,रोनाल्डविलसनरीगन,रॉनल्डरेगन,50,no
+Barclays,en,बार्कलेज,बारक्लिज़,56,no
+Domino's Pizza,en,डोमिनोज़पिज़्ज़ा,डॉमिनोज़पीटसा,56,no
+Amazon,en,अमेज़न,एमाज़ॉन,57,no
+Nestlé,other,नेस्ले,नेस्ट्ल,57,no
+Thomas Edison,en-meaning,थॉमसऐल्वाएडीसन,थॉमसएडिसन,57,no
+Apple,en,एप्पल,एपल,60,no
+LinkedIn,en,लिंक्डइन,लिंकटिन,63,no
+Ford Motor,en,फोर्डमोटर्स,फ़ॉर्डमोटर,64,no
+Jaguar Cars,en,जैगुआरकारें,जैगवारकार्स,64,no
+Fanta,en,फैंटा,फ़ांटा,67,no
+Nottingham,en,नॉटिंघम,नॉटिंगहैम,67,no
+Bill Clinton,en-meaning,विलियमक्लिंटन,बिलक्लिंटन,69,no
+Chris Evans,en,क्रिसइवांस,क्रिसएवन्स,70,no
+Hillary Clinton,en-meaning,हिलेरीरोढमक्लिंटन,हिलारीक्लिंटन,71,no
+Pfizer,en,फाइजर,फ़ाइज़र,71,no
+Volkswagen,other,वॉक्सवैगन,वोल्क्सवैगन,73,no
+David Beckham,en,डेविडबेखम,डेविडबेकहैम,73,no
+Superman,en,सुपरमैन,सूपर्मैन,75,no
+Tommy Hilfiger,en,टॉमीहिलफिगर,टॉमीहिलफ़ाइगर,77,no
+Hewlett-Packard,en,हैवलेटपैकर्ड,ह्यूलेटपैकर्ड,77,no
+Winston Churchill,en,विन्सटनचर्चिल,विंस्टनचर्चिल,77,no
+Citigroup,en,सिटीग्रुप,सिटिग्रूप,78,no
+Donald Duck,en,डोनाल्डडक,डॉनल्डडक,78,no
+Microsoft PowerPoint,en,माइक्रोसॉफ्टपावरप्वाइण्ट,माइक्रोसॉफ़्टपावरपॉइन्ट,79,no
+Spotify,en,स्पॉटिफाय,स्पॉटिफ़ाई,80,no
+PayPal,en,पेपाल,पेपल,80,no
+Fortnite,en,फोर्टनाइट,फ़ॉर्टनाइट,80,no
+Reebok,en,रिबॉक,रीबॉक,80,no
+Honda,other,होंडा,हॉंडा,80,no
+iPad,en,आईपैड,आइपैड,80,no
+Southampton,en,साउथैम्प्टन,साउथहैम्पटन,82,no
+Robert Downey,en,रॉबर्टडॉनी,रॉबर्टडाउनी,82,no
+James Cameron,en,जेम्सकैमरून,जेम्सकैमेरन,82,no
+John Kennedy,en-meaning,जॉनएफकेनेडी,जॉनकेनेडी,82,no
+Cisco,en,सिस्को,सिसको,83,no
+Minecraft,en,माइनक्राफ्ट,माइनक्रैफ़्ट,83,no
+Internet Explorer,en,इण्टरनेटऍक्सप्लोरर,इंटरनेटएक्सप्लोरर,83,no
+iPhone,en,आईफ़ोन,आइफ़ोन,83,no
+Abraham Lincoln,en,अब्राहमलिंकन,एब्राहैमलिंकन,85,no
+Jennifer Lopez,en,जॅनिफ़रलोपैज़,जेनिफ़रलोपेज़,85,no
+Margaret Thatcher,en,मारग्रेटथैचर,मार्गारेटथैचर,85,no
+Facebook,en,फेसबुक,फ़ेसबुक,86,no
+TikTok,en,टिकटॉक,टिक्टॉक,86,no
+Cadbury,en,कैडबरी,कैडबेरी,86,no
+Ed Sheeran,en,एडशियरन,एडशिरन,86,no
+Chevrolet,en,शेव्रोले,शेवरोले,88,no
+Nintendo,other,निनटेंडो,निंटेंडो,88,no
+Unilever,en,यूनीलीवर,यूनिलीवर,88,no
+Nvidia,en-meaning,एनवीडिया,एनविडिया,88,no
+Iron Man,en,आयरनमैन,आयर्नमैन,88,no
+Scarlett Johansson,en,स्कार्लेटजोहानसन,स्कार्लेटयोहांसन,88,no
+Katy Perry,en,कैटीपेरी,केटीपेरी,88,no
+Goodyear Tire and Rubber,en,गुडइयरटायरएंडरबर,गुडयियरटायरएंडरबर,88,no
+Procter and Gamble,en,प्रॉक्टरएंडगैंबल,प्रॉक्टरएंडगैम्बल,88,no
+Victoria's Secret,en,विक्टोरियासीक्रेट,विक्टोरियज़सीक्रेट,89,no
+Microsoft Excel,en,माइक्रोसॉफ़्टऍक्सल,माइक्रोसॉफ़्टएक्सेल,89,no
+Netflix,en,नेटफ्लिक्स,नेटफ़्लिक्स,91,no
+Instagram,en,इंस्टाग्राम,इंस्टाग्रैम,91,no
+Kate Winslet,en,केटविंसलेट,केटविंस्लेट,91,no
+Henry Ford,en,हेनरीफ़ोर्ड,हेनरीफ़ॉर्ड,91,no
+Jurassic Park,en,जुरासिकपार्क,जुरैसिकपार्क,92,no
+Taylor Swift,en,टेलरस्विफ्ट,टेलरस्विफ़्ट,92,no
+Stephen Hawking,en,स्टीफनहॉकिंग,स्टीवनहॉकिंग,92,no
+Harley-Davidson,en,हार्लेडेविडसन,हार्लीडेविडसन,92,no
+Adobe Photoshop,en,अडोबीफोटोशॉप,अडोबीफ़ोटोशॉप,92,no
+Game of Thrones,en,गेमऑफ़थ्रोन्स,गेमऑफ़थ्रोनेस,92,no
+Morgan Freeman,en,मॉर्गनफ्रीमैन,मॉर्गनफ़्रीमैन,93,no
+Oracle Corporation,en,ओरेकलकॉर्पोरेशन,ओराकलकॉर्पोरेशन,93,no
+Steven Spielberg,en,स्टीवनस्पिलबर्ग,स्टीवनस्पीलबर्ग,93,no
+Neil Armstrong,en,नीलआर्मस्ट्रांग,नीलआर्मस्ट्रॉंग,93,no
+Daniel Radcliffe,en,डैनियलरैड्क्लिफ़,डैनियलरैडक्लिफ़,94,no
+Microsoft Windows,en,माइक्रोसॉफ्टविंडोज़,माइक्रोसॉफ़्टविंडोज़,95,no
+Starbucks,en,स्टारबक्स,स्टारबक्स,100,yes
+Google,en,गूगल,गूगल,100,yes
+Microsoft,en,माइक्रोसॉफ़्ट,माइक्रोसॉफ़्ट,100,yes
+Tesla,en,टेस्ला,टेस्ला,100,yes
+McDonald's,en,मैकडॉनल्ड्स,मैकडॉनल्ड्स,100,yes
+Pepsi,en,पेप्सी,पेप्सी,100,yes
+Coca-Cola,en,कोकाकोला,कोकाकोला,100,yes
+Nike,en,नाइकी,नाइकी,100,yes
+Burger King,en,बर्गरकिंग,बर्गरकिंग,100,yes
+YouTube,en,यूट्यूब,यूट्यूब,100,yes
+Mastercard,en,मास्टरकार्ड,मास्टरकार्ड,100,yes
+Snapchat,en,स्नैपचैट,स्नैपचैट,100,yes
+Reddit,en,रेडिट,रेडिट,100,yes
+Visa,en,वीज़ा,वीज़ा,100,yes
+American Express,en,अमेरिकनएक्सप्रेस,अमेरिकनएक्सप्रेस,100,yes
+Intel,en,इंटेल,इंटेल,100,yes
+Dell,en,डेल,डेल,100,yes
+Adobe Systems,en,अडोबीसिस्टम्स,अडोबीसिस्टम्स,100,yes
+Walmart,en,वॉलमार्ट,वॉलमार्ट,100,yes
+Subway,en,सबवे,सबवे,100,yes
+Baskin-Robbins,en,बास्किनरॉबिन्स,बास्किनरॉबिन्स,100,yes
+Kit Kat,en,किटकैट,किटकैट,100,yes
+Sprite,en,स्प्राइट,स्प्राइट,100,yes
+Red Bull,en,रेडबुल,रेडबुल,100,yes
+Johnnie Walker,en,जॉनीवॉकर,जॉनीवॉकर,100,yes
+Jeep,en,जीप,जीप,100,yes
+Land Rover,en,लैंडरोवर,लैंडरोवर,100,yes
+Boeing,en,बोइंग,बोइंग,100,yes
+The Walt Disney,en,दवॉल्टडिज़्नी,दवॉल्टडिज़्नी,100,yes
+Marvel Comics,en,मार्वलकॉमिक्स,मार्वलकॉमिक्स,100,yes
+Pixar,en,पिक्सार,पिक्सार,100,yes
+Xbox,en,एक्सबॉक्स,एक्सबॉक्स,100,yes
+PlayStation,en,प्लेस्टेशन,प्लेस्टेशन,100,yes
+Barbie,en,बार्बी,बार्बी,100,yes
+Hot Wheels,en,हॉटव्हील्स,हॉटव्हील्स,100,yes
+Ray-Ban,en,रेबैन,रेबैन,100,yes
+Dropbox,en,ड्रॉपबॉक्स,ड्रॉपबॉक्स,100,yes
+GitHub,en,गिटहब,गिटहब,100,yes
+Android,en,एंड्रॉइड,एंड्रॉइड,100,yes
+Google Chrome,en,गूगलक्रोम,गूगलक्रोम,100,yes
+Mozilla Firefox,en,मोज़िलाफ़ायरफ़ॉक्स,मोज़िलाफ़ायरफ़ॉक्स,100,yes
+Gmail,en,जीमेल,जीमेल,100,yes
+Yahoo,en,याहू,याहू,100,yes
+Wikipedia,en,विकिपीडिया,विकिपीडिया,100,yes
+eBay,en,ईबे,ईबे,100,yes
+Tesco,en,टेस्को,टेस्को,100,yes
+Walt Disney,en,वॉल्टडिज़्नी,वॉल्टडिज़्नी,100,yes
+Nokia,other,नोकिया,नोकिया,100,yes
+IKEA,other,आइकिया,आइकिया,100,yes
+Samsung,other,सैमसंग,सैमसंग,100,yes
+Toyota,other,टोयोटा,टोयोटा,100,yes
+Sony,other,सोनी,सोनी,100,yes
+Rolex,other,रोलेक्स,रोलेक्स,100,yes
+Twitter,en,ट्विटर,ट्विटर,100,yes
+Vodafone,en,वोडाफ़ोन,वोडाफ़ोन,100,yes
+British Airways,en,ब्रिटिशएयरवेज़,ब्रिटिशएयरवेज़,100,yes
+Quora,en,क्वोरा,क्वोरा,100,yes
+Blogger,en,ब्लॉगर,ब्लॉगर,100,yes
+Linux,en,लिनक्स,लिनक्स,100,yes
+Safari,en,सफ़ारी,सफ़ारी,100,yes
+Qualcomm,en,क्वालकॉम,क्वालकॉम,100,yes
+Texas Instruments,en,टेक्ससइंस्ट्रुमेंट्स,टेक्ससइंस्ट्रुमेंट्स,100,yes
+Harry Potter,en,हैरीपॉटर,हैरीपॉटर,100,yes
+Star Wars,en,स्टारवॉर्स,स्टारवॉर्स,100,yes
+Batman,en,बैटमैन,बैटमैन,100,yes
+Spider-Man,en,स्पाइडरमैन,स्पाइडरमैन,100,yes
+Breaking Bad,en,ब्रेकिंगबैड,ब्रेकिंगबैड,100,yes
+Mickey Mouse,en,मिकीमाउस,मिकीमाउस,100,yes
+Tom and Jerry,en,टॉमएंडजेरी,टॉमएंडजेरी,100,yes
+The Beatles,en,दबीटल्स,दबीटल्स,100,yes
+Coldplay,en,कोल्डप्ले,कोल्डप्ले,100,yes
+Michael Jackson,en,माइकलजैक्सन,माइकलजैक्सन,100,yes
+Bill Gates,en,बिलगेट्स,बिलगेट्स,100,yes
+Steve Jobs,en,स्टीवजॉब्स,स्टीवजॉब्स,100,yes
+Donald Trump,en,डॉनल्डट्रम्प,डॉनल्डट्रम्प,100,yes
+Joe Biden,en,जोबाइडन,जोबाइडन,100,yes
+George Washington,en,जॉर्जवॉशिंगटन,जॉर्जवॉशिंगटन,100,yes
+William Shakespeare,en,विलियमशेक्सपीयर,विलियमशेक्सपीयर,100,yes
+Charles Darwin,en,चार्ल्सडार्विन,चार्ल्सडार्विन,100,yes
+Isaac Newton,en,आइज़कन्यूटन,आइज़कन्यूटन,100,yes
+Tom Cruise,en,टॉमक्रूज़,टॉमक्रूज़,100,yes
+Brad Pitt,en,ब्रैडपिट,ब्रैडपिट,100,yes
+Will Smith,en,विलस्मिथ,विलस्मिथ,100,yes
+Johnny Depp,en,जॉनीडेप,जॉनीडेप,100,yes
+Emma Watson,en,एमावॉटसन,एमावॉटसन,100,yes
+Tiger Woods,en,टाइगरवुड्स,टाइगरवुड्स,100,yes
+Michael Jordan,en,माइकलजॉर्डन,माइकलजॉर्डन,100,yes
+Sheffield,en,शेफ़ील्ड,शेफ़ील्ड,100,yes
+Bruce Lee,en,ब्रूसली,ब्रूसली,100,yes
+Tom Hanks,en,टॉमहैंक्स,टॉमहैंक्स,100,yes
+Christopher Nolan,en,क्रिस्टोफ़रनोलन,क्रिस्टोफ़रनोलन,100,yes
+Tony Blair,en,टोनीब्लेयर,टोनीब्लेयर,100,yes
+Elvis Presley,en,एल्विसप्रेस्ली,एल्विसप्रेस्ली,100,yes
+Bob Dylan,en,बॉबडिलन,बॉबडिलन,100,yes
+Justin Bieber,en,जस्टिनबीबर,जस्टिनबीबर,100,yes
+Lady Gaga,en,लेडीगागा,लेडीगागा,100,yes

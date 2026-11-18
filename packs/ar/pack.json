@@ -1,0 +1,388 @@
+{
+  "id": "ar",
+  "name": "Arabic",
+  "packVersion": "0.0.0-s6",
+  "about": "How speakers of Modern Standard Arabic adapt names written in English spelling. The rules for syllable shape come from a published study of English loanwords in Standard Arabic; the sound-by-sound rules are inferred from that study's examples; the Arabic spelling is fitted to Arabic Wikipedia titles. Every rule names its source and a confidence level. Edit this file to correct or add rules; no programming is needed.",
+  "profiles": {
+    "traditional": "The standard-language pattern. Every syllable starts with one consonant, so consonant pairs at the start of a name are split by a short vowel. P is said as B and V as F.",
+    "younger": "They probably keep P and V, and keep a consonant pair at the start of a name. The published study treats these habits as features of educated or regional speech, outside the standard language."
+  },
+  "profileLabels": {
+    "traditional": "Standard pronunciation",
+    "younger": "English-exposed speakers"
+  },
+  "scriptName": "Arabic script",
+  "accuracy": "The predicted Arabic spelling was compared with the titles of Arabic Wikipedia articles. On 104 names the rules had not been adjusted to (brands, cities and US states), the average similarity was 91.6%, and 53 spellings matched exactly. This measures agreement with one written form of each name. Pronunciation was compared only with the 43 example words printed in Al-Athwary (2017), which the rules were also adjusted to: 87.1%, with 16 exact.",
+  "sources": {
+    "alathwary2017": "Al-Athwary, A. A. H. (2017). The Phonotactic Adaptation of English Loanwords in Arabic. Arab World English Journal 8(3), 392-406. A study of over 300 English loanwords in Modern Standard Arabic, taken mainly from newspapers.",
+    "mubarak2009": "Mubarak, H., Al Sharqawy, M., and Al Masry, E. (2009). Diacritization and Transliteration of Proper Nouns from Arabic to English. MEDAR 2009. The paper covers the reverse direction (Arabic to English) and is used as supporting evidence only.",
+    "arwiki": "Titles of Arabic Wikipedia articles about well-known English names (CC BY-SA 4.0). The rule follows these spellings.",
+    "unverified": "Background knowledge of the pack author; not checked against a source. Corrections welcome."
+  },
+  "effortPoints": {
+    "substitution": 6,
+    "epenthesis": 12,
+    "finalChanged": 10,
+    "finalDropped": 8,
+    "clusterKept": 5,
+    "rDropped": 1,
+    "codaAfterDiphthong": 10,
+    "nonNativeFinalKept": 10
+  },
+  "respellingKey": [
+    ["-", "separates syllables"],
+    ["a", "as in 'cat', short"],
+    ["i", "as in 'sit', short"],
+    ["u", "as in 'put', short"],
+    ["aa", "as in 'father', held longer"],
+    ["ii", "as in 'machine', held longer"],
+    ["uu", "as in 'rule', held longer"],
+    ["ay, aw, uy", "as in 'eye', 'now' and 'boy'"],
+    ["gh", "a soft gargled sound made at the back of the mouth, like a French R"],
+    ["th", "as in 'think'"],
+    ["dh", "as in 'this'"],
+    ["r", "a quick tap or roll of the tongue, always said where it is written"],
+    ["a doubled consonant across a hyphen (fil-la)", "the consonant is held longer"],
+    ["a syllable that starts with a vowel", "begins with a light catch in the throat, as in the middle of 'uh-oh'"]
+  ],
+  "sounds": {
+    "about": "The sounds the pack writes: 'roman' is the easy respelling, 'ipa' the phonetic symbol, 'ar' the Arabic letter. 'q' is the catch in the throat (glottal stop) that starts a word which would otherwise begin with a vowel. 'p' and 'v' are not Standard Arabic sounds and are used only for the English-exposed group; Arabic script writes them with the letters for B and F.",
+    "q": { "roman": "", "ipa": "ʔ", "ar": "" },
+    "b": { "roman": "b", "ipa": "b", "ar": "ب" },
+    "p": { "roman": "p", "ipa": "p", "ar": "ب" },
+    "t": { "roman": "t", "ipa": "t", "ar": "ت" },
+    "d": { "roman": "d", "ipa": "d", "ar": "د" },
+    "k": { "roman": "k", "ipa": "k", "ar": "ك" },
+    "gh": { "roman": "gh", "ipa": "ɣ", "ar": "ج" },
+    "ch": { "roman": "ch", "ipa": "tʃ", "ar": "تش" },
+    "j": { "roman": "j", "ipa": "dʒ", "ar": "ج" },
+    "f": { "roman": "f", "ipa": "f", "ar": "ف" },
+    "v": { "roman": "v", "ipa": "v", "ar": "ف" },
+    "th": { "roman": "th", "ipa": "θ", "ar": "ث" },
+    "dh": { "roman": "dh", "ipa": "ð", "ar": "ذ" },
+    "s": { "roman": "s", "ipa": "s", "ar": "س" },
+    "z": { "roman": "z", "ipa": "z", "ar": "ز" },
+    "sh": { "roman": "sh", "ipa": "ʃ", "ar": "ش" },
+    "h": { "roman": "h", "ipa": "h", "ar": "ه" },
+    "m": { "roman": "m", "ipa": "m", "ar": "م" },
+    "n": { "roman": "n", "ipa": "n", "ar": "ن" },
+    "l": { "roman": "l", "ipa": "l", "ar": "ل" },
+    "r": { "roman": "r", "ipa": "r", "ar": "ر" },
+    "w": { "roman": "w", "ipa": "w", "ar": "و" },
+    "y": { "roman": "y", "ipa": "j", "ar": "ي" }
+  },
+  "consonants": {
+    "about": "What each English consonant becomes. 'to' is a key of 'sounds'; 'panphon' is its row in the sound-similarity table. An entry under 'younger' replaces the main entry for the English-exposed group. 'spelled' lists cases where the sound follows the English letters.",
+    "P": {
+      "to": "b",
+      "panphon": "b",
+      "label": "B",
+      "ruleId": "ar-c-p",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "Standard Arabic has no P sound, and B is used in its place (as in the Arabic forms of 'plastic' and 'computer').",
+      "tip": "P and B sound the same in Standard Arabic, so a name that relies on the difference will lose it.",
+      "younger": {
+        "to": "p",
+        "label": "P or B",
+        "effort": 3,
+        "loss": 0.1,
+        "ruleId": "ar-c-p-kept",
+        "source": "unverified",
+        "confidence": "low",
+        "why": "Standard Arabic has no P sound. Speakers who use English often probably keep the P; other speakers say B. Arabic script writes both with the letter for B.",
+        "tip": "P and B sound the same in Standard Arabic, so a name that relies on the difference will lose it."
+      }
+    },
+    "B": { "to": "b" },
+    "T": { "to": "t" },
+    "D": { "to": "d" },
+    "K": { "to": "k" },
+    "G": {
+      "to": "gh",
+      "panphon": "ɣ",
+      "label": "GH",
+      "loss": 0.3,
+      "ruleId": "ar-c-g",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "Standard Arabic has no hard G sound. The published study shows a soft gargled sound in its place (gorilla becomes ghurilla). This differs by country, and Egyptian speakers probably keep a hard G.",
+      "tip": "A hard G is said and written differently from country to country. A name without one reads the same everywhere."
+    },
+    "CH": {
+      "to": "ch",
+      "label": "T + SH",
+      "effort": 2,
+      "loss": 0.1,
+      "ruleId": "ar-c-ch",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "Standard Arabic has no single CH sound. It is said and written as T followed by SH, which sounds almost the same (sketch becomes iskitsh)."
+    },
+    "JH": {
+      "to": "j",
+      "spelled": [{ "letters": "^dg$", "ar": "دج" }]
+    },
+    "F": { "to": "f" },
+    "V": {
+      "to": "f",
+      "panphon": "f",
+      "label": "F",
+      "ruleId": "ar-c-v",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "Standard Arabic has no V sound, and F is used in its place (video becomes fiidiyuu, virus becomes fayruus).",
+      "tip": "V and F sound the same in Standard Arabic, so a name that relies on the difference will lose it.",
+      "younger": {
+        "to": "v",
+        "label": "V or F",
+        "effort": 3,
+        "loss": 0.1,
+        "ruleId": "ar-c-v-kept",
+        "source": "alathwary2017",
+        "confidence": "medium",
+        "why": "Standard Arabic has no V sound. The published study lists a kept V beside F for one word (villa or filla), so speakers who use English often probably keep the V. Arabic script usually writes both with the letter for F.",
+        "tip": "V and F sound the same in Standard Arabic, so a name that relies on the difference will lose it."
+      }
+    },
+    "TH": { "to": "th" },
+    "DH": { "to": "dh" },
+    "S": {
+      "to": "s",
+      "spelled": [{ "letters": "^zz?$", "to": "z" }]
+    },
+    "Z": { "to": "z" },
+    "SH": { "to": "sh" },
+    "ZH": {
+      "to": "j",
+      "panphon": "d͡ʒ",
+      "label": "J",
+      "ruleId": "ar-c-zh",
+      "source": "unverified",
+      "confidence": "low",
+      "why": "The ZH sound (as in 'vision') is not a Standard Arabic sound; J is probably used, which is close."
+    },
+    "HH": { "to": "h" },
+    "M": { "to": "m" },
+    "N": { "to": "n" },
+    "NG": {
+      "adds": "gh",
+      "label": "N + GH",
+      "loss": 0.3,
+      "ruleId": "ar-c-ng",
+      "source": "unverified",
+      "confidence": "low",
+      "why": "Standard Arabic has no NG sound (as in 'king'). It is probably said as N followed by the sound used for a hard G, the way Arabic spelling writes it."
+    },
+    "L": { "to": "l" },
+    "R": { "to": "r" },
+    "W": { "to": "w" },
+    "Y": { "to": "y" }
+  },
+  "doubling": {
+    "about": "A consonant that the English spelling doubles between two vowels, after a short vowel, is held longer. The study shows this for L only (villa, gorilla, millimeter).",
+    "sounds": ["L"],
+    "rule": {
+      "effort": 0,
+      "loss": 0.1,
+      "ruleId": "ar-double-l",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "An L written double between two vowels is often held longer in Arabic (villa becomes fil-la). The study shows this for some words and gives no rule for which ones."
+    }
+  },
+  "glides": {
+    "about": "Standard Arabic does not allow two vowels in a row. A Y is added after 'a' or 'i' and a W after 'u'. In the study, 26 of 28 cases use Y.",
+    "after": { "a": "y", "i": "y", "u": "w" },
+    "rule": {
+      "from": "the gap between two vowels",
+      "ruleId": "ar-glide",
+      "source": "alathwary2017",
+      "confidence": "high",
+      "why": "Standard Arabic does not allow two vowels in a row, so a Y or a W is said between them (radio becomes raa-di-yuu)."
+    }
+  },
+  "clusters": {
+    "about": "Repairs for groups of consonants. Every syllable starts with exactly one consonant. Two consonants are allowed in the middle of a word and at its end; three are not.",
+    "defaultVowel": "i",
+    "frontVowel": "i",
+    "beforeGlide": { "w": "u", "y": "i" },
+    "loss": 0.5,
+    "insideRule": {
+      "ruleId": "ar-start-pair",
+      "source": "alathwary2017",
+      "confidence": "high",
+      "why": "A Standard Arabic word cannot start with two consonants, so a short vowel is added after the first one. The added vowel copies the vowel that follows (cream becomes ki-riim, bronze becomes bu-runz).",
+      "tip": "Each consonant pair at the start of a name adds a syllable. A name that starts with one consonant and a vowel keeps its length."
+    },
+    "frontRule": {
+      "ruleId": "ar-start-s",
+      "source": "alathwary2017",
+      "confidence": "high",
+      "why": "A Standard Arabic word cannot start with two consonants. When the first is S, a short 'i' is said in front of it (sketch becomes is-kitsh, stereo becomes is-tii-ri-yu). Arabic spellings of names usually leave this 'i' unwritten.",
+      "tip": "A name that starts with S and another consonant gains a syllable at the front."
+    },
+    "middleRule": {
+      "ruleId": "ar-middle-three",
+      "source": "alathwary2017",
+      "confidence": "high",
+      "why": "Standard Arabic allows two consonants in a row in the middle of a word and no more, so a short vowel is added inside a longer group (control becomes kun-tu-rul).",
+      "tip": "Three or more consonants in a row add a syllable."
+    },
+    "endRule": {
+      "ruleId": "ar-end-three",
+      "source": "unverified",
+      "confidence": "low",
+      "why": "Standard Arabic allows two consonants at the end of a word and no more. A short vowel is probably added inside a longer group; the study read for this pack gives no rule for this case.",
+      "tip": "Three or more consonants at the end of a name probably add a syllable."
+    },
+    "keptRule": {
+      "ruleId": "ar-start-pair-kept",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "Speakers who use English often probably say this pair as it is. The published study reports kept pairs as a feature of educated or regional speech and counts them as outside the standard language.",
+      "tip": "Other speakers add a short vowel inside this pair, which adds a syllable."
+    }
+  },
+  "vowels": {
+    "about": "English vowel to Arabic vowel, as an ordered list; the first matching rule wins. 'to' is a, i or u (short), aa, ii or uu (long), or ay, aw, uy, with an optional y before it and an optional r after it. Long vowels are written with a letter (ا ي و) and short vowels are left unwritten, except at the end of a word, where every vowel is written. 'ar', 'arFinal' and 'arInitial' give the letters where they differ from that (in the middle, at the end and at the start of a word). Conditions: stress (main, any, none, notMain), letters (the vowel letters that spell the sound), beforeR, beforeVowel, wordStart, wordEnd, lastSyl, firstSyl, rest and prev (patterns over the English sounds after and before), word (pattern over the spelling).",
+    "summaryRule": {
+      "ruleId": "ar-vowels",
+      "source": "alathwary2017",
+      "confidence": "medium",
+      "why": "Standard Arabic has three vowels (a, i, u), each short or long. Each English vowel is replaced by the nearest of these, and weak vowels usually follow the English spelling (computer becomes kum-bi-yuu-tar). The study gives examples and no full table, so vowel length here follows Arabic spellings."
+    },
+    "letters": { "a": "ا", "i": "ي", "u": "و" },
+    "shortening": {
+      "about": "A long vowel is said short when a consonant closes its syllable in the middle of a word (middleConsonants), or when two consonants end the word after it (finalConsonants). The study states that a long vowel never comes before two final consonants; the middle-of-word case is inferred from its examples (sandal, computer, villa). The spelling keeps the vowel letter either way.",
+      "middleConsonants": 1,
+      "finalConsonants": 2
+    },
+    "twoPart": {
+      "ay": { "vowel": "a", "glide": "y", "ar": "اي" },
+      "aw": { "vowel": "a", "glide": "w", "ar": "او" },
+      "uy": { "vowel": "u", "glide": "y", "ar": "وي" }
+    },
+    "initial": {
+      "a": "أ", "aa": "آ", "i": "إ", "ii": "إي", "u": "أ", "uu": "أو", "ay": "آي", "aw": "أو", "uy": "أوي"
+    },
+    "usualLetters": {
+      "about": "For lining up vowel sounds with the spelling: the letters that usually spell each stressed vowel.",
+      "AA": "^(a|o|au|e)",
+      "AE": "^(a|ai|au)",
+      "AH": "^(u|o|ou|oo|a)",
+      "AO": "^(o|a|au|ou|oa|oo)",
+      "AW": "^(ou|o|au)",
+      "AY": "^(i|y|ie|ei|uy|ai|eye|ye|ui)",
+      "EH": "^(e|ea|a|ai|ie|ue|ei)",
+      "ER": "",
+      "EY": "^(a|ai|ay|ei|ey|ea|e$|ee)",
+      "IH": "^(i|y|e|ui|ee|ie|u)",
+      "IY": "^(e|ee|ea|i|y|ie|ei|ey|eo)",
+      "OW": "^(o|oa|ou|oe|eau|au)",
+      "OY": "^(oi|oy)",
+      "UH": "^(u|oo|ou|o)",
+      "UW": "^(u|oo|ou|e|ue|ui|o|eu|oe)"
+    },
+    "rules": [
+      { "phone": "AA", "beforeR": true, "to": "aa" },
+      { "phone": "AA", "letters": "^(o|ou|ow|au|aw)", "to": "uu", "loss": 0.2 },
+      { "phone": "AA", "to": "aa" },
+
+      { "phone": "AE", "wordStart": true, "to": "a", "loss": 0.1 },
+      { "phone": "AE", "to": "aa", "loss": 0.1 },
+
+      { "phone": "AH", "wordEnd": true, "to": "a" },
+      { "phone": "AH", "wordStart": true, "to": "a", "loss": 0.1 },
+      { "phone": "AH", "stress": "any", "letters": "^a$", "to": "aa", "loss": 0.1 },
+      { "phone": "AH", "stress": "any", "to": "a", "loss": 0.1 },
+      { "phone": "AH", "firstSyl": true, "word": "^mc", "to": "aa", "loss": 0.1 },
+      { "phone": "AH", "letters": "^a$", "to": "aa", "loss": 0.1 },
+      { "phone": ["AH", "IH"], "stress": "none", "letters": "^e$", "lastSyl": true, "rest": "^T$", "to": "ii", "loss": 0.2 },
+      { "phone": "AH", "letters": "^e", "to": "i", "loss": 0.2 },
+      { "phone": "AH", "letters": "^(i|y)", "lastSyl": true, "rest": "^N( Z| S)?$", "to": "i", "loss": 0.2 },
+      { "phone": "AH", "letters": "^(i|y)", "to": "ii", "loss": 0.2 },
+      { "phone": "AH", "letters": "^o$", "to": "uu", "loss": 0.2 },
+      { "phone": "AH", "letters": "^u$", "lastSyl": true, "rest": "^M$", "to": "uu", "loss": 0.1 },
+      { "phone": "AH", "letters": "^(u|ou)", "to": "u", "loss": 0.1 },
+      { "phone": "AH", "to": "a", "loss": 0.1 },
+
+      { "phone": "AO", "letters": "^a$", "word": "all", "to": "uu", "loss": 0.2 },
+      { "phone": "AO", "letters": "^a$", "to": "aa", "loss": 0.1 },
+      { "phone": "AO", "to": "uu", "loss": 0.2 },
+
+      { "phone": "AW", "to": "aw" },
+      { "phone": "AY", "to": "ay" },
+
+      { "phone": "EH", "wordStart": true, "to": "i", "loss": 0.2 },
+      { "phone": "EH", "beforeR": true, "letters": "^a$", "to": "aa", "loss": 0.2 },
+      { "phone": "EH", "rest": "^(N|M|T|K) [^AEIOU ]+ [A-Z]", "to": "i", "loss": 0.2 },
+      { "phone": "EH", "to": "ii", "loss": 0.2 },
+
+      { "phone": "ER", "letters": "^o", "to": "uur", "loss": 0.2 },
+      { "phone": "ER", "letters": "^a$", "rest": "^D", "to": "aar", "loss": 0.1 },
+      { "phone": "ER", "stress": "any", "letters": "^(e|i|ea)", "to": "iir", "loss": 0.2 },
+      { "phone": "ER", "to": "ar", "loss": 0.1 },
+
+      { "phone": "EY", "wordEnd": true, "to": "ay", "arInitial": "إي", "loss": 0.1 },
+      { "phone": "EY", "letters": "^ay$", "to": "ay", "arInitial": "إي", "loss": 0.1 },
+      { "phone": "EY", "to": "ay", "ar": "ي", "arInitial": "إي", "loss": 0.1 },
+
+      { "phone": "IH", "wordStart": true, "to": "i" },
+      { "phone": "IH", "stress": "notMain", "lastSyl": true, "rest": "^N( Z| S)?$", "to": "i" },
+      { "phone": "IH", "stress": "none", "letters": "^(e|a)$", "to": "i", "loss": 0.1 },
+      { "phone": "IH", "to": "ii" },
+
+      { "phone": "IY", "beforeVowel": true, "to": "i" },
+      { "phone": "IY", "to": "ii" },
+
+      { "phone": "OW", "to": "uu", "loss": 0.2 },
+      { "phone": "OY", "to": "uy", "loss": 0.1 },
+
+      { "phone": "UH", "letters": "^oo", "to": "uu" },
+      { "phone": "UH", "beforeR": true, "to": "uu" },
+      { "phone": "UH", "to": "u" },
+
+      { "phone": "UW", "letters": "^(e|eu)$", "prev": "(N|D|T)$", "to": "yuu" },
+      { "phone": "UW", "to": "uu" }
+    ]
+  },
+  "limits": [
+    "Stress is not predicted. No source read for this pack states where Arabic speakers put the stress in a borrowed name.",
+    "Results have not been checked by native speakers.",
+    "The pack covers Modern Standard Arabic, the shared written and formal language. Everyday speech differs from country to country, and a name can sound different in Egypt, the Gulf, the Levant and North Africa.",
+    "A hard G is written differently by country (غ, ج, ك or ق), and the pack writes one of them (ج). The respelling shows GH, the sound in the published study; Egyptian speakers probably say a hard G.",
+    "The Arabic spelling shown is the one the rules predict. Company-chosen spellings often differ, and which vowels get a letter varies from name to name.",
+    "Names that are not English-style are read the English way, so a French, German or Italian name will often come out wrong.",
+    "The study does not cover TH, ZH, NG or three consonants at the end of a word, so those predictions are less certain. TH is shown with the Standard Arabic TH sounds; in everyday speech many speakers probably use S, Z, T or D.",
+    "The sound-by-sound rules (P to B, V to F, G to GH, the vowels) are inferred from the examples printed in one study of common nouns. Brand names were not part of that study.",
+    "The two speaker groups are a simplification. The study read for this pack treats kept P, V and consonant pairs as educated or regional habits and gives no figures for how many speakers have them."
+  ],
+  "accuracyData": {
+    "about": "Spelling: the predicted Arabic spelling compared with Arabic Wikipedia titles (scripts/build-ar-benchmark.ts, scripts/run-ar-benchmark.ts). Before comparing, vowel marks and the lengthening stroke are removed, the alef forms (أ إ آ) are treated as one letter, and ڤ پ گ چ count as ف ب ك ج; brackets, a leading article and words such as 'company' were removed from the titles when the lists were built. Rules were tuned on the tune list only. The two held-out lists were run once, after the rules were fixed, and their rows were not read. Pronunciation: the predicted transcription compared with the forms printed in Al-Athwary (2017); these words were used for tuning.",
+    "measured": "2026-11-18",
+    "tune": { "names": 181, "exact": 125, "meanSimilarity": 94.7 },
+    "heldOut": {
+      "names": 104,
+      "exact": 53,
+      "meanSimilarity": 91.6,
+      "lists": {
+        "ar-holdout.csv": { "names": 66, "exact": 32, "meanSimilarity": 91.6 },
+        "ar-holdout2.csv": { "names": 38, "exact": 21, "meanSimilarity": 91.5 }
+      }
+    },
+    "paperExamples": { "words": 43, "exact": 16, "meanSimilarity": 87.1 }
+  },
+  "market": {
+    "code": "EG",
+    "country": "Arab countries"
+  },
+  "marketCodes": ["EG", "SA", "DZ", "IQ", "MA", "SD", "YE", "SY", "TN", "JO", "AE", "LY", "LB", "OM", "KW", "MR", "QA", "BH", "PS"],
+  "voiceLang": "ar",
+  "scriptNote": "The Arabic spelling the rules predict, written the way foreign names usually are: long vowels get a letter (ا ي و), short vowels are left out, and no vowel marks or doubling marks are used. Companies choose their own spellings, and these often differ.",
+  "validation": {
+    "nativeChecked": false,
+    "note": "Not checked by native speakers. The syllable rules come from Al-Athwary (2017); the sound-by-sound rules follow that study's examples, and the spelling follows Arabic Wikipedia titles. Corrections are welcome."
+  },
+  "speakerNote": "Arabic is the main language of about 19 countries, and everyday speech differs from one to the next. The pack covers the standard language they share, so a result is a starting point for any one country."
+}

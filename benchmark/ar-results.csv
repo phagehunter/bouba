@@ -1,0 +1,199 @@
+name,origin,real,predicted,similarity_percent,exact_match
+Nestlé,other,نستله,نيستل,60,no
+Nescafe,en,نسكافيه,نيسكافاي,63,no
+Shell,en,شل,شيل,67,no
+GitHub,en,غيتهاب,جيتهب,67,no
+Heineken,other,هينيكن,هاينكن,67,no
+Kellogg's,en,كلوقز,كيلوجز,67,no
+LinkedIn,en,لينكدإن,لينكتن,71,no
+Uber,en,أوبر,يوبر,75,no
+Pringles,en,برينجلز,برينجليس,75,no
+Chevrolet,en,شيفروليه,شيفرولاي,75,no
+Zoom,en,زووم,زوم,75,no
+Firefox,en,فيرفكس,فايرفوكس,75,no
+Lego,other,ليغو,ليجو,75,no
+Logitech,en,لوجيتيك,لوجيتيتش,75,no
+Instagram,en,إنستغرام,إنستاجرام,78,no
+Intel,en,إنتل,إنتيل,80,no
+Subway,en,صبواي,سبواي,80,no
+Boeing,en,بوينغ,بوينج,80,no
+Nivea,other,نيفيا,نيفي,80,no
+Avon,en,أفون,إيفون,80,no
+Quora,en,كورا,كوورا,80,no
+Blogger,en,بلوغر,بلوجر,80,no
+Buick,en,بيوك,بيويك,80,no
+Forbes,en,فوربس,فوربز,80,no
+Sherlock Holmes,en,شرلوكهولمز,شيرلوكهومز,80,no
+Costco,en,كوسكو,كوستكو,83,no
+Vaseline,en,فازلين,فاسلين,83,no
+Jaguar,en,جاغوار,جاجوار,83,no
+Burberry,en,بربري,بربيري,83,no
+Tommy Hilfiger,en,توميهيلفيغر,توميهيلفايجر,83,no
+Tripadvisor,en,تريبأدفيسور,تريبادفايزور,83,no
+Michelin,other,ميشلان,ميشلن,83,no
+Huawei,other,هواوي,هواواي,83,no
+Rolex,other,رولكس,روليكس,83,no
+Seven Up,en,سفنأب,سيفنأب,83,no
+Levi's,en,ليفايس,ليفايز,83,no
+Medium,en,ميديام,ميديوم,83,no
+Pinterest,en,بنترست,بينترست,86,no
+Walmart,en,وولمارت,والمارت,86,no
+Doritos,en,دوريتوس,دوريتوز,86,no
+Converse,en,كونفيرس,كونفرس,86,no
+Samsung,other,سامسونج,سامسنج,86,no
+Cadbury,en,كادبوري,كادبيري,86,no
+Maybelline,en,ميبلين,مايبلين,86,no
+Skechers,en,سكيتشرز,سكيتشرس,86,no
+Lincoln,en,لينكولن,لينكون,86,no
+Burger King,en,برجركنج,برجركينج,88,no
+Snapchat,en,سنابشات,سنابتشات,88,no
+Budweiser,en,بدويايزر,بدوايزر,88,no
+Wordpress,en,ووردبريس,ووردبرس,88,no
+McLaren,en,ماكلارين,ماكلارن,88,no
+Timberland,en,تمبرلاند,تيمبرلاند,89,no
+Ralph Lauren,en,رالفلورين,رالفلورن,89,no
+Volkswagen,other,فولكسفاجن,فولكسواجن,89,no
+Lloyds Bank,en,لويدزبنك,لويدزبانك,89,no
+Dunkin' Donuts,en,دانكندونتس,دنكندونتس,90,no
+Krispy Kreme,en,كرسبيكريم,كريسبيكريم,90,no
+Rolling Stone,en,رولينغستون,رولينجستون,90,no
+Tesla Motors,en,تسلاموتورز,تيسلاموتورز,91,no
+Marvel Comics,en,مارفلكومكس,مارفلكوميكس,91,no
+Calvin Klein,en,كالفينكلاين,كالفنكلاين,91,no
+Victoria Secret,en,فكتورياسيكريت,فيكتورياسيكريت,93,no
+American Express,en,أمريكانإكسبريس,أميريكانإكسبريس,93,no
+Texas Instruments,en,تكساسإنسترومنتس,تكساسإنسترمنتس,93,no
+Kingston Technology,en,كينغستونتكنولوجي,كينجستونتكنولوجي,94,no
+Starbucks,en,ستاربكس,ستاربكس,100,yes
+Netflix,en,نتفليكس,نتفليكس,100,yes
+Facebook,en,فيسبوك,فيسبوك,100,yes
+Google,en,جوجل,جوجل,100,yes
+Apple,en,أبل,أبل,100,yes
+Microsoft,en,مايكروسوفت,مايكروسوفت,100,yes
+McDonald's,en,ماكدونالدز,ماكدونالدز,100,yes
+Pepsi,en,بيبسي,بيبسي,100,yes
+Coca-Cola,en,كوكاكولا,كوكاكولا,100,yes
+Nike,en,نايكي,نايكي,100,yes
+Pizza Hut,en,بيتزاهت,بيتزاهت,100,yes
+YouTube,en,يوتيوب,يوتيوب,100,yes
+TikTok,en,تيكتوك,تيكتوك,100,yes
+Mastercard,en,ماستركارد,ماستركارد,100,yes
+Amazon,en,أمازون,أمازون,100,yes
+WhatsApp,en,واتساب,واتساب,100,yes
+Reddit,en,ريديت,ريديت,100,yes
+Spotify,en,سبوتيفاي,سبوتيفاي,100,yes
+PayPal,en,بايبال,بايبال,100,yes
+Visa,en,فيزا,فيزا,100,yes
+Oracle,en,أوراكل,أوراكل,100,yes
+Dell,en,ديل,ديل,100,yes
+Cisco,en,سيسكو,سيسكو,100,yes
+Adobe,en,أدوبي,أدوبي,100,yes
+Domino's Pizza,en,دومينوزبيتزا,دومينوزبيتزا,100,yes
+Dairy Queen,en,ديريكوين,ديريكوين,100,yes
+Baskin-Robbins,en,باسكنروبنز,باسكنروبنز,100,yes
+Oreo,en,أوريو,أوريو,100,yes
+Kit Kat,en,كيتكات,كيتكات,100,yes
+Snickers,en,سنيكرز,سنيكرز,100,yes
+Sprite,en,سبرايت,سبرايت,100,yes
+Fanta,en,فانتا,فانتا,100,yes
+Red Bull,en,ريدبل,ريدبل,100,yes
+Colgate,en,كولجيت,كولجيت,100,yes
+Gillette,en,جيليت,جيليت,100,yes
+Pantene,en,بانتين,بانتين,100,yes
+Pfizer,en,فايزر,فايزر,100,yes
+Ford,en,فورد,فورد,100,yes
+Jeep,en,جيب,جيب,100,yes
+Harley-Davidson,en,هارليديفيدسون,هارليديفيدسون,100,yes
+Rolls-Royce Motor,en,رولزرويسموتور,رولزرويسموتور,100,yes
+Bentley,en,بنتلي,بنتلي,100,yes
+Land Rover,en,لاندروفر,لاندروفر,100,yes
+FedEx,en,فيديكس,فيديكس,100,yes
+Walt Disney,en,والتديزني,والتديزني,100,yes
+Pixar,en,بيكسار,بيكسار,100,yes
+PlayStation,en,بلايستيشن,بلايستيشن,100,yes
+Minecraft,en,ماينكرافت,ماينكرافت,100,yes
+Fortnite,en,فورتنايت,فورتنايت,100,yes
+Barbie,en,باربي,باربي,100,yes
+Vans,en,فانز,فانز,100,yes
+Reebok,en,ريبوك,ريبوك,100,yes
+Under Armour,en,آندرآرمور,أندرآرمور,100,yes
+Ray-Ban,en,رايبان,رايبان,100,yes
+Hilton,en,هيلتون,هيلتون,100,yes
+Sheraton,en,شيراتون,شيراتون,100,yes
+Holiday Inn,en,هوليدايإن,هوليدايإن,100,yes
+Expedia,en,إكسبيديا,إكسبيديا,100,yes
+Agoda,en,أجودا,آجودا,100,yes
+Grab,en,جراب,جراب,100,yes
+Slack,en,سلاك,سلاك,100,yes
+Dropbox,en,دروبوكس,دروبوكس,100,yes
+Android,en,أندرويد,أندرويد,100,yes
+Microsoft Windows,en,مايكروسوفتويندوز,مايكروسوفتويندوز,100,yes
+Google Chrome,en,جوجلكروم,جوجلكروم,100,yes
+Gmail,en,جيميل,جيميل,100,yes
+Yahoo,en,ياهو,ياهو,100,yes
+Wikipedia,en,ويكيبيديا,ويكيبيديا,100,yes
+eBay,en,إيباي,إيباي,100,yes
+Tesco,en,تيسكو,تيسكو,100,yes
+Walt Disney,en,والتديزني,والتديزني,100,yes
+Nokia,other,نوكيا,نوكيا,100,yes
+IKEA,other,إيكيا,آيكيا,100,yes
+Mitsubishi,other,ميتسوبيشي,ميتسوبيشي,100,yes
+Toyota,other,تويوتا,تويوتا,100,yes
+Honda,other,هوندا,هوندا,100,yes
+Sony,other,سوني,سوني,100,yes
+Adidas,other,أديداس,أديداس,100,yes
+Nintendo,other,نينتندو,نينتندو,100,yes
+Coca-Cola Zero,en,كوكاكولازيرو,كوكاكولازيرو,100,yes
+Mountain Dew,en,ماونتنديو,ماونتنديو,100,yes
+Heinz,en,هاينز,هاينز,100,yes
+Kraft Foods,en,كرافتفودز,كرافتفودز,100,yes
+Unilever,en,يونيليفر,يونيليفر,100,yes
+Johnson and Johnson,en,جونسونآندجونسون,جونسونأندجونسون,100,yes
+Revlon,en,ريڤلون,ريفلون,100,yes
+Gap,en,جاب,جاب,100,yes
+Crocs,en,كروكس,كروكس,100,yes
+New Balance,en,نيوبالانس,نيوبالانس,100,yes
+Puma,en,بوما,بوما,100,yes
+Lenovo,en,لينوفو,لينوفو,100,yes
+Nvidia,en,إنفيديا,إنفيديا,100,yes
+Qualcomm,en,كوالكوم,كوالكوم,100,yes
+Salesforce,en,سيلزفورس,سيلزفورس,100,yes
+Hewlett-Packard,en,هيوليتباكارد,هيوليتباكارد,100,yes
+Western Digital,en,ويسترنديجيتال,ويسترنديجيتال,100,yes
+Seagate Technology,en,سيجيتتكنولوجي,سيجيتتكنولوجي,100,yes
+Garmin,en,جارمن,جارمن,100,yes
+Fitbit,en,فيتبيت,فيتبيت,100,yes
+GoPro,en,جوبرو,جوبرو,100,yes
+Blizzard Entertainment,en,بليزاردإنترتينمنت,بليزاردإنترتينمنت,100,yes
+Electronic Arts,en,إلكترونيكآرتس,إلكترونيكآرتس,100,yes
+Rockstar Games,en,روكستارجيمز,روكستارجيمز,100,yes
+Steam,en,ستيم,ستيم,100,yes
+Disney,en,ديزني,ديزني,100,yes
+Hulu,en,هولو,هولو,100,yes
+Vimeo,en,فيميو,فيميو,100,yes
+Duolingo,en,دوولينجو,دوولينجو,100,yes
+Myspace,en,مايسبيس,مايسبيس,100,yes
+Craigslist,en,كريجزليست,كريجزليست,100,yes
+Groupon,en,جروبون,جروبون,100,yes
+Booking,en,بوكينج,بوكينج,100,yes
+Caterpillar,en,كاتربيلر,كاتربيلر,100,yes
+Lockheed Martin,en,لوكهيدمارتن,لوكهيدمارتن,100,yes
+Chrysler,en,كرايسلر,كرايسلر,100,yes
+Dodge,en,دودج,دودج,100,yes
+Cadillac,en,كاديلاك,كاديلاك,100,yes
+Aston Martin,en,آستونمارتن,أستونمارتن,100,yes
+Mini,en,ميني,ميني,100,yes
+Lotus,en,لوتس,لوتس,100,yes
+Vodafone,en,فودافون,فودافون,100,yes
+Barclays,en,باركليز,باركليز,100,yes
+Reuters,en,رويترز,رويترز,100,yes
+Newsweek,en,نيوزويك,نيوزويك,100,yes
+Playboy,en,بلايبوي,بلايبوي,100,yes
+Monopoly,en,مونوبولي,مونوبولي,100,yes
+Scrabble,en,سكرابل,سكرابل,100,yes
+Tetris,en,تتريس,تتريس,100,yes
+Pacman,en,باكمان,باكمان,100,yes
+Batman,en,باتمان,باتمان,100,yes
+Superman,en,سوبرمان,سوبرمان,100,yes
+Mickey Mouse,en,ميكيماوس,ميكيماوس,100,yes
+Harry Potter,en,هاريبوتر,هاريبوتر,100,yes

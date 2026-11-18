@@ -1,0 +1,19 @@
+name: Add or correct a rule, or propose a language
+description: A change to a language pack, or a new language
+labels: [rules]
+body:
+  - type: input
+    id: language
+    attributes: { label: Language }
+    validations: { required: true }
+  - type: textarea
+    id: rule
+    attributes: { label: The rule, description: 'What happens to which sound, and where in the word. Plain words are fine: "a final L is said as N".' }
+    validations: { required: true }
+  - type: textarea
+    id: examples
+    attributes: { label: Examples, description: A few real borrowed words or brand names that show it }
+    validations: { required: true }
+  - type: textarea
+    id: source
+    attributes: { label: Source, description: A published source, or how you know. Unsourced rules are welcome and will be marked "unverified" }

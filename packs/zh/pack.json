@@ -1,0 +1,1404 @@
+{
+  "id": "zh",
+  "name": "Mandarin Chinese",
+  "packVersion": "0.0.0-s6",
+  "about": "How mainland Mandarin speakers say and write names that arrive in English spelling, when the name is carried over by sound. The characters come from the Xinhua transcription table, which is stored below as data. Every rule names its source and a confidence level. Edit this file to correct or add rules; no programming is needed.",
+  "profiles": {
+    "traditional": "The standard transcription used by mainland news media. Every consonant is kept and gets its own syllable from the Xinhua table.",
+    "younger": "The shorter form found in company and brand names. An R after a vowel is left out, and a final D after N is left out."
+  },
+  "profileLabels": {
+    "traditional": "Standard transcription",
+    "younger": "Brand-style shortening"
+  },
+  "scriptName": "simplified Chinese characters",
+  "scriptPerProfile": true,
+  "scriptNote": "The characters are the standard transcription characters for each sound. A company would usually choose characters for their meaning.",
+  "voiceLang": "zh",
+  "market": {
+    "code": "CN",
+    "country": "China"
+  },
+  "validation": {
+    "nativeChecked": false,
+    "note": "Not checked by native speakers. The rules come from the Xinhua transcription table for names and from the counts in Miao (2006), a study of English names borrowed into mainland Mandarin."
+  },
+  "accuracy": "The predicted pinyin was compared with the pinyin of Chinese Wikipedia titles for English names. Only titles written entirely with the standard transcription characters could be compared: 77 of 222 names on a list the rules had not been adjusted to. On that list the average similarity was 83.4% under \"Standard transcription\" and 85.4% under \"Brand-style shortening\", with 33 and 39 of 77 matching exactly. The comparable names are mostly place names, which follow the standard closely. Against 40 company and brand names printed in Miao (2006), also kept apart, the average similarity was 60.1% and 58.9%, with 6 and 5 matching exactly. Brand names are often chosen for meaning, so the sound-based form matches them less often.",
+  "accuracyData": {
+    "about": "Pinyin without tones, predicted against real (scripts/build-zh-benchmark.ts and scripts/run-zh-benchmark.ts). Similarity is 1 minus the edit distance between the two pinyin strings divided by the longer length. A title is scored only if every character is in the Xinhua table or printed in Miao (2006). Rules were tuned on the tuning list and the first 40 Miao pairs only. The held-out list and the last 40 Miao pairs were run once, after the rules were fixed, and nothing was changed afterward. The Chinese titles on the held-out list were read before that run, to mark translations by meaning; no predictions were run on them until the end.",
+    "measured": "2026-11-18",
+    "tune": {
+      "names": 249,
+      "scored": 71,
+      "notComparable": 123,
+      "latinTitle": 30,
+      "noChineseArticle": 6,
+      "otherLanguageOrigin": 17,
+      "meaning": 2,
+      "traditional": {
+        "exact": 36,
+        "meanSimilarity": 83.2
+      },
+      "younger": {
+        "exact": 36,
+        "meanSimilarity": 83.2
+      }
+    },
+    "heldOut": {
+      "names": 222,
+      "scored": 77,
+      "notComparable": 131,
+      "latinTitle": 10,
+      "noChineseArticle": 1,
+      "otherLanguageOrigin": 2,
+      "meaning": 1,
+      "traditional": {
+        "exact": 33,
+        "meanSimilarity": 83.4
+      },
+      "younger": {
+        "exact": 39,
+        "meanSimilarity": 85.4
+      }
+    },
+    "miaoFirst40": {
+      "use": "tuning check",
+      "traditional": {
+        "exact": 11,
+        "meanSimilarity": 66.7
+      },
+      "younger": {
+        "exact": 11,
+        "meanSimilarity": 66.4
+      }
+    },
+    "miaoLast40": {
+      "use": "held-out check",
+      "traditional": {
+        "exact": 6,
+        "meanSimilarity": 60.1
+      },
+      "younger": {
+        "exact": 5,
+        "meanSimilarity": 58.9
+      }
+    },
+    "titleVariant": "Mainland (zh-cn) titles came from character conversion of the stored title (converttitles and varianttitles). Regional names set inside an article were not applied, so a few titles are Taiwan or Hong Kong forms."
+  },
+  "speakerNote": "The standard transcription keeps every consonant. Company and brand names are often shorter: in Miao (2006), brand and company names dropped 28% of single final consonants and other words dropped 17%. Real brand names are often chosen for meaning, and 29% of the sound-based English loans in that study carry a meaning pun in the characters.",
+  "limits": [
+    "Tones are not predicted. Every Mandarin syllable has a tone, and the respelling shows pinyin without tone marks.",
+    "The characters shown are the standard transcription characters. A real brand would choose characters for their meaning, so the characters of a real Chinese brand name will usually differ even when the sounds match.",
+    "Many real Chinese brand names are translations by meaning (Microsoft is 微软, \"micro soft\"). Bouba predicts the sound-based form only.",
+    "The result follows mainland usage. Names are written and said differently in Taiwan and in Hong Kong.",
+    "Results have not been checked by native speakers.",
+    "Names that are not English-style are read the English way, so a French, German or Japanese name will often come out wrong.",
+    "The vowel choices follow the Xinhua table, which is a spelling standard for names. The study used for consonants did not cover vowels.",
+    "\"Brand-style shortening\" applies only the two shortenings that were the most common outcome in the study. Real brand names also drop other sounds in about a third of cases, and which name does so cannot be predicted.",
+    "Long-established names keep older forms that the table does not produce (London is 伦敦, Washington is 华盛顿)."
+  ],
+  "sources": {
+    "miao2006": "Miao, Ruiqin (2006). Loanword Adaptation in Mandarin Chinese: Perceptual, Phonological and Sociolinguistic Factors. PhD dissertation, Stony Brook University (Rutgers Optimality Archive 814). Counts from 1,177 English loans in mainland Mandarin, mostly company and brand names.",
+    "xinhua": "Xinhua News Agency English-to-Chinese transcription table, as reproduced in the Wikipedia article \"Transcription into Chinese characters\". It is a spelling standard for names.",
+    "unverified": "Background knowledge of the pack author; not checked against a source. Corrections welcome."
+  },
+  "effortPoints": {
+    "substitution": 6,
+    "epenthesis": 12,
+    "finalChanged": 10,
+    "finalDropped": 8,
+    "clusterKept": 5,
+    "rDropped": 1,
+    "codaAfterDiphthong": 10,
+    "nonNativeFinalKept": 10
+  },
+  "respellingKey": [
+    [
+      "-",
+      "separates syllables; each syllable is one Chinese character"
+    ],
+    [
+      "(no tone marks)",
+      "the respelling is pinyin without tones; tones are not predicted"
+    ],
+    [
+      "b, d, g",
+      "like the P, T, K of \"spy\", \"sty\", \"sky\": no puff of air and no buzz"
+    ],
+    [
+      "p, t, k",
+      "as in English, with a strong puff of air"
+    ],
+    [
+      "q",
+      "like CH in \"cheese\", with the tongue tip down"
+    ],
+    [
+      "x",
+      "like SH in \"sheep\", with the tongue tip down"
+    ],
+    [
+      "j",
+      "like J in \"jeep\", with the tongue tip down and no buzz"
+    ],
+    [
+      "zh, ch, sh",
+      "like J, CH, SH with the tongue tip curled back"
+    ],
+    [
+      "z, c",
+      "like the DS of \"kids\" and the TS of \"cats\""
+    ],
+    [
+      "r at the start",
+      "between English R and the S of \"measure\""
+    ],
+    [
+      "si, zi, ci, shi, zhi, chi, ri",
+      "the consonant held as a buzz; the \"i\" is not \"ee\" here"
+    ],
+    [
+      "i (elsewhere)",
+      "as in \"machine\""
+    ],
+    [
+      "e",
+      "like the vowel of \"her\" without the R"
+    ],
+    [
+      "er",
+      "like \"are\" with the tongue curled back"
+    ],
+    [
+      "a",
+      "as in \"father\""
+    ],
+    [
+      "o, uo",
+      "like \"wo\" in \"wore\""
+    ],
+    [
+      "u",
+      "as in \"rule\"; after j, q, x and y it is the French \"u\""
+    ],
+    [
+      "ai, ei, ao, ou",
+      "as in \"eye\", \"day\", \"now\", \"go\""
+    ],
+    [
+      "ui, iu",
+      "like \"way\" and \"yo\""
+    ],
+    [
+      "ie, ue",
+      "like \"yeah\" with the vowel of \"bed\""
+    ],
+    [
+      "an, en, in, un",
+      "the vowel plus N"
+    ],
+    [
+      "ang, eng, ing, ong",
+      "the vowel plus NG as in \"song\""
+    ]
+  ],
+  "table": {
+    "about": "The Xinhua table. Each row is a vowel class and each column a consonant; a cell holds the character and its pinyin. A second character after \"|\" is the alternate the table lists (mostly the forms used in female names) and is stored for reference. A missing cell is empty in the source; the adapter then writes the consonant-alone character followed by the vowel character.",
+    "source": "xinhua",
+    "columns": [
+      "",
+      "b",
+      "p",
+      "d",
+      "t",
+      "g",
+      "k",
+      "v",
+      "w",
+      "f",
+      "z",
+      "ts",
+      "s",
+      "zh",
+      "sh",
+      "j",
+      "ch",
+      "h",
+      "m",
+      "n",
+      "l",
+      "r",
+      "y",
+      "gw",
+      "kw",
+      "hw"
+    ],
+    "columnSounds": {
+      "": "no consonant",
+      "b": "b",
+      "p": "p",
+      "d": "d",
+      "t": "t",
+      "g": "ɡ",
+      "k": "k",
+      "v": "v",
+      "w": "w",
+      "f": "f",
+      "z": "z, dz",
+      "ts": "ts",
+      "s": "s, ð, θ",
+      "zh": "ʒ",
+      "sh": "ʃ",
+      "j": "dʒ",
+      "ch": "tʃ",
+      "h": "h",
+      "m": "m",
+      "n": "n",
+      "l": "l",
+      "r": "r",
+      "y": "j",
+      "gw": "ɡʷ",
+      "kw": "kʷ",
+      "hw": "hʷ"
+    },
+    "rowSounds": {
+      "alone": "consonant with no vowel after it",
+      "a": "ɑː, æ, ʌ",
+      "e": "ɛ, eɪ",
+      "er": "ɜ, ə",
+      "i": "iː, ɪ",
+      "o": "ɒ, ɔː, oʊ",
+      "u": "uː, ʊ",
+      "yu": "juː, jʊ",
+      "ai": "aɪ",
+      "au": "aʊ",
+      "an": "æn, ʌn, æŋ",
+      "ang": "ɑn, aʊn, ʌŋ, ɔn, ɒn, ɒŋ",
+      "en": "ɛn, ɛŋ, ɜn, ən, əŋ",
+      "in": "ɪn, in, ɪən, jən",
+      "ing": "ɪŋ",
+      "un": "un, ʊn, oʊn",
+      "ung": "ʊŋ"
+    },
+    "rows": {
+      "alone": {
+        "b": "布 bù",
+        "p": "普 pǔ",
+        "d": "德 dé",
+        "t": "特 tè",
+        "g": "格 gé",
+        "k": "克 kè",
+        "v": "夫 fū|弗 fú",
+        "w": "夫 fū|弗 fú",
+        "f": "夫 fū|弗 fú",
+        "z": "兹 zī",
+        "ts": "茨 cí",
+        "s": "斯 sī|丝 sī",
+        "zh": "日 rì",
+        "sh": "什 shí",
+        "j": "奇 qí",
+        "ch": "奇 qí",
+        "h": "赫 hè",
+        "m": "姆 mǔ",
+        "n": "恩 ēn",
+        "l": "尔 ěr",
+        "r": "尔 ěr",
+        "y": "伊 yī",
+        "gw": "古 gǔ",
+        "kw": "库 kù",
+        "hw": "胡 hú"
+      },
+      "a": {
+        "": "阿 ā",
+        "b": "巴 bā",
+        "p": "帕 pà",
+        "d": "达 dá",
+        "t": "塔 tǎ",
+        "g": "加 jiā",
+        "k": "卡 kǎ",
+        "v": "瓦 wǎ|娃 wá",
+        "w": "瓦 wǎ|娃 wá",
+        "f": "法 fǎ|娃 wá",
+        "z": "扎 zhā",
+        "ts": "察 chá",
+        "s": "萨 sà|莎 shā",
+        "zh": "扎 zhā",
+        "sh": "沙 shā|莎 shā",
+        "j": "贾 jiǎ",
+        "ch": "查 chá",
+        "h": "哈 hā",
+        "m": "马 mǎ|玛 mǎ",
+        "n": "纳 nà|娜 nà",
+        "l": "拉 lā",
+        "r": "拉 lā",
+        "y": "亚 yà|娅 yà",
+        "gw": "瓜 guā",
+        "kw": "夸 kuā",
+        "hw": "华 huá"
+      },
+      "e": {
+        "": "埃 āi",
+        "b": "贝 bèi",
+        "p": "佩 pèi",
+        "d": "德 dé",
+        "t": "特 tè|泰 tài",
+        "g": "盖 gài",
+        "k": "凯 kǎi",
+        "v": "韦 wéi",
+        "w": "韦 wéi",
+        "f": "费 fèi",
+        "z": "泽 zé",
+        "ts": "策 cè",
+        "s": "塞 sài",
+        "zh": "热 rè",
+        "sh": "谢 xiè",
+        "j": "杰 jié",
+        "ch": "切 qiè",
+        "h": "赫 hè|黑 hēi",
+        "m": "梅 méi",
+        "n": "内 nèi",
+        "l": "莱 lái",
+        "r": "雷 léi|蕾 lěi",
+        "y": "耶 yē",
+        "gw": "圭 guī",
+        "kw": "奎 kuí",
+        "hw": "惠 huì"
+      },
+      "er": {
+        "": "厄 è",
+        "b": "伯 bó",
+        "p": "珀 pò",
+        "d": "德 dé",
+        "t": "特 tè",
+        "g": "格 gé",
+        "k": "克 kè",
+        "v": "弗 fú",
+        "w": "沃 wò",
+        "f": "弗 fú",
+        "z": "泽 zé",
+        "ts": "策 cè",
+        "s": "瑟 sè",
+        "zh": "热 rè",
+        "sh": "舍 shè",
+        "j": "哲 zhé",
+        "ch": "彻 chè",
+        "h": "赫 hè",
+        "m": "默 mò",
+        "n": "纳 nà|娜 nà",
+        "l": "勒 lè",
+        "r": "勒 lè",
+        "y": "耶 yē",
+        "gw": "果 guǒ",
+        "kw": "阔 kuò",
+        "hw": "霍 huò"
+      },
+      "i": {
+        "": "伊 yī",
+        "b": "比 bǐ",
+        "p": "皮 pí",
+        "d": "迪 dí",
+        "t": "蒂 dì",
+        "g": "吉 jí",
+        "k": "基 jī",
+        "v": "维 wéi",
+        "w": "威 wēi",
+        "f": "菲 fēi",
+        "z": "齐 qí",
+        "ts": "齐 qí",
+        "s": "西 xī",
+        "zh": "日 rì",
+        "sh": "希 xī",
+        "j": "吉 jí",
+        "ch": "奇 qí",
+        "h": "希 xī",
+        "m": "米 mǐ",
+        "n": "尼 ní|妮 nī",
+        "l": "利 lì|莉 lì",
+        "r": "里 lǐ|丽 lì",
+        "y": "伊 yī",
+        "gw": "圭 guī",
+        "kw": "奎 kuí",
+        "hw": "惠 huì"
+      },
+      "o": {
+        "": "奥 ào",
+        "b": "博 bó",
+        "p": "波 bō",
+        "d": "多 duō",
+        "t": "托 tuō",
+        "g": "戈 gē",
+        "k": "科 kē",
+        "v": "沃 wò",
+        "w": "沃 wò",
+        "f": "福 fú",
+        "z": "佐 zuǒ",
+        "ts": "措 cuò",
+        "s": "索 suǒ",
+        "zh": "若 ruò",
+        "sh": "肖 xiāo",
+        "j": "乔 qiáo",
+        "ch": "乔 qiáo",
+        "h": "霍 huò",
+        "m": "莫 mò",
+        "n": "诺 nuò",
+        "l": "洛 luò",
+        "r": "罗 luó|萝 luó",
+        "y": "约 yuē",
+        "gw": "果 guǒ",
+        "kw": "阔 kuò",
+        "hw": "霍 huò"
+      },
+      "u": {
+        "": "乌 wū",
+        "b": "布 bù",
+        "p": "普 pǔ",
+        "d": "杜 dù",
+        "t": "图 tú",
+        "g": "古 gǔ",
+        "k": "库 kù",
+        "v": "武 wǔ",
+        "w": "伍 wǔ",
+        "f": "富 fù",
+        "z": "祖 zǔ",
+        "ts": "楚 chǔ",
+        "s": "苏 sū",
+        "zh": "茹 rú",
+        "sh": "舒 shū",
+        "j": "朱 zhū",
+        "ch": "楚 chǔ",
+        "h": "胡 hú",
+        "m": "穆 mù",
+        "n": "努 nǔ",
+        "l": "卢 lú",
+        "r": "鲁 lǔ",
+        "y": "尤 yóu",
+        "kw": "库 kù"
+      },
+      "yu": {
+        "": "尤 yóu",
+        "b": "比尤 bǐ-yóu",
+        "p": "皮尤 pí-yóu",
+        "d": "迪尤 dí-yóu",
+        "t": "蒂尤 dì-yóu",
+        "g": "久 jiǔ",
+        "k": "丘 qiū",
+        "v": "维尤 wéi-yóu",
+        "w": "威尤 wēi-yóu",
+        "f": "菲尤 fēi-yóu",
+        "z": "久 jiǔ",
+        "ts": "丘 qiū",
+        "s": "休 xiū",
+        "sh": "休 xiū",
+        "j": "久 jiǔ",
+        "ch": "丘 qiū",
+        "h": "休 xiū",
+        "m": "缪 miù",
+        "n": "纽 niǔ",
+        "l": "柳 liǔ",
+        "r": "留 liú"
+      },
+      "ai": {
+        "": "艾 ài",
+        "b": "拜 bài",
+        "p": "派 pài",
+        "d": "代 dài|黛 dài",
+        "t": "泰 tài",
+        "g": "盖 gài",
+        "k": "凯 kǎi",
+        "v": "韦 wéi",
+        "w": "怀 huái",
+        "f": "法 fǎ",
+        "z": "宰 zǎi",
+        "ts": "蔡 cài",
+        "s": "赛 sài",
+        "sh": "夏 xià",
+        "j": "贾 jiǎ",
+        "ch": "柴 chái",
+        "h": "海 hǎi",
+        "m": "迈 mài",
+        "n": "奈 nài",
+        "l": "莱 lái",
+        "r": "赖 lài",
+        "y": "耶 yē",
+        "gw": "瓜伊 guā-yī",
+        "kw": "夸 kuā",
+        "hw": "怀 huái"
+      },
+      "au": {
+        "": "奥 ào",
+        "b": "鲍 bào",
+        "p": "保 bǎo",
+        "d": "道 dào",
+        "t": "陶 táo",
+        "g": "高 gāo",
+        "k": "考 kǎo",
+        "v": "沃 wò",
+        "w": "沃 wò",
+        "f": "福 fú",
+        "z": "藻 zǎo",
+        "ts": "曹 cáo",
+        "s": "绍 shào",
+        "sh": "绍 shào",
+        "j": "焦 jiāo",
+        "ch": "乔 qiáo",
+        "h": "豪 háo",
+        "m": "毛 máo",
+        "n": "瑙 nǎo",
+        "l": "劳 láo",
+        "r": "劳 láo",
+        "y": "尧 yáo",
+        "kw": "阔 kuò"
+      },
+      "an": {
+        "": "安 ān",
+        "b": "班 bān",
+        "p": "潘 pān",
+        "d": "丹 dān",
+        "t": "坦 tǎn",
+        "g": "甘 gān",
+        "k": "坎 kǎn",
+        "v": "万 wàn",
+        "w": "万 wàn",
+        "f": "凡 fán",
+        "z": "赞 zàn",
+        "ts": "灿 càn",
+        "s": "桑 sāng",
+        "sh": "尚 shàng",
+        "j": "詹 zhān",
+        "ch": "钱 qián",
+        "h": "汉 hàn",
+        "m": "曼 màn",
+        "n": "南 nán",
+        "l": "兰 lán",
+        "r": "兰 lán",
+        "y": "扬 yáng",
+        "gw": "关 guān",
+        "kw": "宽 kuān",
+        "hw": "环 huán"
+      },
+      "ang": {
+        "": "昂 áng",
+        "b": "邦 bāng",
+        "p": "庞 páng",
+        "d": "当 dāng",
+        "t": "唐 táng",
+        "g": "冈 gāng",
+        "k": "康 kāng",
+        "v": "旺 wàng",
+        "w": "旺 wàng",
+        "f": "方 fāng",
+        "z": "藏 zàng",
+        "ts": "仓 cāng",
+        "s": "桑 sāng",
+        "zh": "让 ràng",
+        "sh": "尚 shàng",
+        "j": "章 zhāng",
+        "ch": "昌 chāng",
+        "h": "杭 háng",
+        "m": "芒 máng",
+        "n": "南 nán",
+        "l": "朗 lǎng",
+        "r": "朗 lǎng",
+        "y": "扬 yáng",
+        "gw": "光 guāng",
+        "kw": "匡 kuāng",
+        "hw": "黄 huáng"
+      },
+      "en": {
+        "": "恩 ēn",
+        "b": "本 běn",
+        "p": "彭 péng",
+        "d": "登 dēng",
+        "t": "滕 téng",
+        "g": "根 gēn",
+        "k": "肯 kěn",
+        "v": "文 wén",
+        "w": "文 wén",
+        "f": "芬 fēn",
+        "z": "曾 zēng",
+        "ts": "岑 cén",
+        "s": "森 sēn",
+        "zh": "任 rèn",
+        "sh": "申 shēn",
+        "j": "真 zhēn",
+        "ch": "琴 qín",
+        "h": "亨 hēng",
+        "m": "门 mén",
+        "n": "嫩 nèn",
+        "l": "伦 lún",
+        "r": "伦 lún",
+        "y": "延 yán",
+        "gw": "古恩 gǔ-ēn",
+        "kw": "昆 kūn"
+      },
+      "in": {
+        "": "因 yīn",
+        "b": "宾 bīn",
+        "p": "平 píng",
+        "d": "丁 dīng",
+        "t": "廷 tíng",
+        "g": "金 jīn",
+        "k": "金 jīn",
+        "v": "温 wēn",
+        "w": "温 wēn",
+        "f": "芬 fēn",
+        "z": "津 jīn",
+        "ts": "欣 xīn",
+        "s": "辛 xīn",
+        "sh": "欣 xīn",
+        "j": "金 jīn",
+        "ch": "钦 qīn",
+        "h": "欣 xīn",
+        "m": "明 míng",
+        "n": "宁 níng",
+        "l": "林 lín|琳 lín",
+        "r": "林 lín|琳 lín",
+        "y": "因 yīn",
+        "gw": "古因 gǔ-yīn",
+        "kw": "昆 kūn"
+      },
+      "ing": {
+        "": "英 yīng",
+        "b": "宾 bīn",
+        "p": "平 píng",
+        "d": "丁 dīng",
+        "t": "廷 tíng",
+        "g": "京 jīng",
+        "k": "金 jīn",
+        "v": "温 wēn",
+        "w": "温 wēn",
+        "f": "芬 fēn",
+        "z": "京 jīng",
+        "ts": "青 qīng",
+        "s": "辛 xīn",
+        "sh": "兴 xìng",
+        "j": "京 jīng",
+        "ch": "青 qīng",
+        "h": "兴 xìng",
+        "m": "明 míng",
+        "n": "宁 níng",
+        "l": "林 lín|琳 lín",
+        "r": "林 lín|琳 lín",
+        "y": "英 yīng",
+        "gw": "古英 gǔ-yīng"
+      },
+      "un": {
+        "": "温 wēn",
+        "b": "本 běn",
+        "p": "蓬 péng",
+        "d": "敦 dūn",
+        "t": "通 tōng",
+        "g": "贡 gòng",
+        "k": "昆 kūn",
+        "v": "文 wén",
+        "w": "文 wén",
+        "f": "丰 fēng",
+        "z": "尊 zūn",
+        "ts": "聪 cōng",
+        "s": "孙 sūn",
+        "sh": "顺 shùn",
+        "j": "准 zhǔn",
+        "ch": "春 chūn",
+        "h": "洪 hóng",
+        "m": "蒙 méng",
+        "n": "农 nóng",
+        "l": "伦 lún",
+        "r": "伦 lún",
+        "y": "云 yún"
+      },
+      "ung": {
+        "": "翁 wēng",
+        "b": "邦 bāng",
+        "p": "蓬 péng",
+        "d": "东 dōng",
+        "t": "通 tōng",
+        "g": "贡 gòng",
+        "k": "孔 kǒng",
+        "v": "翁 wēng",
+        "w": "翁 wēng",
+        "f": "丰 fēng",
+        "z": "宗 zōng",
+        "ts": "聪 cōng",
+        "s": "松 sōng",
+        "zh": "容 róng",
+        "sh": "雄 xióng",
+        "j": "琼 qióng",
+        "ch": "琼 qióng",
+        "h": "洪 hóng",
+        "m": "蒙 méng",
+        "n": "农 nóng",
+        "l": "隆 lóng",
+        "r": "龙 lóng",
+        "y": "永 yǒng",
+        "hw": "洪 hóng"
+      }
+    },
+    "notes": [
+      "A word-initial \"a\" said as a weak vowel uses the ɑː row.",
+      "Word-final \"ia\" writes the \"a\" as 亚.",
+      "Unstressed a, e, i, o, u are generally written by their spelling.",
+      "A word-final \"r\" or \"re\" said as a weak vowel is written 尔.",
+      "\"tr\" and \"dr\" are written as the t or d character plus the r-row character.",
+      "\"m\" is written with the n rows before b or p.",
+      "弗 is used at the beginning of a word.",
+      "The alternates 娅, 玛, 琳, 娜, 丽, 莉, 莎, 黛, 丝, 妮 are used in female names."
+    ]
+  },
+  "columns": {
+    "about": "The table column for each English consonant (ARPAbet). Pairs that share one column are listed under \"pairs\".",
+    "P": "p",
+    "B": "b",
+    "T": "t",
+    "D": "d",
+    "K": "k",
+    "G": "g",
+    "V": "v",
+    "W": "w",
+    "F": "f",
+    "Z": "z",
+    "S": "s",
+    "TH": "s",
+    "DH": "s",
+    "ZH": "zh",
+    "SH": "sh",
+    "JH": "j",
+    "CH": "ch",
+    "HH": "h",
+    "M": "m",
+    "N": "n",
+    "NG": "n",
+    "L": "l",
+    "R": "r",
+    "Y": "y",
+    "pairs": [
+      {
+        "first": "T",
+        "second": "S",
+        "column": "ts"
+      },
+      {
+        "first": "D",
+        "second": "Z",
+        "column": "z"
+      },
+      {
+        "first": "K",
+        "second": "W",
+        "column": "kw",
+        "beforeVowel": true
+      },
+      {
+        "first": "G",
+        "second": "W",
+        "column": "gw",
+        "beforeVowel": true
+      },
+      {
+        "first": "HH",
+        "second": "W",
+        "column": "hw",
+        "beforeVowel": true
+      }
+    ],
+    "wordInitialAlternate": {
+      "columns": [
+        "f",
+        "v",
+        "w"
+      ],
+      "row": "alone"
+    }
+  },
+  "shifts": {
+    "about": "What is reported when the character for a consonant starts with a different sound from the English consonant. The key is the English consonant, \">\" and the first letters of the pinyin. \"same\" lists pairs that count as no change.",
+    "same": [
+      "P>p",
+      "B>b",
+      "T>t",
+      "D>d",
+      "K>k",
+      "G>g",
+      "F>f",
+      "S>s",
+      "SH>sh",
+      "HH>h",
+      "M>m",
+      "N>n",
+      "NG>n",
+      "L>l",
+      "W>w",
+      "Y>y",
+      "JH>j",
+      "JH>zh",
+      "CH>q",
+      "CH>ch",
+      "N>",
+      "NG>",
+      "Y>",
+      "L>",
+      "R>"
+    ],
+    "rules": {
+      "R>l": {
+        "label": "L",
+        "panphon": "l",
+        "effort": 6,
+        "ruleId": "zh-c-r",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no English-style R before a vowel, and L is used: in Miao (2006), 50 of 53 names starting with R took L.",
+        "tip": "R and L sound the same at the start of a syllable in this transcription, so a name that relies on the difference will lose it."
+      },
+      "V>w": {
+        "label": "W",
+        "loss": 0.5,
+        "effort": 6,
+        "ruleId": "zh-c-v-w",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no V sound; before a vowel W is used (12 of 16 names in Miao 2006).",
+        "tip": "V and W sound the same in Mandarin."
+      },
+      "V>f": {
+        "label": "F",
+        "loss": 0.3,
+        "effort": 6,
+        "ruleId": "zh-c-v-f",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no V sound; a V with no vowel after it becomes \"fu\", and before some vowels the table also uses an F character."
+      },
+      "TH>s": {
+        "label": "S",
+        "panphon": "s",
+        "effort": 6,
+        "ruleId": "zh-c-th",
+        "source": "miao2006",
+        "confidence": "medium",
+        "why": "Mandarin has no TH sound (as in \"think\"); S is used. The study had few names with TH.",
+        "tip": "TH and S sound the same in Mandarin."
+      },
+      "DH>s": {
+        "label": "S",
+        "panphon": "s",
+        "effort": 6,
+        "ruleId": "zh-c-dh",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "Mandarin has no TH sound (as in \"this\"); the standard table writes it with the S characters."
+      },
+      "Z>z": {
+        "label": "DS (pinyin z)",
+        "loss": 0.3,
+        "effort": 6,
+        "ruleId": "zh-c-z",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "Mandarin has no buzzing Z as in \"zoo\"; the standard table uses characters that start like the DS of \"kids\"."
+      },
+      "Z>s": {
+        "label": "S",
+        "panphon": "s",
+        "effort": 6,
+        "ruleId": "zh-c-z-s",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "Mandarin has no buzzing Z; where the name spells the sound with S, the S character is used."
+      },
+      "Z>*": {
+        "label": "",
+        "loss": 0.4,
+        "effort": 6,
+        "ruleId": "zh-c-z-other",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "Mandarin has no buzzing Z as in \"zoo\"; the standard table uses the nearest character it has for this vowel."
+      },
+      "ZH>r": {
+        "label": "Mandarin R",
+        "loss": 0.3,
+        "effort": 6,
+        "ruleId": "zh-c-zh",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The ZH sound of \"measure\" is written with the characters for the Mandarin R, which sounds close to it."
+      },
+      "ZH>*": {
+        "label": "",
+        "loss": 0.4,
+        "effort": 6,
+        "ruleId": "zh-c-zh-other",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The ZH sound of \"measure\" has no character of its own for this vowel in the standard table; the nearest one is used."
+      },
+      "K>j": {
+        "label": "J",
+        "loss": 0.4,
+        "effort": 6,
+        "ruleId": "zh-c-k-j",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no \"kee\" syllable, so K before an \"ee\" sound becomes J (pinyin \"ji\").",
+        "tip": "K before \"i\" or \"ee\" changes to J in Mandarin; K before other vowels stays."
+      },
+      "G>j": {
+        "label": "J",
+        "loss": 0.4,
+        "effort": 6,
+        "ruleId": "zh-c-g-j",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no \"gee\" syllable with a hard G, so G becomes J here; Miao (2006) found this in 7 of 22 names starting with G, mostly before \"ee\" and \"a\" as in \"cat\"."
+      },
+      "S>x": {
+        "label": "SH-like X",
+        "loss": 0.3,
+        "effort": 6,
+        "ruleId": "zh-c-s-x",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no \"see\" syllable, so S before an \"ee\" sound becomes the soft SH written \"x\" in pinyin.",
+        "tip": "S before \"i\" or \"ee\" changes to a soft SH in Mandarin."
+      },
+      "HH>x": {
+        "label": "SH-like X",
+        "loss": 0.5,
+        "effort": 6,
+        "ruleId": "zh-c-h-x",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "Mandarin has no \"hee\" syllable, so H before an \"ee\" sound becomes the soft SH written \"x\" in pinyin.",
+        "tip": "H before \"i\" or \"ee\" changes to a soft SH in Mandarin."
+      },
+      "SH>x": {
+        "label": "SH-like X",
+        "loss": 0.1,
+        "effort": 1,
+        "ruleId": "zh-c-sh-x",
+        "source": "miao2006",
+        "confidence": "high",
+        "why": "English SH is usually written with the soft Mandarin SH (pinyin \"x\"): 8 of 11 names in Miao (2006)."
+      },
+      "S>sh": {
+        "label": "SH",
+        "panphon": "ʃ",
+        "effort": 6,
+        "ruleId": "zh-c-s-sh",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The standard table writes S with an SH character before this vowel."
+      },
+      "W>h": {
+        "label": "HW",
+        "loss": 0.3,
+        "effort": 2,
+        "ruleId": "zh-c-w-h",
+        "source": "miao2006",
+        "confidence": "medium",
+        "why": "The standard table writes W with a \"hu\" character before this vowel; Miao (2006) found \"hu\" for W in 12 of 53 names."
+      },
+      "T>d": {
+        "label": "D (pinyin d)",
+        "loss": 0.2,
+        "effort": 2,
+        "ruleId": "zh-c-t-d",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The standard table writes T before \"ee\" with a character that has no puff of air (pinyin \"di\")."
+      },
+      "P>b": {
+        "label": "B (pinyin b)",
+        "loss": 0.2,
+        "effort": 2,
+        "ruleId": "zh-c-p-b",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The standard table writes P before \"o\" with a character that has no puff of air (pinyin \"bo\")."
+      },
+      "JH>q": {
+        "label": "CH-like Q",
+        "loss": 0.2,
+        "effort": 2,
+        "ruleId": "zh-c-j-q",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The standard table writes J with a character that starts with a puff of air (pinyin \"q\") here."
+      },
+      "*": {
+        "label": "",
+        "loss": 0.3,
+        "effort": 2,
+        "ruleId": "zh-c-table",
+        "source": "xinhua",
+        "confidence": "medium",
+        "why": "The standard table writes this consonant and vowel pair with a character that starts with a different consonant."
+      }
+    }
+  },
+  "insertedVowel": {
+    "about": "A consonant with no vowel after it gets its own syllable from the \"consonant alone\" row of the table. The vowel each consonant takes is stated with counts in Miao (2006) for the consonants in \"stated\".",
+    "loss": 0.5,
+    "stated": [
+      "P",
+      "B",
+      "T",
+      "D",
+      "K",
+      "G",
+      "F",
+      "V",
+      "S",
+      "Z",
+      "SH",
+      "TH",
+      "CH",
+      "JH",
+      "M"
+    ],
+    "rule": {
+      "ruleId": "zh-insert",
+      "source": "miao2006",
+      "confidence": "high",
+      "why": "A Mandarin syllable cannot end in this consonant, so the consonant gets a short vowel of its own and becomes a full syllable: \"u\" after P, B, F and M, \"e\" after T, D, K and G, a buzzed \"i\" after S, Z and SH.",
+      "tip": "Each consonant with no vowel after it adds a syllable. Names where consonants and vowels alternate keep their length in Mandarin."
+    },
+    "ruleOther": {
+      "ruleId": "zh-insert-table",
+      "source": "xinhua",
+      "confidence": "medium",
+      "why": "A Mandarin syllable cannot end in this consonant, so the standard table gives it a syllable of its own.",
+      "tip": "Each consonant with no vowel after it adds a syllable."
+    }
+  },
+  "liquids": {
+    "about": "L and R with no vowel after them.",
+    "lToEr": {
+      "loss": 0.5,
+      "ruleId": "zh-l-er",
+      "source": "miao2006",
+      "confidence": "high",
+      "why": "An L with no vowel after it becomes the separate syllable \"er\" (40 of 72 final L in Miao 2006; 20 were dropped).",
+      "tip": "An L at the end of a syllable adds a syllable in Mandarin and no longer sounds like L."
+    },
+    "rSilentAfter": [
+      "AA",
+      "AO"
+    ],
+    "rSilentMedial": {
+      "loss": 0.2,
+      "ruleId": "zh-r-silent",
+      "source": "xinhua",
+      "confidence": "medium",
+      "why": "An R after \"ah\" or \"aw\" and before another consonant is not written: the standard table follows British pronunciation, where this R is silent."
+    },
+    "rToEr": {
+      "loss": 0.4,
+      "ruleId": "zh-r-er",
+      "source": "xinhua",
+      "confidence": "medium",
+      "why": "The standard transcription writes an R that ends a syllable as the separate syllable \"er\"."
+    },
+    "rDroppedBrand": {
+      "loss": 0.4,
+      "ruleId": "zh-r-dropped",
+      "source": "miao2006",
+      "confidence": "high",
+      "why": "Company and brand names usually leave out an R that ends a syllable: 77 of 109 final R were dropped in Miao (2006), and 51 of 54 R before another final consonant."
+    }
+  },
+  "nasals": {
+    "about": "A vowel followed by N or NG uses one of the nasal rows of the table, so the N or NG stays at the end of the syllable. \"rows\" gives the nasal row for each English vowel. A weak vowel uses \"weak\" (by its spelling). A vowel with no nasal row keeps its own character and the N gets 恩.",
+    "rows": {
+      "AE": {
+        "N": "an",
+        "NG": "an"
+      },
+      "AH": {
+        "N": "an",
+        "NG": "ang"
+      },
+      "AA": {
+        "N": "ang",
+        "NG": "ang"
+      },
+      "AO": {
+        "N": "ang",
+        "NG": "ang"
+      },
+      "AW": {
+        "N": "ang"
+      },
+      "EH": {
+        "N": "en",
+        "NG": "en"
+      },
+      "ER": {
+        "N": "en",
+        "NG": "en"
+      },
+      "IH": {
+        "N": "in",
+        "NG": "ing"
+      },
+      "IY": {
+        "N": "in",
+        "NG": "ing"
+      },
+      "UW": {
+        "N": "un",
+        "NG": "ung"
+      },
+      "UH": {
+        "N": "un",
+        "NG": "ung"
+      },
+      "OW": {
+        "N": "un",
+        "NG": "ung"
+      }
+    },
+    "weak": {
+      "default": "en",
+      "byLetter": {
+        "a": "an",
+        "i": "in",
+        "y": "in"
+      }
+    },
+    "noRowWhenStressed": [
+      "ER"
+    ],
+    "mBefore": [
+      "B",
+      "P"
+    ],
+    "kept": {
+      "ruleId": "zh-n-kept",
+      "source": "miao2006",
+      "confidence": "high",
+      "why": "A final N or NG is kept: Mandarin syllables can end in N and NG (173 of 184 in Miao 2006)."
+    },
+    "placeChanged": {
+      "loss": 0.2,
+      "effort": 0,
+      "ruleId": "zh-n-ng",
+      "source": "miao2006",
+      "confidence": "medium",
+      "why": "The character the standard table gives for this syllable ends in the other nasal sound (N for NG, or NG for N); Miao (2006) found this swap in about a fifth of names ending in N."
+    },
+    "mToN": {
+      "loss": 0.3,
+      "effort": 2,
+      "ruleId": "zh-m-n",
+      "source": "xinhua",
+      "confidence": "medium",
+      "why": "Before B or P the standard table writes M with an N syllable, because a Mandarin syllable cannot end in M."
+    }
+  },
+  "brandStyle": {
+    "about": "The shortenings applied under \"Brand-style shortening\". Each is the most common outcome for its context in Miao (2006). Final stops and final L are kept, because keeping them was the more common outcome (stops kept 67%, L kept 69%), also after an unstressed vowel (stops kept 61%, L kept 59%).",
+    "finalDAfterN": {
+      "loss": 1,
+      "ruleId": "zh-nd-dropped",
+      "source": "miao2006",
+      "confidence": "high",
+      "why": "Company and brand names usually leave out a final D after N: 6 of 9 names ending in \"nd\" in Miao (2006).",
+      "tip": "A name ending in \"nd\" will probably lose the D in a Chinese brand name."
+    }
+  },
+  "vowels": {
+    "about": "Which table row each English vowel uses. The first matching rule wins. \"letters\" tests the vowel letters in the spelling; \"stress\": \"none\" means a weak (unstressed) vowel. The table note says weak vowels are generally written by their spelling.",
+    "rules": [
+      {
+        "phone": "AH",
+        "stress": "none",
+        "syllabicL": true,
+        "to": "",
+        "loss": 0
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^a",
+        "to": "a",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^[iy]",
+        "to": "i",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^o",
+        "to": "o",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "letters": "^e",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "AH",
+        "stress": "none",
+        "to": "er",
+        "loss": 0.1
+      },
+      {
+        "phone": "AH",
+        "letters": "^o",
+        "to": "o",
+        "loss": 0.3
+      },
+      {
+        "phone": "AH",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "AA",
+        "afterW": true,
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "AA",
+        "letters": "^o",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "AA",
+        "to": "a",
+        "loss": 0
+      },
+      {
+        "phone": "AE",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "EH",
+        "beforeRV": true,
+        "letters": "^a",
+        "to": "a",
+        "loss": 0.2
+      },
+      {
+        "phone": "EH",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "EY",
+        "to": "e",
+        "loss": 0.1
+      },
+      {
+        "phone": "ER",
+        "stress": "none",
+        "letters": "^o",
+        "to": "o",
+        "loss": 0.3
+      },
+      {
+        "phone": "ER",
+        "stress": "none",
+        "letters": "^a",
+        "to": "a",
+        "loss": 0.3
+      },
+      {
+        "phone": "ER",
+        "to": "er",
+        "loss": 0.2
+      },
+      {
+        "phone": "IY",
+        "to": "i",
+        "loss": 0
+      },
+      {
+        "phone": "IH",
+        "stress": "none",
+        "letters": "^e",
+        "to": "e",
+        "loss": 0.2
+      },
+      {
+        "phone": "IH",
+        "to": "i",
+        "loss": 0.1
+      },
+      {
+        "phone": "AO",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "OW",
+        "to": "o",
+        "loss": 0.1
+      },
+      {
+        "phone": "OY",
+        "to": "o",
+        "then": "i",
+        "loss": 0.2
+      },
+      {
+        "phone": "UW",
+        "to": "u",
+        "loss": 0
+      },
+      {
+        "phone": "UH",
+        "to": "u",
+        "loss": 0.1
+      },
+      {
+        "phone": "AY",
+        "to": "ai",
+        "loss": 0
+      },
+      {
+        "phone": "AW",
+        "to": "au",
+        "loss": 0
+      }
+    ],
+    "syllabicLWord": "[^aeiouy]le([^aeiouy]|$)",
+    "alternateFor": {
+      "about": "Cells where the second character listed is used for the \"ay\" sound of \"day\" (the row covers both \"e\" as in \"bed\" and \"ay\").",
+      "row": "e",
+      "phones": [
+        "EY"
+      ],
+      "columns": [
+        "h",
+        "t"
+      ]
+    },
+    "yuRowPhones": [
+      "UW",
+      "UH"
+    ],
+    "finalIa": {
+      "word": "ia$",
+      "column": "y"
+    },
+    "summaryRule": {
+      "ruleId": "zh-vowels",
+      "source": "xinhua",
+      "confidence": "medium",
+      "why": "Each English vowel is written with the nearest vowel the standard table offers, and weak vowels usually follow the spelling."
+    }
+  }
+}

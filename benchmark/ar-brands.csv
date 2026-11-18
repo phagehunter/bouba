@@ -1,0 +1,222 @@
+name,wiki_title,origin,title,real
+Starbucks,Starbucks,en,ستاربكس,ستاربكس
+Netflix,Netflix,en,نتفليكس,نتفليكس
+Facebook,Facebook,en,فيسبوك,فيسبوك
+Google,Google,en,جوجل,جوجل
+Apple,Apple Inc.,en,أبل,أبل
+Shell,Shell plc,en,شل,شل
+Microsoft,Microsoft,en,مايكروسوفت,مايكروسوفت
+Tesla Motors,"Tesla, Inc.",en,تسلا موتورز,تسلاموتورز
+McDonald's,McDonald's,en,ماكدونالدز,ماكدونالدز
+Pepsi,Pepsi,en,بيبسي,بيبسي
+Coca-Cola,Coca-Cola,en,كوكا كولا,كوكاكولا
+Nike,"Nike, Inc.",en,نايكي,نايكي
+Pizza Hut,Pizza Hut,en,بيتزا هت,بيتزاهت
+Burger King,Burger King,en,برجر كنج,برجركنج
+YouTube,YouTube,en,يوتيوب,يوتيوب
+TikTok,TikTok,en,تيك توك,تيكتوك
+Mastercard,Mastercard,en,ماستركارد,ماستركارد
+Amazon,Amazon (company),en,أمازون (شركة),أمازون
+Instagram,Instagram,en,إنستغرام,إنستغرام
+WhatsApp,WhatsApp,en,واتساب,واتساب
+LinkedIn,LinkedIn,en,لينكد إن,لينكدإن
+Snapchat,Snapchat,en,سناب شات,سنابشات
+Pinterest,Pinterest,en,بنترست,بنترست
+Reddit,Reddit,en,ريديت,ريديت
+Spotify,Spotify,en,سبوتيفاي,سبوتيفاي
+Uber,Uber,en,أوبر,أوبر
+Airbnb,Airbnb,mismatch,إير بي إن بي,
+PayPal,PayPal,en,باي بال,بايبال
+Visa,Visa Inc.,en,فيزا,فيزا
+American Express,American Express,en,أمريكان إكسبريس,أمريكانإكسبريس
+Intel,Intel,en,إنتل,إنتل
+Oracle,Oracle Corporation,en,أوراكل,أوراكل
+Dell,Dell,en,ديل,ديل
+Cisco,Cisco,en,سيسكو,سيسكو
+Adobe,Adobe Inc.,en,أدوبي,أدوبي
+Walmart,Walmart,en,وول مارت,وولمارت
+Costco,Costco,en,كوسكو (شركة),كوسكو
+Subway,Subway (restaurant),en,صب واي,صبواي
+Domino's Pizza,Domino's,en,دومينوز بيتزا,دومينوزبيتزا
+Dunkin' Donuts,Dunkin' Donuts,en,دانكن دونتس,دانكندونتس
+Krispy Kreme,Krispy Kreme,en,كرسبي كريم,كرسبيكريم
+Dairy Queen,Dairy Queen,en,ديري كوين,ديريكوين
+Baskin-Robbins,Baskin-Robbins,en,باسكن روبنز,باسكنروبنز
+Oreo,Oreo,en,أوريو,أوريو
+Kit Kat,Kit Kat,en,كيت كات,كيتكات
+Snickers,Snickers,en,سنيكرز,سنيكرز
+Pringles,Pringles,en,برينجلز,برينجلز
+Doritos,Doritos,en,دوريتوس,دوريتوس
+Sprite,Sprite (drink),en,سبرايت,سبرايت
+Fanta,Fanta,en,فانتا,فانتا
+Red Bull,Red Bull,en,ريد بل,ريدبل
+Budweiser,Budweiser,en,بدويايزر,بدويايزر
+Johnnie Walker,Johnnie Walker,en,,
+Colgate,Colgate (toothpaste),en,كولجيت,كولجيت
+Gillette,Gillette,en,جيليت,جيليت
+Pantene,Pantene,en,بانتين,بانتين
+Vaseline,Vaseline,en,فازلين,فازلين
+Pfizer,Pfizer,en,فايزر,فايزر
+Ford,Ford Motor Company,en,فورد (شركة),فورد
+Chevrolet,Chevrolet,en,شيفروليه,شيفروليه
+Jeep,Jeep,en,جيب (شركة),جيب
+Harley-Davidson,Harley-Davidson,en,هارلي ديفيدسون,هارليديفيدسون
+Rolls-Royce Motor,Rolls-Royce Motor Cars,en,رولزرويس موتور,رولزرويسموتور
+Bentley,Bentley,en,بنتلي,بنتلي
+Jaguar,Jaguar Cars,en,جاغوار (شركة),جاغوار
+Land Rover,Land Rover,en,لاند روفر,لاندروفر
+Goodyear,Goodyear Tire and Rubber Company,mismatch,شركة جوديير للإطارات والمطاط,
+Boeing,Boeing,en,بوينغ,بوينغ
+FedEx,FedEx,en,فيديكس,فيديكس
+Walt Disney,The Walt Disney Company,en,شركة والت ديزني,والتديزني
+Marvel Comics,Marvel Comics,en,مارفل كومكس,مارفلكومكس
+Pixar,Pixar,en,بيكسار,بيكسار
+Warner Bros.,Warner Bros.,en,,
+Xbox,Xbox,mismatch,إكس بوكس,
+PlayStation,PlayStation,en,بلاي ستيشن,بلايستيشن
+Minecraft,Minecraft,en,ماينكرافت,ماينكرافت
+Fortnite,Fortnite,en,فورتنايت,فورتنايت
+Barbie,Barbie,en,باربي,باربي
+Hot Wheels,Hot Wheels,en,,
+Converse,Converse (brand),en,كونفيرس (شركة أحذية),كونفيرس
+Vans,Vans,en,فانز,فانز
+Reebok,Reebok,en,ريبوك,ريبوك
+Under Armour,Under Armour,en,آندر آرمور,آندرآرمور
+Timberland,Timberland (company),en,شركة تمبرلاند,تمبرلاند
+Ray-Ban,Ray-Ban,en,راي بان,رايبان
+Burberry,Burberry,en,بربري (علامة تجارية),بربري
+Ralph Lauren,Ralph Lauren Corporation,en,رالف لورين (شركة),رالفلورين
+Calvin Klein,Calvin Klein,en,كالفين كلاين (مصمم أزياء),كالفينكلاين
+Tommy Hilfiger,Tommy Hilfiger (company),en,تومي هيلفيغر (شركة),توميهيلفيغر
+Victoria Secret,Victoria's Secret,en,فكتوريا سيكريت,فكتورياسيكريت
+Hilton,Hilton Hotels & Resorts,en,فنادق ومنتجعات هيلتون,هيلتون
+Marriott,Marriott International,translated,ماريوت الدولية,
+Hyatt,Hyatt,translated,حياة (فندق),
+Sheraton,Sheraton Hotels and Resorts,en,فنادق ومنتجعات شيراتون,شيراتون
+Holiday Inn,Holiday Inn,en,هوليداي إن,هوليدايإن
+Expedia,Expedia,en,إكسبيديا,إكسبيديا
+Tripadvisor,Tripadvisor,en,تريب أدفيسور,تريبأدفيسور
+Agoda,Agoda,en,أجودا,أجودا
+Grab,Grab Holdings,en,جراب,جراب
+Lazada,Lazada,en,,
+Shopee,Shopee,en,,
+Zoom,Zoom (software),en,زووم (برنامج),زووم
+Slack,Slack (software),en,سلاك,سلاك
+Dropbox,Dropbox,en,دروبوكس,دروبوكس
+GitHub,GitHub,en,غيت هاب,غيتهاب
+Android,Android (operating system),en,أندرويد (نظام تشغيل),أندرويد
+Microsoft Windows,Microsoft Windows,en,مايكروسوفت ويندوز,مايكروسوفتويندوز
+Google Chrome,Google Chrome,en,جوجل كروم,جوجلكروم
+Firefox,Firefox,en,فيرفكس,فيرفكس
+Gmail,Gmail,en,جي ميل,جيميل
+Yahoo,Yahoo,en,ياهو!,ياهو
+Wikipedia,Wikipedia,en,ويكيبيديا,ويكيبيديا
+eBay,eBay,en,إيباي,إيباي
+Tesco,Tesco,en,تيسكو,تيسكو
+Walt Disney,Walt Disney,en,والت ديزني,والتديزني
+Nokia,Nokia,other,نوكيا,نوكيا
+IKEA,IKEA,other,إيكيا,إيكيا
+Nestlé,Nestlé,other,نستله,نستله
+Michelin,Michelin,other,ميشلان,ميشلان
+Mitsubishi,Mitsubishi,other,ميتسوبيشي,ميتسوبيشي
+Huawei,Huawei,other,هواوي,هواوي
+Samsung,Samsung,other,سامسونج,سامسونج
+Toyota,Toyota,other,تويوتا,تويوتا
+Honda,Honda,other,هوندا,هوندا
+Sony,Sony,other,سوني,سوني
+Adidas,Adidas,other,أديداس,أديداس
+Rolex,Rolex,other,رولكس,رولكس
+Volkswagen,Volkswagen,other,فولكس فاجن,فولكسفاجن
+Lego,Lego,other,ليغو (لعبة),ليغو
+Heineken,Heineken,other,هينيكن,هينيكن
+Nintendo,Nintendo,other,نينتندو,نينتندو
+Nivea,Nivea,other,نيفيا,نيفيا
+Twitter,Twitter,translated,إكس (منصة تواصل),
+Coca-Cola Zero,Coca-Cola Zero Sugar,en,كوكا كولا زيرو,كوكاكولازيرو
+Seven Up,7 Up,en,سفن أب,سفنأب
+Mountain Dew,Mountain Dew,en,ماونتن ديو,ماونتنديو
+Dr Pepper,Dr Pepper,en,,
+Kellogg's,Kellogg's,en,كلوقز,كلوقز
+Heinz,Heinz,en,هاينز,هاينز
+Kraft Foods,Kraft Foods,en,شركة مجموعة كرافت فودز,كرافتفودز
+Mars,Mars Inc.,translated,مارس المتحدة,
+Cadbury,Cadbury,en,كادبوري,كادبوري
+Unilever,Unilever,en,يونيليفر,يونيليفر
+Johnson and Johnson,Johnson & Johnson,en,جونسون آند جونسون,جونسونآندجونسون
+Procter and Gamble,Procter & Gamble,translated,بروكتر وغامبل,
+Dove,Dove (brand),en,,
+Lux,Lux (soap),en,,
+Nescafe,Nescafé,en,نسكافيه,نسكافيه
+Maybelline,Maybelline,en,ميبلين,ميبلين
+Revlon,Revlon,en,ريڤلون,ريڤلون
+Avon,Avon Products,en,منتجات أفون,أفون
+Levi's,Levi Strauss & Co.,en,ليفايس,ليفايس
+Gap,Gap Inc.,en,جاب (شركة),جاب
+Skechers,Skechers,en,سكيتشرز,سكيتشرز
+Crocs,Crocs,en,كروكس (شركة),كروكس
+New Balance,New Balance,en,نيو بالانس,نيوبالانس
+Puma,Puma (brand),en,بوما,بوما
+Lenovo,Lenovo,en,لينوفو,لينوفو
+Nvidia,Nvidia,en,إنفيديا,إنفيديا
+Qualcomm,Qualcomm,en,كوالكوم,كوالكوم
+Broadcom,Broadcom,en,,
+Salesforce,Salesforce,en,سيلزفورس,سيلزفورس
+Hewlett-Packard,Hewlett-Packard,en,هيوليت-باكارد,هيوليتباكارد
+Texas Instruments,Texas Instruments,en,تكساس إنسترومنتس,تكساسإنسترومنتس
+Western Digital,Western Digital,en,ويسترن ديجيتال,ويسترنديجيتال
+Seagate Technology,Seagate Technology,en,سيجيت تكنولوجي,سيجيتتكنولوجي
+Kingston Technology,Kingston Technology,en,كينغستون تكنولوجي,كينغستونتكنولوجي
+Logitech,Logitech,en,لوجيتيك,لوجيتيك
+Garmin,Garmin,en,جارمن,جارمن
+Fitbit,Fitbit,en,فيتبيت,فيتبيت
+GoPro,GoPro,en,جو برو,جوبرو
+Blizzard Entertainment,Blizzard Entertainment,en,بليزارد إنترتينمنت,بليزاردإنترتينمنت
+Electronic Arts,Electronic Arts,en,إلكترونيك آرتس,إلكترونيكآرتس
+Rockstar Games,Rockstar Games,en,روكستار جيمز,روكستارجيمز
+Steam,Steam (service),en,ستيم,ستيم
+Disney,Disney+,en,ديزني+,ديزني
+Hulu,Hulu,en,هولو,هولو
+Vimeo,Vimeo,en,فيميو,فيميو
+Shazam,Shazam (application),en,,
+Duolingo,Duolingo,en,دوولينجو,دوولينجو
+Quora,Quora,en,كورا,كورا
+Medium,Medium (website),en,ميديام,ميديام
+Wordpress,WordPress,en,ووردبريس,ووردبريس
+Blogger,Blogger (service),en,بلوغر,بلوغر
+Myspace,Myspace,en,ماي سبيس,مايسبيس
+Craigslist,Craigslist,en,كريجزليست,كريجزليست
+Groupon,Groupon,en,جروبون,جروبون
+Booking,Booking.com,en,بوكينج,بوكينج
+Delta,Delta Air Lines,translated,خطوط دلتا الجوية,
+Caterpillar,Caterpillar Inc.,en,كاتربيلر,كاتربيلر
+Lockheed Martin,Lockheed Martin,en,لوكهيد مارتن,لوكهيدمارتن
+Chrysler,Chrysler,en,كرايسلر,كرايسلر
+Dodge,Dodge,en,دودج,دودج
+Cadillac,Cadillac,en,كاديلاك,كاديلاك
+Buick,Buick,en,بيوك (شركة),بيوك
+Lincoln,Lincoln Motor Company,en,لينكولن (شركة),لينكولن
+Aston Martin,Aston Martin,en,آستون مارتن,آستونمارتن
+McLaren,McLaren,en,ماكلارين,ماكلارين
+Mini,Mini (marque),en,ميني (بي إم دبليو),ميني
+Lotus,Lotus Cars,en,لوتس (شركة),لوتس
+Vodafone,Vodafone,en,فودافون,فودافون
+Barclays,Barclays,en,باركليز,باركليز
+Lloyds Bank,Lloyds Bank,en,لويدز بنك,لويدزبنك
+Reuters,Reuters,en,رويترز,رويترز
+Bloomberg,Bloomberg L.P.,mismatch,بلومبيرغ إل بي,
+Forbes,Forbes,en,فوربس,فوربس
+Rolling Stone,Rolling Stone,en,رولينغ ستون,رولينغستون
+Newsweek,Newsweek,en,نيوزويك,نيوزويك
+Playboy,Playboy,en,بلاي بوي,بلايبوي
+Monopoly,Monopoly (game),en,مونوبولي (لعبة),مونوبولي
+Scrabble,Scrabble,en,سكرابل,سكرابل
+Tetris,Tetris,en,تتريس,تتريس
+Pacman,Pac-Man,en,باك مان,باكمان
+Batman,Batman,en,باتمان,باتمان
+Superman,Superman,en,سوبرمان,سوبرمان
+Spiderman,Spider-Man,translated,الرجل العنكبوت,
+Mickey Mouse,Mickey Mouse,en,ميكي ماوس,ميكيماوس
+Sherlock Holmes,Sherlock Holmes,en,شرلوك هولمز,شرلوكهولمز
+Harry Potter,Harry Potter,en,هاري بوتر,هاريبوتر
+Star Wars,Star Wars,translated,حرب النجوم,
+Titanic,Titanic,mismatch,آر إم إس تيتانيك,
