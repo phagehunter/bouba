@@ -2,7 +2,11 @@
 
 Versions before 0.0.1 were development stages on one computer and were never published.
 
-## 0.0.0-s7 (in progress)
+## 0.0.0-s8 (in progress)
+
+- The web version is published to GitHub Pages on each push.
+
+## 0.0.0-s7
 
 - The app remembers recent names, the last language and a shortlist on the device.
 - The address carries the name and language, and "Copy link" shares a result.
