@@ -12,7 +12,9 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator && /^https?:$/.test(loc
   navigator.serviceWorker.register(`./sw.js?v=${__APP_VERSION__}`).then(async () => {
     await navigator.serviceWorker.ready;
     // Files loaded before the saving started would be missed, so save them now.
-    const urls = performance.getEntriesByType('resource').map((e) => e.name).filter((u) => u.startsWith(location.origin));
+    // Only files from the app's own folder are saved. Anything else the hosting page loads is left alone.
+    const own = new URL('./', location.href).href;
+    const urls = performance.getEntriesByType('resource').map((e) => e.name).filter((u) => u.startsWith(own));
     const cache = await caches.open('name-check-2-' + __APP_VERSION__);
     await Promise.all(urls.map((u) => cache.add(u).catch(() => undefined)));
   }).catch(() => undefined);

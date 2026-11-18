@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <!-- A shared link carries a name after "#". It is taken out of the address here, before any other script runs. -->
+    <script>window.__boubaLink = location.hash; try { if (location.hash) history.replaceState(history.state, '', location.pathname + location.search); } catch (e) {}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <meta name="description" content="Shows how speakers of Thai, Burmese, Japanese, Mandarin Chinese, Arabic and Hindi are likely to pronounce a company or product name written in English spelling." />

@@ -5,6 +5,8 @@ Versions before 0.0.1 were development stages on one computer and were never pub
 ## 0.0.0-s8 (in progress)
 
 - The web version is published to GitHub Pages on each push.
+- The typed name is no longer kept in the page address. A shared link is read once and then cleared, and "Copy link" builds a link on request.
+- The offline copy stores only the app's own files.
 
 ## 0.0.0-s7
 

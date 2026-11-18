@@ -24,11 +24,10 @@ export function remove(key: string): void {
   try { localStorage.removeItem(key); } catch { /* storage unavailable */ }
 }
 
-/** Puts the state after "#" in the address without adding a step to the back button. */
-export function writeHash(encoded: string): void {
+/** Removes anything after "#" from the address, without adding a step to the back button. */
+export function clearHash(): void {
   try {
-    const next = '#' + encoded;
-    if (location.hash !== next) history.replaceState(history.state, '', next);
+    if (location.hash) history.replaceState(history.state, '', location.pathname + location.search);
   } catch { /* some embedded views do not allow it */ }
 }
 

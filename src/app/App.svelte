@@ -5,8 +5,8 @@
   import Mark from './Mark.svelte';
   import MarketChips from './MarketChips.svelte';
   import { LANGUAGES, languageOf } from './lib';
-  import { addRecent, addToShortlist, cleanRecent, decodeState, encodeState } from './state';
-  import { KEYS, load, reducedMotion, remove, save, writeHash } from './store';
+  import { addRecent, addToShortlist, cleanRecent, decodeState } from './state';
+  import { KEYS, clearHash, load, reducedMotion, remove, save } from './store';
 
   const TABS = [
     { id: 'check', label: 'Check a name' },
@@ -17,7 +17,8 @@
   const FIRST_SHORTLIST = 'Shell\nStarbucks\nTesla\nLotus\nSprite\nZoom';
 
   // The address wins over what the device remembers.
-  const fromAddress = decodeState(location.hash, IDS);
+  // index.html has already moved a shared link out of the address and into this variable.
+  const fromAddress = decodeState(window.__boubaLink || location.hash, IDS);
   const savedLang = load(KEYS.lang);
   const savedShortlist = load(KEYS.shortlist);
 
@@ -32,15 +33,13 @@
 
   $effect(() => save(KEYS.lang, langId));
   $effect(() => save(KEYS.shortlist, shortlist));
-  // Keep the name and language in the address. The short wait keeps typing from rewriting it on every key.
-  $effect(() => {
-    const encoded = encodeState({ name: text, lang: langId });
-    const timer = setTimeout(() => writeHash(encoded), 250);
-    return () => clearTimeout(timer);
-  });
+  // The typed name is never kept in the address. A shared link is read once and then removed from it,
+  // so no script on the hosting page can read the name from the address. "Copy link" builds a link on request.
+  clearHash();
 
   function readAddress() {
     const s = decodeState(location.hash, IDS);
+    clearHash();
     if (s.lang) langId = s.lang;
     if (s.name !== undefined) {
       text = s.name;

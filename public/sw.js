@@ -18,7 +18,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   const req = event.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+  // Only the app's own files are handled. Requests outside its folder go straight to the network.
+  if (req.method !== 'GET' || !req.url.startsWith(self.registration.scope)) return;
   // Pages: try the network first so updates arrive, and fall back to the saved copy.
   if (req.mode === 'navigate') {
     event.respondWith(fetch(req).then((res) => { caches.open(CACHE).then((c) => c.put('./', res.clone())); return res; }).catch(() => caches.match('./')));
